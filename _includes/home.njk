@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{seoDescription}}" />
+    <meta name="keywords" content="{{seoKeywords}}" />
+    <title>{{title}}</title>
+    {% set css %}
+      {% include "css/markdown.css" %}
+      {% include "css/components/breadcrumbs.css" %}
+    {% endset %}
+    <style>{{ css | cssmin | safe }}</style>
+  </head>
+  <body>
+    <section>
+      <h2>Разделы</h2>
+      <ul>
+      {%- for section in collections['section'] -%}
+        <li><a href="{{section.url}}">{{ section.data.title }}</a></li>
+      {%- endfor -%}
+      </ul>
+    <section>
+    <section>
+      <h2>Конспекты</h2>
+      <ul>
+      {%- for conspect in collections['conspect'] -%}
+        <li><a href="{{conspect.url}}">{{ conspect.data.title }}</a></li>
+      {%- endfor -%}
+      </ul>
+    <section>
+    <section>
+      <h2>Новые статьи</h2>
+      <ul>
+      {%- for post in collections['post'] -%}
+        <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+      {%- endfor -%}
+      </ul>
+    <section>    
+    {{ content | safe }}
+  </body>
+</html>

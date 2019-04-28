@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{seoDescription}}" />
+    <meta name="keywords" content="{{seoKeywords}}" />
+    <title>{{title}}</title>
+    {% set css %}
+      {% include "css/components/breadcrumbs.css" %}
+      {% include "css/markdown.css" %}
+    {% endset %}
+    <style>{{ css | cssmin | safe }}</style>
+  </head>
+  <body>
+    <ul class="breadcrumbs">
+      <li>{% home %}</li>
+      <li>{{ breadcrumbName }}</li>
+    </ul>
+    <ul>
+    {%- for section in collections['section'] -%}
+      <li><a href="{{section.url}}">{{ section.data.title }}</a></li>
+    {%- endfor -%}
+    </ul>
+    {{ content | safe }}
+  </body>
+</html>

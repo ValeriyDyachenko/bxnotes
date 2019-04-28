@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{seoDescription}}" />
+    <meta name="keywords" content="{{seoKeywords}}" />
+    <title>{{title}}</title>
+    {% set css %}
+      {% include "css/components/breadcrumbs.css" %}
+      {% include "css/markdown.css" %}
+    {% endset %}
+    <style>{{ css | cssmin | safe }}</style>
+  </head>
+  <body>
+    <ul class="breadcrumbs">
+      <li>{% home %}</li>
+      <li><a href="{{ collections['sections'][0].url }}">{{ collections['sections'][0].data.breadcrumbName }}</a></li>
+      <li>{{ title }}</li>
+    </ul>
+    <ul>
+    {%- for post in collections['conspectInSection:' + section] -%}
+      <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+    {%- endfor -%}
+    </ul>
+    {{ content | safe }}
+  </body>
+</html>
