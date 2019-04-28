@@ -6,6 +6,7 @@ section: js
 title: Компоновщик
 seoDescription: Обзор паттерна "Компоновщик" и его реализация в JavaScript.
 seoKeywords: js, компоновщик, паттерны
+date: 2018-22-09 10:00:00
 ---
 # Компоновщик
 

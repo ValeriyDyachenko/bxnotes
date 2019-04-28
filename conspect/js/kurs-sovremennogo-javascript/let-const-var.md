@@ -6,6 +6,7 @@ section: js
 title: Let, const, var.
 seoDescription: Объявление переменных с помощью var, let, const.
 seoKeywords: var, let, const, js
+date: 2018-22-09 03:00:00
 ---
 # Let, const, var
 

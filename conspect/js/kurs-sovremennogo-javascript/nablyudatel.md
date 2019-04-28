@@ -6,6 +6,7 @@ section: js
 title: Наблюдатель
 seoDescription: Обзор паттерна "Наблюдатель" и его реализация в JavaScript.
 seoKeywords: js, наблюдатель, паттерны
+date: 2018-22-09 11:00:00
 ---
 # Наблюдатель
 

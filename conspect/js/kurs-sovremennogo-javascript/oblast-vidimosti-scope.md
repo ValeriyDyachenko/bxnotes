@@ -6,6 +6,7 @@ section: js
 title: Область видимости. Scope.
 seoDescription: Виды контекста и особенности работы с ним в JavaScript.
 seoKeywords: var, let, const, js, scope
+date: 2018-22-09 02:00:00
 ---
 # Область видимости. Scope.
 
