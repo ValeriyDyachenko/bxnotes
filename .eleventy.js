@@ -3,7 +3,7 @@ const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode('logger', _ => console.log(JSON.stringify(_)));
-  eleventyConfig.addShortcode('home', () => `<a href="/">Главная</a>`);
+  eleventyConfig.addShortcode('home', () => `<a href="/">🏠</a>`);
   eleventyConfig.addShortcode('postPagination', (collections, conspectName, title) => {
     const postsCnt = collections['postInConspect:'+conspectName].length;
     let postIndex = postsCnt;
