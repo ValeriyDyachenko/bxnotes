@@ -6,6 +6,7 @@ section: js
 title: Строитель
 seoDescription: Обзор паттерна "Строитель" и его реализация в JavaScript.
 seoKeywords: js, строитель, паттерны
+date: 2018-22-09 08:00:00
 ---
 # Строитель
 

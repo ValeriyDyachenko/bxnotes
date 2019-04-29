@@ -6,6 +6,7 @@ section: js
 title: Promise
 seoDescription: Использования объекта Promise для рефакторинга паттерна "Callback Hell"
 seoKeywords: js, promise, resolve, reject
+date: 2018-22-09 14:00:00
 ---
 # Promise
 

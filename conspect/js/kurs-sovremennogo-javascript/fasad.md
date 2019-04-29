@@ -6,6 +6,7 @@ section: js
 title: Фасад
 seoDescription: Обзор паттерна "Фасад" и его реализация в JavaScript
 seoKeywords: js, фасад, паттерны
+date: 2018-22-09 09:00:00
 ---
 # Фасад
 

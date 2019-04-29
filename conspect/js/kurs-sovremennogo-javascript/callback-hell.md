@@ -6,6 +6,7 @@ section: js
 title: Callback Hell
 seoDescription: Что такое Callback Hell. История известного антипаттерна.
 seoKeywords: js, callback hell
+date: 2018-22-09 13:00:00
 ---
 # Callback Hell
 

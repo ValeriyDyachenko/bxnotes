@@ -6,6 +6,7 @@ section: angular
 title: Создание компонентов
 seoDescription: Angular компоненты, их архитектура и как создать собственный компонент.
 seoKeywords: angular, spa, component, cli, ng, generate component
+date: 2018-14-01 00:00:00
 ---
 # Создание компонентов
 

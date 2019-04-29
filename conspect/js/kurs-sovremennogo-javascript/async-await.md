@@ -6,6 +6,7 @@ section: js
 title: Async/Await
 seoDescription: Преимущество Asinc/Await функций. Последовательное и конкурентное выполнение кода. Запуск неизвестного числа Promise функций.
 seoKeywords: js, async, await, promise
+date: 2018-22-09 15:00:00
 ---
 # Async/Await
 

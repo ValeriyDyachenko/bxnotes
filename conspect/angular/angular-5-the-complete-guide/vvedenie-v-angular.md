@@ -6,6 +6,7 @@ section: angular
 title: Установка и первый запуск
 seoDescription: Установка Angular и настройка окружения. Создание первого приложения на Angular.
 seoKeywords: angular, spa, npm, IDE, ng, serve
+date: 2018-13-01 00:00:00
 ---
 # Установка и первый запуск
 
