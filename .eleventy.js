@@ -39,6 +39,8 @@ module.exports = function(eleventyConfig) {
   );
   eleventyConfig.addPassthroughCopy("img");
   return {
-    passthroughFileCopy: true
+    templateFormats : ['njk', 'md'],
+    markdownTemplateEngine: false,
+    passthroughFileCopy: true,
   };
 };
