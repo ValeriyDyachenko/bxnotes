@@ -6,7 +6,7 @@ section: js
 title: This
 seoDescription: Как работает this в JavaScript.
 seoKeywords: js, this, scope, bind, apply, call
-date: 2018-22-09 05:00:00
+date: 2018-09-22 05:00:00
 ---
 # This
 

@@ -6,7 +6,7 @@ section: js
 title: Всплытие. Hoisting
 seoDescription: Процесс всплытия переменных в JavaScript.
 seoKeywords: hoisting
-date: 2018-22-09 01:00:00
+date: 2018-09-22 01:00:00
 ---
 # Всплытие. Hoisting.
 
