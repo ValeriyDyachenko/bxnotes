@@ -6,7 +6,7 @@ section: js
 title: JavaScript, ECMA, Babel
 seoDescription: Язык программирования JavaScript и стандарт ECMA.
 seoKeywords: js, ecma, babel
-date: 2018-22-09 00:00:00
+date: 2018-09-22 00:00:00
 ---
 # JavaScript, ECMA, Babel
 

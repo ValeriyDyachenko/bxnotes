@@ -6,7 +6,7 @@ section: js
 title: Модуль
 seoDescription: Преимущества паттерна "Модуль" и его реализация в JavaScript.
 seoKeywords: паттерны, модуль, js
-date: 2018-22-09 07:00:00
+date: 2018-09-22 07:00:00
 ---
 # Модуль
 
