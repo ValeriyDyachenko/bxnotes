@@ -6,7 +6,7 @@ section: angular
 title: Пример приложения на Angular 5
 seoDescription: Создание простого приложения с динамически обновляющимся текстом.
 seoKeywords: angular, spa
-date: 2018-13-01 01:00:00
+date: 2018-01-13 01:00:00
 ---
 # Пример приложения на Angular 5
 
