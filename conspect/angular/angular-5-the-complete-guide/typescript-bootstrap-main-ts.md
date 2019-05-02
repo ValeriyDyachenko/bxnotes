@@ -6,7 +6,7 @@ section: angular
 title: TypeScript, Bootstrap, Main.ts
 seoDescription: Использование TypeScript, подключение Bootstrap с помощью npm и роль файла main.ts
 seoKeywords: angular, spa, bootstrap, typescript, main.ts
-date: 2018-13-01 02:00:00
+date: 2018-01-13 02:00:00
 ---
 # TypeScript, Bootstrap, Main.ts
 
