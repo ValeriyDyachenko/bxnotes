@@ -22,6 +22,14 @@
       </ul>
     <section>
     <section>
+      <h2>Темы</h2>
+      <ul>
+      {%- for subject in collections['subject'] -%}
+        <li><a href="{{subject.url}}">{{ subject.data.title }}</a></li>
+      {%- endfor -%}
+      </ul>
+    <section>
+    <section>
       <h2>Конспекты</h2>
       <ul>
       {%- for conspect in collections['conspect'] -%}

@@ -15,12 +15,14 @@
   <body>
     <ul class="breadcrumbs">
       <li>{% home %}</li>
+      <li><a href="{{ collections['sections'][0].url }}">{{ collections['sections'][0].data.breadcrumbName }}</a></li>
+      <li><a href="{{ collections['sectionName:'+section][0].url }}">{{ collections['sectionName:'+section][0].data.breadcrumbName }}</a></li>
       <li>{{ breadcrumbName }}</li>
     </ul>
+    <h1>{{ title }}</h1>
     <ul>
-    <h1>{{ title }}</h1>  
-    {%- for section in collections['section'] -%}
-      <li><a href="{{section.url}}">{{ section.data.title }}</a></li>
+    {%- for conspect in collections['conspectSubject:' + subject] -%}
+      <li><a href="{{conspect.url}}">{{ conspect.data.title }}</a></li>
     {%- endfor -%}
     </ul>
     {{ content | safe }}

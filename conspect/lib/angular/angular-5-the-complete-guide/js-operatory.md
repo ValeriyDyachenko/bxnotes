@@ -1,0 +1,36 @@
+---
+layout: post.njk
+tags: [post, postInConspect:angular-5-the-complete-guide]
+conspect: angular-5-the-complete-guide
+section: lib
+subject: angular
+title: JS операторы
+seoDescription:  JS операторы, которые важно знать для работы с Angular.
+seoKeywords: angular, spa, slice, spread
+date: 2018-01-14 22:00:00
+---
+# JS операторы
+
+## Получение копии массива
+
+Допустим в классе есть приватное свойство типа массива. И метод геттер, который его возвращает. Для того, чтобы геттер возвращал не непосредственно ссылку на объект, а копию, можно использовать метод `slice()` без аргумента:
+
+```typescript
+return this.propName.slice();
+```
+
+## Оператор spread
+
+Синтаксис: `...[val1, val2, val_n]`
+
+Оператор `spread` в аргументе функции, позволяет передать массив, как список.
+
+```typescript
+my_funcrion(...[arg1, arg2])
+```
+
+это будет интерпретировано как:
+
+```typescript
+my_funcrion(arg1, arg2);
+```
