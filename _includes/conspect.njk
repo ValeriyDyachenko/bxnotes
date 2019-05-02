@@ -16,7 +16,8 @@
     <ul class="breadcrumbs">
       <li>{% home %}</li>
       <li><a href="{{ collections['sections'][0].url }}">{{ collections['sections'][0].data.breadcrumbName }}</a></li>
-      <li><a href="{{ collections['sectionName:'+section][0].url }}">{{ collections['sectionName:'+section][0].data.title }}</a></li>
+      <li><a href="{{ collections['sectionName:'+section][0].url }}">{{ collections['sectionName:'+section][0].data.breadcrumbName }}</a></li>
+      <li><a href="{{ collections['subjectName:'+subject][0].url }}">{{ collections['subjectName:'+subject][0].data.breadcrumbName }}</a></li>
       <li>{{ title }}</li>
     </ul>
     {{ content | safe }}

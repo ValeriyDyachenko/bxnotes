@@ -16,11 +16,12 @@
     <ul class="breadcrumbs">
       <li>{% home %}</li>
       <li><a href="{{ collections['sections'][0].url }}">{{ collections['sections'][0].data.breadcrumbName }}</a></li>
-      <li>{{ title }}</li>
+      <li>{{ breadcrumbName }}</li>
     </ul>
     <ul>
-    {%- for post in collections['conspectInSection:' + section] -%}
-      <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+    <h1>{{ title }}</h1>
+    {%- for subject in collections['subjectInSection:' + section] -%}
+      <li><a href="{{subject.url}}">{{ subject.data.title }}</a></li>
     {%- endfor -%}
     </ul>
     {{ content | safe }}
