@@ -76,10 +76,8 @@ date: 2018-01-05 09:00:00
 
 В папку первого сайта установить битрикс. Затем в папке второго сайта делаются *симлинки* на папку *bitrix* и *upload* первого сайта.
 
-```shell
-ln -s /home/bitrix/ext_www/site_one/bitrix  /home/bitrix/ext_www/site_two
-ln -s /home/bitrix/ext_www/site_one/upload /home/bitrix/ext_www/site_two
-```
+`ln -s /home/bitrix/ext_www/site_one/bitrix  /home/bitrix/ext_www/site_two`
+`ln -s /home/bitrix/ext_www/site_one/upload /home/bitrix/ext_www/site_two`
 
 Скопировать на второй сайт файлы:
 
