@@ -1,0 +1,32 @@
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  line-height: 0;
+  margin: 1rem 0 3rem 0;
+  width: 950px;
+}
+
+.breadcrumbs li:first-child {
+  margin: 0 25px 0 0;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  color: #000;
+  margin-right: 25px;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+  content: "⯈";
+  margin-right: 25px;
+  color: #ff3faa;
+}
+
+.breadcrumbs li a{
+  color: #0067cc;
+}
+
+.breadcrumbs .breadcrumbs-home-ico {
+  margin-right: 7px;
+}

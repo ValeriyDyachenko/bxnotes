@@ -1,0 +1,37 @@
+#conspect-nav-burger, #mobile-burger {
+  display: none;
+}
+
+.conspect-nav {
+  width: 362px; /* outer menu width */
+  display: inline-block;
+}
+
+.conspect-nav .title {
+  font-size: 1.3rem;
+  margin: 1rem 0 24px 0;
+  display: block;
+  max-width: 372px;
+  line-height: 1.9rem;
+}
+
+.conspect-nav ul {
+  width: auto;
+  margin: 0;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  font-size: .9rem;
+  padding: 0 24px 0 0;
+}
+
+.conspect-nav ul li{
+  margin: 10px 0;
+}
+
+.conspect-nav a {
+  color: #000;
+  display: block;
+}

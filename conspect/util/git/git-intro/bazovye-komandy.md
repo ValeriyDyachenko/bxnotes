@@ -95,7 +95,7 @@ git commit -am "this is another comment"
 
 Рассмотрим команды `pull` и `push` на практическом примере. Создадим на гитхабе новый тестовый проект. Поставьте галочку чтобы создать readme файл:
 
-![создание GitHub проекта](/img/util/git/git-intro/bazovye-komandy/init-git-project.png "создание GitHub проекта")
+![создание GitHub проекта](/assets/img/util/git/git-intro/bazovye-komandy/init-git-project.png "создание GitHub проекта")
 
 Затем создадим директорию, инициализируем в ней *Git*, и выполним команды `remote add` и `pull`:
 

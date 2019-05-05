@@ -1,0 +1,13 @@
+.header {
+  margin: 15px 0 15px 0;
+}
+
+.header .bold, .header .thin {
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000000;
+}
+
+.header .thin {
+  color: #676767;;
+}

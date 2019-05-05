@@ -6,29 +6,54 @@
     <meta name="description" content="{{seoDescription}}" />
     <meta name="keywords" content="{{seoKeywords}}" />
     <title>{{title}}</title>
-    {% set css %}
-      {% include "css/prism-vs.css" %}
-      {% include "css/markdown.css" %}
-      {% include "css/components/breadcrumbs.css" %}
-    {% endset %}
-    <style>{{ css | cssmin | safe }}</style>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/common/post.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/desktop/post.css" media="(min-width: 1280px)">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/mobile/post.css" media="(max-width: 1279px)">
+    {# <link rel="preload" href="/assets/styles/pages/desktop/home.css" as="style"> #}
   </head>
   <body>
-    <ul class="breadcrumbs">
-      <li>{% home %}</li>
-      <li><a href="{{ collections['sections'][0].url }}">{{ collections['sections'][0].data.breadcrumbName }}</a></li>
-      <li><a href="{{ collections['sectionName:'+section][0].url }}">{{ collections['sectionName:'+section][0].data.breadcrumbName }}</a></li>
-      <li><a href="{{ collections['subjectName:'+subject][0].url }}">{{ collections['subjectName:'+subject][0].data.breadcrumbName }}</a></li>
-      <li><a href="{{ collections['conspectName:'+conspect][0].url }}">{{ collections['conspectName:'+conspect][0].data.title }}</a></li>
-      <li>{{ title }}</li>
-    </ul>
-    <ul>
-    {%- for post in collections['postInConspect:'+conspect] -%}
-      <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
-    {%- endfor -%}
-    </ul>
-    {{ content | safe }}
-    {% postPagination collections, conspect, title %}
-    <a href="https://github.com/ValeriyDyachenko/bxnotes/blob/master{{ page.inputPath.replace('./', '/') }}">Редактировать на GitHub</a>
+
+    <input id="conspect-nav-burger" type="checkbox" value="burger" />
+    <label id="mobile-burger" for="conspect-nav-burger">
+      <div class="hamburger hamburger--3dx js-hamburger">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </label>
+    <div id="page-wrapper">
+      <div class="container">
+        <nav class=conspect-nav>
+          <ul>
+            <li class="title">{{ collections['conspectName:'+conspect][0].data.title }}</li>
+              {%- for post in collections['postInConspect:'+conspect] -%}
+                <li>
+                  <a href="{{post.url}}">
+                    {% if post.data.title === title %} <strong> {% endif %}
+                        {{ post.data.title }}
+                    {% if post.data.title === title %} </strong> {% endif %}   
+                  </a>
+                </li>
+              {%- endfor -%}
+          </ul>
+        </nav>
+        <section class="post-content">
+          {% include 'header.njk' %}
+          <nav>
+            <ul class="breadcrumbs">
+              <li>{% home %}</li>
+              <li><a href="{{ collections['sections'][0].url }}">{{ collections['sections'][0].data.breadcrumbName }}</a></li>
+              <li><a href="{{ collections['sectionName:'+section][0].url }}">{{ collections['sectionName:'+section][0].data.breadcrumbName }}</a></li>
+              <li><a href="{{ collections['subjectName:'+subject][0].url }}">{{ collections['subjectName:'+subject][0].data.breadcrumbName }}</a></li>
+              <li><a href="{{ collections['conspectName:'+conspect][0].url }}">{{ collections['conspectName:'+conspect][0].data.title }}</a></li>
+            </ul>
+          </nav>
+          {{ content | safe }}
+          <div id="mobile-nav">{% postPagination collections, conspect, title %}</div>
+          <a class="github-btn" href="https://github.com/ValeriyDyachenko/bxnotes/blob/master{{ page.inputPath.replace('./', '/') }}">Редактировать на GitHub</a> 
+        </section>
+      </div>
+      {% include 'footer.njk' %}
+    </div>
   </body>
 </html>

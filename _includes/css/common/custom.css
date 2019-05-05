@@ -1,0 +1,32 @@
+html { margin-left: calc(100vw - 100%); }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.direct-link {
+  color: "#c3c3c3";
+}
+
+blockquote {
+  border-left: 4px solid #da0079;
+  padding: 0 15px;
+  color: #000;
+}
+
+.token.comment {
+  color: #ff79c6;
+}
+
+a {
+  color: #da0079;;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+table tr td, table tr th {
+  border: 1px solid #ddd;
+}

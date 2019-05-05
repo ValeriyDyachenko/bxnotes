@@ -6,11 +6,6 @@
     <meta name="description" content="{{seoDescription}}" />
     <meta name="keywords" content="{{seoKeywords}}" />
     <title>{{title}}</title>
-    {% set css %}
-      {% include "css/components/breadcrumbs.css" %}
-      {% include "css/markdown.css" %}
-    {% endset %}  
-    <style>{{ css | cssmin | safe }}</style>
   </head>
   <body>
     <ul class="breadcrumbs">

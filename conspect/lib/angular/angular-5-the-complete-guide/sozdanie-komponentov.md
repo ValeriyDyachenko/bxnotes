@@ -107,5 +107,5 @@ declarations: [
 
 Компоненты могут быть вложены друг в друга. Это помогает создать удобную структуру проекта:
 
-![alt text](/img/angular/angular-5-the-complete-guide/sozdanie-komponentov/accb37eb3210f43f62b6850c64cea269.jpg)
+![alt text](/assets/img/angular/angular-5-the-complete-guide/sozdanie-komponentov/accb37eb3210f43f62b6850c64cea269.jpg)
 
