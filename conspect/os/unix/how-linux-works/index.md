@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:how-linux-works, conspectSubject:unix]
+tags: [conspect, conspectName:how-linux-works, conspectInSubject:unix, conspectInSection:os]
 conspect: how-linux-works
 section: os
 subject: unix

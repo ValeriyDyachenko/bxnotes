@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-tags: [post, postInConspect:murach-mysql]
+tags: [post, postInConspect:murach-mysql, postInSubject:mysql, postInSection:db]
 conspect: murach-mysql
 section: db
 subject: mysql

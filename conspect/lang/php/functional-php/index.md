@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:functional-php, conspectSubject:php]
+tags: [conspect, conspectName:functional-php, conspectInSubject:php, conspectInSection:lang]
 conspect: functional-php
 section: lang
 subject: php

@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-tags: [post, postInConspect:integratsiya-dizayna-i-nastroyka-platformy]
+tags: [post, postInConspect:integratsiya-dizayna-i-nastroyka-platformy, postInSubject:bitrix, postInSection:lib]
 conspect: integratsiya-dizayna-i-nastroyka-platformy
 section: lib
 subject: bitrix

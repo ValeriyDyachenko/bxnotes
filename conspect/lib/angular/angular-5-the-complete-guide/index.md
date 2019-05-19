@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:angular-5-the-complete-guide, conspectSubject:angular]
+tags: [conspect, conspectName:angular-5-the-complete-guide, conspectInSubject:angular, conspectInSection:lib]
 conspect: angular-5-the-complete-guide
 section: lib
 subject: angular

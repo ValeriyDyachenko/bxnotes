@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:rasshireniye-tipovykh-vozmozhnostey, conspectSubject:bitrix]
+tags: [conspect, conspectName:rasshireniye-tipovykh-vozmozhnostey, conspectInSubject:bitrix, conspectInSection:lib]
 conspect: rasshireniye-tipovykh-vozmozhnostey
 section: lib
 subject: bitrix

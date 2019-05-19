@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-tags: [post, postInConspect:how-linux-works]
+tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
 conspect: how-linux-works
 section: os
 subject: unix
