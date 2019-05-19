@@ -16,7 +16,7 @@
     </ul>
     <h1>{{ title }}</h1>
     <ul>
-    {%- for conspect in collections['conspectSubject:' + subject] -%}
+    {%- for conspect in collections['conspectInSubject:' + subject] -%}
       <li><a href="{{conspect.url}}">{{ conspect.data.title }}</a></li>
     {%- endfor -%}
     </ul>

@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-tags: [post, postInConspect:javascript-patterns]
+tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
 conspect: javascript-patterns
 section: lang
 subject: js

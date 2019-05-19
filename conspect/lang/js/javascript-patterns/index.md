@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:javascript-patterns, conspectSubject:js]
+tags: [conspect, conspectName:javascript-patterns, conspectInSubject:js, conspectInSection:lang]
 conspect: javascript-patterns
 section: lang
 subject: js

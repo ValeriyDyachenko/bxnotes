@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:git-intro, conspectSubject:git]
+tags: [conspect, conspectName:git-intro, conspectInSubject:git, conspectInSection:util]
 conspect: git-intro
 section: util
 subject: git

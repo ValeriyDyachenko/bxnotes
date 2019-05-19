@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:react-game, conspectSubject:react]
+tags: [conspect, conspectName:react-game, conspectInSubject:react, conspectInSection:lib]
 conspect: react-game
 section: lib
 subject: react

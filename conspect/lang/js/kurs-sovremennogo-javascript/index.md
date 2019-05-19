@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:kurs_sovremennogo_javascript, conspectSubject:js]
+tags: [conspect, conspectName:kurs_sovremennogo_javascript, conspectInSubject:js, conspectInSection:lang]
 conspect: kurs_sovremennogo_javascript
 section: lang
 subject: js

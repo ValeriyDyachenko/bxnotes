@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-tags: [post, postInConspect:react-game]
+tags: [post, postInConspect:react-game, postInSubject:react, postInSection:lib]
 conspect: react-game
 section: lib
 subject: react

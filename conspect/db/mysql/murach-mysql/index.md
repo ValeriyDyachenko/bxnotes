@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:murach-mysql, conspectSubject:mysql]
+tags: [conspect, conspectName:murach-mysql, conspectInSubject:mysql, conspectInSection:db]
 conspect: murach-mysql
 section: db
 subject: mysql

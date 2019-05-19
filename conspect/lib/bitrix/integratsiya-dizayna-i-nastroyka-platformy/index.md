@@ -1,6 +1,6 @@
 ---
 layout: conspect.njk
-tags: [conspect, conspectName:integratsiya-dizayna-i-nastroyka-platformy, conspectSubject:bitrix]
+tags: [conspect, conspectName:integratsiya-dizayna-i-nastroyka-platformy, conspectInSubject:bitrix, conspectInSection:lib]
 conspect: integratsiya-dizayna-i-nastroyka-platformy
 section: lib
 subject: bitrix

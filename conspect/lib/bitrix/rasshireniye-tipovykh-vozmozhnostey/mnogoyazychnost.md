@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey]
+tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
 conspect: rasshireniye-tipovykh-vozmozhnostey
 section: lib
 subject: bitrix
