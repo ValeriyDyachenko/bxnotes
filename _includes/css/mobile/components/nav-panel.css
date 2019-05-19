@@ -1,47 +1,8 @@
-.conspect-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transform: translate(100vw, 0px);
-  transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
-  background-color: #ffffff;
-  top: 0;
-  left: 0;
-  right: 0; 
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  overflow-x: auto;
-  pointer-events: none;
-}
-
-#conspect-nav-burger:checked ~ #page-wrapper .container .conspect-nav {
+#nav-panel-burger:checked ~ #page-wrapper .container .conspect-menu {
   opacity: 1;
   transform: translate(0px, 0px);
   z-index: 1;
   pointer-events: auto;
-}
-
-.conspect-nav ul {
-  list-style: none;
-  padding: 0 20px 10px;
-}
-
-.conspect-nav ul li.title {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.conspect-nav ul li {
-  margin: 20px 0;
-}
-
-.conspect-nav ul li a {
-  color: #0059b1;
-  display: block;
 }
 
 #mobile-burger {
@@ -51,7 +12,7 @@
   right: 20px;
 }
 
-#conspect-nav-burger {
+#nav-panel-burger {
   display: none;
 }
 
@@ -84,12 +45,12 @@
 .hamburger:hover {
   opacity: 0.9; 
 }
-#conspect-nav-burger:checked ~ #mobile-burger .hamburger:hover {
+#nav-panel-burger:checked ~ #mobile-burger .hamburger:hover {
   opacity: 0.9; 
 }
-#conspect-nav-burger:checked ~ #mobile-burger .hamburger .hamburger-inner,
-#conspect-nav-burger:checked ~ #mobile-burger .hamburger .hamburger-inner::before,
-#conspect-nav-burger:checked ~ #mobile-burger .hamburger .hamburger-inner::after {
+#nav-panel-burger:checked ~ #mobile-burger .hamburger .hamburger-inner,
+#nav-panel-burger:checked ~ #mobile-burger .hamburger .hamburger-inner::before,
+#nav-panel-burger:checked ~ #mobile-burger .hamburger .hamburger-inner::after {
   background-color: #000; 
 }
 .hamburger-box {
@@ -129,13 +90,13 @@
 .hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-#conspect-nav-burger:checked ~ #mobile-burger .hamburger--3dx .hamburger-inner {
+#nav-panel-burger:checked ~ #mobile-burger .hamburger--3dx .hamburger-inner {
   background-color: transparent !important;
   transform: rotateY(180deg); 
 }
-#conspect-nav-burger:checked ~ #mobile-burger .hamburger--3dx .hamburger-inner::before {
+#nav-panel-burger:checked ~ #mobile-burger .hamburger--3dx .hamburger-inner::before {
   transform: translate3d(0, 9px, 0) rotate(45deg); 
 }
-#conspect-nav-burger:checked ~ #mobile-burger .hamburger--3dx .hamburger-inner::after {
+#nav-panel-burger:checked ~ #mobile-burger .hamburger--3dx .hamburger-inner::after {
   transform: translate3d(0, -9px, 0) rotate(-45deg); 
 }
