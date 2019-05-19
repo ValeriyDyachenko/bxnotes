@@ -4,13 +4,20 @@
   "description": "blog about web developing and coding",
   "main": "index.js",
   "author": "Valerii Diachenko",
+  "scripts": {
+    "dev": "concurrently \"gulp --watch\" \"eleventy --serve\""
+  },
   "devDependencies": {
     "@11ty/eleventy": "0.8.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "2.0.3",
+    "concurrently": "4.1.0",
+    "gulp": "4.0.2",
+    "gulp-clean-css": "4.2.0",
+    "gulp-concat": "2.6.1",
+    "html-minifier": "4.0.0",
     "markdown-it": "8.4.2",
     "markdown-it-anchor": "5.0.2",
-    "markdown-it-emoji": "1.4.0",
-    "clean-css": "4.2.1"
+    "markdown-it-emoji": "1.4.0"
   },
   "license": "MIT"
 }

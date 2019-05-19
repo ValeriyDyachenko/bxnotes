@@ -1,0 +1,9 @@
+.post-content {
+  width: 750px;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.post-content h1 {
+  margin-bottom: 2rem;
+}
