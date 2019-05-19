@@ -12,9 +12,8 @@
     {# <link rel="preload" href="/assets/styles/pages/desktop/home.css" as="style"> #}
   </head>
   <body>
-
-    <input id="conspect-nav-burger" type="checkbox" value="burger" />
-    <label id="mobile-burger" for="conspect-nav-burger">
+    <input id="nav-panel-burger" type="checkbox" value="burger" />
+    <label id="mobile-burger" for="nav-panel-burger">
       <div class="hamburger hamburger--3dx js-hamburger">
         <div class="hamburger-box">
           <div class="hamburger-inner"></div>
@@ -23,21 +22,23 @@
     </label>
     <div id="page-wrapper">
       <div class="container">
-        <nav class=conspect-nav>
-          <ul>
-            <li class="title">{{ collections['conspectName:'+conspect][0].data.title }}</li>
-              {%- for post in collections['postInConspect:'+conspect] -%}
-                <li>
-                  <a href="{{post.url}}">
-                    {% if post.data.title === title %} <strong> {% endif %}
-                        {{ post.data.title }}
-                    {% if post.data.title === title %} </strong> {% endif %}   
-                  </a>
-                </li>
-              {%- endfor -%}
-          </ul>
+        <nav class=nav-panel>
+          <div class="conspect-menu">
+            <ul>
+              <li class="title">{{ collections['conspectName:'+conspect][0].data.title }}</li>
+                {%- for post in collections['postInConspect:'+conspect] -%}
+                  <li>
+                    <a href="{{post.url}}">
+                      {% if post.data.title === title %} <strong> {% endif %}
+                          {{ post.data.title }}
+                      {% if post.data.title === title %} </strong> {% endif %}   
+                    </a>
+                  </li>
+                {%- endfor -%}
+            </ul>
+          </div>
         </nav>
-        <section class="post-content">
+        <section class="page-content">
           {% include 'header.njk' %}
           <nav>
             <ul class="breadcrumbs">

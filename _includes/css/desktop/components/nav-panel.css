@@ -1,0 +1,8 @@
+#nav-panel-burger, #mobile-burger {
+  display: none;
+}
+
+.nav-panel {
+  width: 362px;
+  display: inline-block;
+}

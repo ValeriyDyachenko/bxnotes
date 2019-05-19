@@ -1,13 +1,8 @@
-#conspect-nav-burger, #mobile-burger {
-  display: none;
+.site-menu {
+  width: auto;
 }
 
-.conspect-nav {
-  width: 362px; /* outer menu width */
-  display: inline-block;
-}
-
-.conspect-nav .title {
+.site-menu .title {
   font-size: 1.3rem;
   margin: 1rem 0 24px 0;
   display: block;
@@ -15,7 +10,7 @@
   line-height: 1.9rem;
 }
 
-.conspect-nav ul {
+.site-menu .site-menu__container {
   width: auto;
   margin: 0;
   list-style-type: none;
@@ -25,13 +20,4 @@
   overflow-y: auto;
   font-size: .9rem;
   padding: 0 24px 0 0;
-}
-
-.conspect-nav ul li{
-  margin: 10px 0;
-}
-
-.conspect-nav a {
-  color: #000;
-  display: block;
 }
