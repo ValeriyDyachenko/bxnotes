@@ -21,20 +21,9 @@
     </label>
     <div id="page-wrapper">
       <div class="container">
-
         <nav class=nav-panel>
-          <div class="site-menu">
-            <ul class="site-menu__container">
-              <li class="title">Навигация по сайту</li>
-                <li>
-                  <a href="{{post.url}}">
-                      rwerwere
-                  </a>
-                </li>
-            </ul>
-          </div>
+          {% getSiteMenu collections, section, subject, conspect %}
         </nav>
-
         <section class="page-content">
           {% include 'header.njk' %}
           <nav>
@@ -48,7 +37,7 @@
           </nav>
           {{ content | safe }}
           <p>Оглавление:
-            <ul>
+            <ul class="base-list">
             {%- for post in collections['postInConspect:'+conspect] -%}
               <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
             {%- endfor -%}
@@ -59,8 +48,5 @@
       </div>
       {% include 'footer.njk' %}
     </div>
-
-
-
   </body>
 </html>

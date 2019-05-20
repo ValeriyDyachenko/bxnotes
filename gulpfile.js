@@ -69,6 +69,7 @@ const paths = {
       },
       conspect: {
         src: [
+          '_includes/css/mobile/custom.css',
           '_includes/css/mobile/components/header.css',
           '_includes/css/mobile/components/breadcrumbs.css',
           '_includes/css/mobile/components/nav-panel.css',

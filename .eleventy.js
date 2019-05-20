@@ -32,6 +32,51 @@ module.exports = function(eleventyConfig) {
     const {next} = getNav(collections, conspectName, title);
     return next ? `<div class="arrow-placeholder"></div><div class="arrow"><a href="${next.url} ">⯈</a></div>` : ' ';
   });
+  eleventyConfig.addShortcode('getSiteMenu', (collections, sectionActive, subjectActive, conspectActive) => {
+    if (!collections) {
+      throw Error('Collections is required.');
+    }
+    const sections = collections['section'];
+    let content = '<div class="sections">';
+    for (let secInd = 0, secLen = sections.length; secInd < secLen; secInd++) {
+      content += '<div class="section-block">';
+      const isSecChecked = sections[secInd].data.section === sectionActive ? 'checked' : '';
+      content += `
+        <input class="section-checkbox" id="section-${secInd}" type="checkbox" ${isSecChecked} />
+        <label class="section-item" for="section-${secInd}">${sections[secInd].data.title}</label>
+      `;
+      const nestedSubjects = collections[`subjectInSection:${sections[secInd].data.section}`];
+      if (nestedSubjects) {
+        content += '<div class="subject-block">';
+        for (let subInd = 0, subLen = nestedSubjects.length; subInd < subLen; subInd++) {
+          const isSubChecked = nestedSubjects[subInd].data.subject === subjectActive ? 'checked' : '';
+          content += `
+            <input class="subject-checkbox" id="subject-${secInd}-${subInd}" type="checkbox" ${isSubChecked} />
+            <label class="subject-item" for="subject-${secInd}-${subInd}">${nestedSubjects[subInd].data.title}</label>
+          `;
+          const nestedConspects = collections[`conspectInSubject:${nestedSubjects[subInd].data.subject}`];
+          if (nestedConspects) {
+            content += '<div class="conspect-block">';
+            for (let conInd = 0, conLen = nestedConspects.length; conInd < conLen; conInd++) {
+              const isConActive = nestedConspects[conInd].data.conspect === conspectActive ? 'active' : '';
+              content += `<div class="conspect-item ${isConActive}"><a href="${nestedConspects[conInd].url}" >${nestedConspects[conInd].data.title}</a></div>`;
+            }
+            content += '</div>';
+          }
+        }
+        content += '</div>';
+      }
+      content += '</div>';
+    }
+    content += '</div>';
+    return `
+      <div class="site-menu">
+        <div class="site-menu__container">
+          ${content}
+        </div>  
+      </div>  
+    `;
+  });
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
