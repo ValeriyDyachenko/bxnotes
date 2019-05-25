@@ -2,6 +2,14 @@
   width: auto;
 }
 
+.site-menu input {
+  display: none;
+}
+
+.site-menu .sections {
+  margin-top: 4.1rem;
+}
+
 .site-menu .title {
   font-size: 1.3rem;
   margin: 1rem 0 24px 0;
@@ -12,6 +20,7 @@
 
 .site-menu .site-menu__container {
   width: auto;
+  max-width: 374px;
   margin: 0;
   list-style-type: none;
   position: fixed;
@@ -19,5 +28,80 @@
   max-height: 100vh;
   overflow-y: auto;
   font-size: .9rem;
-  padding: 0 24px 0 0;
+  padding: 0 2rem 0 0;
+}
+
+
+
+
+input.section-checkbox + label + .subject-block {
+  overflow-y: hidden;
+  width: auto;
+  padding-left: 1rem;
+  transition: transform 0.1s ease-out;
+}
+input.section-checkbox:not(:checked) + label + .subject-block {
+  height: 0;
+  transform: translate(0px, -25%) scaleY(0.7);
+}
+input.section-checkbox:checked + label + .subject-block {
+  height: auto;
+  border-left: 1px solid #c3c3c3;
+  border-radius: 15px;
+  transform: translate(0px, 0px) scaleY(1);
+}
+
+
+input.subject-checkbox + label + .conspect-block {
+  overflow-y: hidden;
+  width: auto;
+  padding-left: 1rem;
+  transition: transform 0.1s ease-out;
+  padding-right: 20px;
+}
+input.subject-checkbox:not(:checked) + label + .conspect-block {
+  height: 0;
+  transform: translate(0px, -25%) scaleY(0.7);
+}
+input.subject-checkbox:checked + label + .conspect-block {
+  height: auto;
+  border-left: 1px solid #c3c3c3;
+  border-radius: 15px;
+  transform: translate(0px, 0px) scaleY(1);
+}
+
+
+
+
+.section-item, .subject-item, .conspect-item {
+  display: table;
+  padding: 7px;
+  cursor: pointer;
+  color: #5f5f5f;
+}
+
+.section-item::after, .subject-item::after {
+  content: "➤";
+  font-size: 0.8em;
+  transform: rotate(0.25turn);
+  margin-left: 7px;
+  display: inline-block;
+  color: #ddd;
+  transition: transform 0.15s ease;
+}
+
+:checked + .section-item::after, :checked + .subject-item::after {
+  transform: rotate(0.75turn);
+  color: #ff3faa;
+}
+
+.conspect-item.active a::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #ff3faa;
+  margin-left: 8px;
+  margin-top: 8px;
 }
