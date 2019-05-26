@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Цикл for in
 seoDescription: Обход объектов циклом for-in в JavaScript и использование метода hasOwnProperty() для безопасного обхода.
 seoKeywords: js, for-in, hasOwnProperty()

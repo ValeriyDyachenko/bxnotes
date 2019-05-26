@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:functional-php, conspectInSubject:php, conspectInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
-title: Функциональный PHP
+title: О конспекте
+conspectTitle: Функциональный PHP
 seoDescription: Functional PHP | Функциональный PHP.
 seoKeywords: php, functional, веб-разработка, webdev
+date: 2017-11-06 00:00:00
 ---
 # Functional PHP | Функциональный PHP
 

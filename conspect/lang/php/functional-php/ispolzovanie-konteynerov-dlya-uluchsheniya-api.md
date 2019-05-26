@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Использование контейнеров для улучшения API
 seoDescription: Безопасное и эффективное применение цепочки функций с помощью класса обертки.
 seoKeywords: php, static, call_user_func(), __invoke(), map()

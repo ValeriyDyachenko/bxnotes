@@ -1,0 +1,15 @@
+<nav class=conspect-nav>
+  <div class="conspect-menu">
+    <ul>
+        {%- for post in collections['postInConspect:'+conspect] -%}
+          <li>
+            <a href="{{post.url}}">
+              {% if post.data.title === title %} <strong> {% endif %}
+                  {{ post.data.title }}
+              {% if post.data.title === title %} </strong> {% endif %}   
+            </a>
+          </li>
+        {%- endfor -%}
+    </ul>
+  </div>
+</nav>

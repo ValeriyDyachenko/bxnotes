@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:integratsiya-dizayna-i-nastroyka-platformy, postInSubject:bitrix, postInSection:lib]
-conspect: integratsiya-dizayna-i-nastroyka-platformy
-section: lib
-subject: bitrix
 title: Технологии 1C-Битрикс
 seoDescription: Базовые технологии 1С-Битрикс. Поиск, эрмитаж, кеширование, композит.
 seoKeywords: birix:search.form, bitrix:search.page, addEditAction(), addDeleteAction(), getEditAreaId(), кеширование

@@ -1,60 +1,21 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{seoDescription}}" />
-    <meta name="keywords" content="{{seoKeywords}}" />
-    <title>{{title}}</title>
-    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/common/post.css">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/desktop/post.css" media="(min-width: 1280px)">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/mobile/post.css" media="(max-width: 1279px)">
-    {# <link rel="preload" href="/assets/styles/pages/desktop/home.css" as="style"> #}
-  </head>
+  {% include 'components/head/head.njk' %}
   <body>
-    <input id="nav-panel-burger" type="checkbox" value="burger" />
-    <label id="mobile-burger" for="nav-panel-burger">
-      <div class="hamburger hamburger--3dx js-hamburger">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
-        </div>
-      </div>
-    </label>
+    {% include 'components/conspect-burger/conspect-burger.njk' %}
+    {% include 'components/nav-burger/nav-burger.njk' %}
     <div id="page-wrapper">
-      <div class="container">
-        <nav class=nav-panel>
-          <div class="conspect-menu">
-            <ul>
-              <li class="title">{{ collections['conspectName:'+conspect][0].data.title }}</li>
-                {%- for post in collections['postInConspect:'+conspect] -%}
-                  <li>
-                    <a href="{{post.url}}">
-                      {% if post.data.title === title %} <strong> {% endif %}
-                          {{ post.data.title }}
-                      {% if post.data.title === title %} </strong> {% endif %}   
-                    </a>
-                  </li>
-                {%- endfor -%}
-            </ul>
-          </div>
-        </nav>
-        <section class="page-content">
-          {% include 'header.njk' %}
-          <nav>
-            <ul class="breadcrumbs">
-              <li>{% home %}</li>
-              <li><a href="{{ collections['sections'][0].url }}">{{ collections['sections'][0].data.breadcrumbName }}</a></li>
-              <li><a href="{{ collections['sectionName:'+section][0].url }}">{{ collections['sectionName:'+section][0].data.breadcrumbName }}</a></li>
-              <li><a href="{{ collections['subjectName:'+subject][0].url }}">{{ collections['subjectName:'+subject][0].data.breadcrumbName }}</a></li>
-              <li><a href="{{ collections['conspectName:'+conspect][0].url }}">{{ collections['conspectName:'+conspect][0].data.title }}</a></li>
-            </ul>
-          </nav>
+      <div class="container" data-include-component="container">
+        {% include 'components/conspect-menu/conspect-menu.njk' %}
+        <section class="page-content" data-include-component="page-content">
+          {% include 'components/header/header.njk' %}
           {{ content | safe }}
-          <div id="mobile-nav">{% postPagination collections, conspect, title %}</div>
-          <a class="github-btn" href="https://github.com/ValeriyDyachenko/bxnotes/blob/master{{ page.inputPath.replace('./', '/') }}">Редактировать на GitHub</a> 
+          {% include 'components/post-pagination/post-pagination.njk' %}
+          {% include 'components/github-btn/github-btn.njk' %}
         </section>
+        {% include 'components/site-nav/site-nav.njk' %}
       </div>
-      {% include 'footer.njk' %}
+      {% include 'components/footer/footer.njk' %}
     </div>
   </body>
 </html>

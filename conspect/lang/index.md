@@ -1,7 +1,4 @@
 ---
-layout: section.njk
-tags: [section, sectionName:lang]
-section: lang
 title: Языки программирования
 breadcrumbName: языки программирования
 seoDescription: Конспекты и уроки по языкам программирования.

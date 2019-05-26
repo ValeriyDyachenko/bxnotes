@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:react-game, postInSubject:react, postInSection:lib]
-conspect: react-game
-section: lib
-subject: react
 title: Игра на реакте
 seoDescription: Пример игры "Сбивание мишеней" на React.
 seoKeywords: react, game
@@ -207,7 +202,7 @@ export const initialGameState = () => ({
 
 ## Игра (components/state/Game.js)
 
-```js
+```js {% raw %}
 import React, { Component } from 'react'
 import Target from './Target'
 import {defaultParams, initialGameState} from '../../js/params.js'
@@ -322,7 +317,11 @@ class Game extends React.Component {
                         this.state.gameover === true
                         &&  <div style={messageStyle}>
                                 <div>Мишеней сбито: {this.state.lastscore}</div>
-                                <div onClick={() => this.runNewGame()}><span style={{textDecoration: 'underline', cursor: 'pointer'}}>Играть еще</span></div>
+                                <div onClick={() => this.runNewGame()}>
+                                    <span style={{textDecoration: 'underline', cursor: 'pointer'}}>
+                                        Играть еще
+                                    </span>
+                                </div>
                             </div>
                     }
 
@@ -334,7 +333,7 @@ class Game extends React.Component {
     }
 }
 
-export default Game
+export default Game {% endraw %}
 ```
 
 `runNewGame` начинает новую игру. Он обнуляет игровое состояние и запускает `makeGameFlow`.

@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:git-intro, conspectInSubject:git, conspectInSection:util]
-conspect: git-intro
-section: util
-subject: git
-title: Основы Git
+title: О конспекте
+conspectTitle: Основы Git
 seoDescription: Git руководство по использованию
 seoKeywords: основы git
+date: 2018-05-06 03:00:00
 ---
 # Основы Git. Руководство по использованию
 

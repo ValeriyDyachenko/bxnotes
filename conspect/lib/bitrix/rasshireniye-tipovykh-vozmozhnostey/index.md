@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:rasshireniye-tipovykh-vozmozhnostey, conspectInSubject:bitrix, conspectInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
-title: Подготовка ко второму экзамену Битрикс
+title: О конспекте
+conspectTitle: Подготовка ко второму экзамену Битрикс
 seoDescription: Основные технологии и расширение типовых возможностей.
 seoKeywords: bitrix, экзамен, конспект
+date: 2018-01-03 07:00:00
 ---
 # Подготовка ко второму экзамену Битрикс
 

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Route продолжение
 seoDescription:  Параметры роутера, фрагмент, родительский роутинг, редирект в Angular5.
 seoKeywords: angular, spa, route, fragment, redirect

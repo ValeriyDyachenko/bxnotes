@@ -1,0 +1,11 @@
+<head>
+  {% set layoutName = layout.replace('.njk', '') %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{seoDescription}}" />
+  <meta name="keywords" content="{{seoKeywords}}" />
+  <title>{% if conspectTitle %} Конспект {{conspectTitle}} {% elif title %} {{title}} {% endif %}</title>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/common.css">
+  <link rel="stylesheet" type="text/css" href="/assets/styles/desktop/{{layoutName}}.css" media="(min-width: 1280px)">
+  <link rel="stylesheet" type="text/css" href="/assets/styles/mobile/{{layoutName}}.css" media="(max-width: 1279px)">
+</head>

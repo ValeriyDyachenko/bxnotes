@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Область видимости. Scope.
 seoDescription: Виды контекста и особенности работы с ним в JavaScript.
 seoKeywords: var, let, const, js, scope

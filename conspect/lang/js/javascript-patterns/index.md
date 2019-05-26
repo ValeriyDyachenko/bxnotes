@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:javascript-patterns, conspectInSubject:js, conspectInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
-title: JavaScript Patterns
+title: О конспекте
+conspectTitle: JavaScript Patterns
 seoDescription: Конспект книги JavaScript Patterns.
 seoKeywords: js, JavaScript, JavaScript Patterns, Паттерны Java Script, веб-разработка, webdev
+date: 2017-11-12 00:00:00
 ---
 # JavaScript Patterns | Паттерны Java Script
 

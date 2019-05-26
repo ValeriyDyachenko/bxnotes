@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Инкапсуляция стилей и ссылки
 seoDescription: Режимы инкапсуляции стилей, локальная ссылка в шаблоне Angular. Доступ к шаблону и DOM из компонента с помощью @ViewChild и @ContentChild.
 seoKeywords: angular, spa, ViewEncapsulation, @ViewChild, @ContentChild

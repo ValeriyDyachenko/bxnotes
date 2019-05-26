@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Директива атрибута
 seoDescription: Создание директивы атрибута и использование класса Renderer2 в Angular5.
 seoKeywords: angular, spa, directine, renderer2

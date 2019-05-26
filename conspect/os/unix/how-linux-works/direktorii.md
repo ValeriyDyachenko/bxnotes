@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Директории
 seoDescription: Создание и удаление директорий в Linux.
 seoKeywords: linux, cd, mkdir, rmdir

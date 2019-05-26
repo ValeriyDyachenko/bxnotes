@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: HostListener и HostBinding
 seoDescription: Использование декораторов HostListener и HostBinding для реагирования на события и работы со стилями в Angular5.
 seoKeywords: angular, spa, @HostListener, @HostBinding

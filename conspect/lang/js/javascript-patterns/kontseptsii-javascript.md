@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Концепции JavaScript
 seoDescription: Обзор языка программирования Java Script, и чем он отличается от языков программирования, основанных на классах.
 seoKeywords: js, number, string, boolean, null, undefined, prototype

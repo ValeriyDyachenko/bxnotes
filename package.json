@@ -5,7 +5,8 @@
   "main": "index.js",
   "author": "Valerii Diachenko",
   "scripts": {
-    "dev": "concurrently \"gulp --watch\" \"eleventy --serve\""
+    "dev": "concurrently \"gulp --watch\" \"eleventy --serve\"",
+    "debug": "set DEBUG=Eleventy*&&eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.8.2",
@@ -17,7 +18,8 @@
     "html-minifier": "4.0.0",
     "markdown-it": "8.4.2",
     "markdown-it-anchor": "5.0.2",
-    "markdown-it-emoji": "1.4.0"
+    "markdown-it-emoji": "1.4.0",
+    "del": "4.1.1"
   },
   "license": "MIT"
 }

@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:how-linux-works, conspectInSubject:unix, conspectInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
-title: Внутреннее устройство Linux
-seoDescription: Основные технологии и расширение типовых возможностей.
-seoKeywords: bitrix, экзамен, конспект
+title: О конспекте
+conspectTitle: Внутреннее устройство Linux
+seoDescription: Внутренности и тонкости работы операционной системы Linux. Эта книга поможет вам понять как работают *nix системы и свободно с ними общаться.
+seoKeywords: unix, os
+date: 2018-08-03 00:00:00
 ---
 # Внутреннее устройство Linux | How Linux Works
 

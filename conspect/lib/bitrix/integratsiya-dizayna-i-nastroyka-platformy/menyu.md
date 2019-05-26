@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:integratsiya-dizayna-i-nastroyka-platformy, postInSubject:bitrix, postInSection:lib]
-conspect: integratsiya-dizayna-i-nastroyka-platformy
-section: lib
-subject: bitrix
 title: Меню
 seoDescription: Создание динамического меню в 1С-Битрикс.
 seoKeywords: битрикс, меню, menu_ext.php, bitrix:menu.sections

@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:kurs_sovremennogo_javascript, conspectInSubject:js, conspectInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
-title: Курс современного JavaScript
+title: О конспекте
+conspectTitle: Курс современного JavaScript
 seoDescription: Конспект по программированию - Курс современного JavaScript.
 seoKeywords: js, JavaScript, ES6, паттерны, веб-разработка, webdev
+date: 2018-09-21 00:00:00
 ---
 # Курс современного JavaScript
 

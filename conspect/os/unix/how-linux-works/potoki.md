@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Потоки
 seoDescription: Работа с потоками в Linux, и их перенаправление.
 seoKeywords: linux

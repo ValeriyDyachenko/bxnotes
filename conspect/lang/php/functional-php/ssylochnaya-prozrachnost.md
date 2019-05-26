@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Ссылочная прозрачность
 seoDescription: Математические принципы создания функций без сайд эффекта
 seoKeywords: php, transparency

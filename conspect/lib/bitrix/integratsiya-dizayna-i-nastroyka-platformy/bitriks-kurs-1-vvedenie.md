@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:integratsiya-dizayna-i-nastroyka-platformy, postInSubject:bitrix, postInSection:lib]
-conspect: integratsiya-dizayna-i-nastroyka-platformy
-section: lib
-subject: bitrix
 title: Битрикс курс №1. Введение
 seoDescription: Ссылки на учебные ресурсы Битрикс и рекомендации.
 seoKeywords: битрикс, экзамен

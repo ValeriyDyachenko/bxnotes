@@ -1,0 +1,12 @@
+.github-btn {
+  margin: 0 auto;
+  font-size: .8rem;
+  margin-top: 61px;
+  padding: 9px 11px;
+  border-radius: 2px;
+  display: table;
+  box-shadow: -2px 2px 3px #d2d2d2;
+  border: 1px solid #4e4e4e;
+  background: #282a36;
+  color: #ffffff;
+}

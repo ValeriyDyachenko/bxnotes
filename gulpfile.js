@@ -1,114 +1,62 @@
+const fs = require('fs');
+const del = require('del');
 const gulp = require("gulp");
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 
-const paths = {
-  css: {
-    common: {
-      post: {
-        src: [
-          '_includes/css/common/markdown.css',
-          '_includes/css/common/prism.css',
-          '_includes/css/common/hilighted-prism.css',
-          '_includes/css/common/custom.css',
-        ],
-        dest: 'assets/styles/pages/common/',
-      },
-      commonPage: {
-        src: [
-          '_includes/css/common/markdown.css',
-          '_includes/css/common/custom.css',
-        ],
-        dest: 'assets/styles/pages/common/',
-      }
-    },
-    desktop: {
-      post: {
-        src: [
-          '_includes/css/desktop/components/header.css',
-          '_includes/css/desktop/components/breadcrumbs.css',
-          '_includes/css/desktop/components/nav-panel.css',
-          '_includes/css/desktop/components/conspect-menu.css',
-          '_includes/css/desktop/components/container.css',
-          '_includes/css/desktop/components/page-content.css',
-          '_includes/css/desktop/components/footer.css',
-          '_includes/css/desktop/components/github-btn.css',
-          '_includes/css/desktop/components/pagination-bottom.css',
-        ],
-        dest: 'assets/styles/pages/desktop/',
-      },
-      commonPage: {
-        src: [
-          '_includes/css/desktop/components/header.css',
-          '_includes/css/desktop/components/breadcrumbs.css',
-          '_includes/css/desktop/components/nav-panel.css',
-          '_includes/css/desktop/components/site-menu.css',
-          '_includes/css/desktop/components/container.css',
-          '_includes/css/desktop/components/page-content.css',
-          '_includes/css/desktop/components/footer.css',
-        ],
-        dest: 'assets/styles/pages/desktop/',
-      },
-      home: {
-        src: [
-          '_includes/css/desktop/components/header.css',
-          '_includes/css/desktop/components/breadcrumbs.css',
-          '_includes/css/desktop/components/nav-panel.css',
-          '_includes/css/desktop/components/site-menu.css',
-          '_includes/css/desktop/components/container.css',
-          '_includes/css/desktop/components/page-content.css',
-          '_includes/css/desktop/components/footer.css',
-          '_includes/css/desktop/components/blocks-in-row.css',
-        ],
-        dest: 'assets/styles/pages/desktop/',
-      }
-    },
-    mobile: {
-      post: {
-        src: ([
-          '_includes/css/mobile/custom.css',
-          '_includes/css/mobile/components/header.css',
-          '_includes/css/mobile/components/breadcrumbs.css',
-          '_includes/css/mobile/components/nav-panel.css',
-          '_includes/css/mobile/components/conspect-menu.css',
-          '_includes/css/mobile/components/container.css',
-          '_includes/css/mobile/components/page-content.css',
-          '_includes/css/mobile/components/footer.css',
-          '_includes/css/mobile/components/github-btn.css',
-          '_includes/css/mobile/components/pagination-bottom.css',
-        ]),
-        dest: 'assets/styles/pages/mobile/',
-      },
-      commonPage: {
-        src: [
-          '_includes/css/mobile/custom.css',
-          '_includes/css/mobile/components/header.css',
-          '_includes/css/mobile/components/breadcrumbs.css',
-          '_includes/css/mobile/components/nav-panel.css',
-          '_includes/css/mobile/components/site-menu.css',
-          '_includes/css/mobile/components/container.css',
-          '_includes/css/mobile/components/page-content.css',
-          '_includes/css/mobile/components/footer.css',
-        ],
-        dest: 'assets/styles/pages/mobile/',
-      },
-      home: {
-        src: [
-          '_includes/css/mobile/custom.css',
-          '_includes/css/mobile/components/header.css',
-          '_includes/css/mobile/components/breadcrumbs.css',
-          '_includes/css/mobile/components/nav-panel.css',
-          '_includes/css/mobile/components/site-menu.css',
-          '_includes/css/mobile/components/container.css',
-          '_includes/css/mobile/components/page-content.css',
-          '_includes/css/mobile/components/footer.css',
-          '_includes/css/mobile/components/blocks-in-row.css',
-        ],
-        dest: 'assets/styles/pages/mobile/',
-      },
-    },
-  }
+const pages = [
+  {name: 'post', path: '_includes/post.njk'},
+  {name: 'subject', path: '_includes/subject.njk'},
+  {name: 'section', path: '_includes/section.njk'},
+  {name: 'sections', path: '_includes/sections.njk'},
+  {name: 'home', path: '_includes/home.njk'},
+];
+
+const deviceTypes = {
+  mobile: 'mobile',
+  desktop: 'desktop',
 };
+
+const globalStyles = [
+  '_includes/css/common/markdown.css',
+  '_includes/css/common/prism.css',
+  '_includes/css/common/hilighted-prism.css',
+  '_includes/css/common/custom.css',
+];
+
+const includedCss = {};
+
+const parser = /({% *include.*components[^\/]*\/[^\/]*\/((?:(?!\.njk).)+)|data-include-component="?'?([^"']*)"?'?)/g;
+
+pages.forEach(page => {
+  const content = fs.readFileSync(page.path).toString();
+  let match = parser.exec(content);
+  while (match != null) {
+    if (!includedCss[page.name]) includedCss[page.name] = {};
+    if (!includedCss[page.name][deviceTypes.mobile]) includedCss[page.name][deviceTypes.mobile] = [];
+    if (!includedCss[page.name][deviceTypes.desktop]) includedCss[page.name][deviceTypes.desktop] = [];
+    const componentName = match[2] || match[3];
+    if (componentName) {
+      const componentCss = [
+        {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.mobile}.css`, device: deviceTypes.mobile},
+        {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.desktop}.css`, device: deviceTypes.desktop},
+      ];
+      try {
+        componentCss.forEach(css => {
+          if (fs.existsSync(css.path)) {
+            includedCss[page.name][css.device].push(css.path);
+            console.log(`Css ${css.path} is included to page ${page.name}`);
+          } else {
+            console.warn(`Css ${css.path} not exist`);
+          }
+        })
+      } catch(err) {
+        console.error(err)
+      }
+    }
+    match = parser.exec(content);
+  }
+});
 
 function css(src, dest, fileName) {
   return gulp.src(src)
@@ -117,20 +65,17 @@ function css(src, dest, fileName) {
     .pipe(gulp.dest(dest));
 }
 
-const build = gulp.series(
-  gulp.parallel(
-    () => css(paths.css.common.post.src, paths.css.common.post.dest, 'post.css'),
-    () => css(paths.css.desktop.post.src, paths.css.desktop.post.dest, 'post.css'),
-    () => css(paths.css.mobile.post.src, paths.css.mobile.post.dest, 'post.css'),
-    () => css(paths.css.common.commonPage.src, paths.css.common.commonPage.dest, 'commonPage.css'),
-    () => css(paths.css.desktop.commonPage.src, paths.css.desktop.commonPage.dest, 'commonPage.css'),
-    () => css(paths.css.mobile.commonPage.src, paths.css.mobile.commonPage.dest, 'commonPage.css'),
-    () => css(paths.css.desktop.home.src, paths.css.desktop.home.dest, 'home.css'),
-    () => css(paths.css.mobile.home.src, paths.css.mobile.home.dest, 'home.css'),
-  )
-);
+const build = () => {
+  del.sync(['_site/assets/styles/**']);
+  css(globalStyles, `assets/styles/`, `common.css`);
+  const pages = Object.keys(includedCss);
+  pages.forEach(page => {
+      css(includedCss[page][deviceTypes.mobile], `assets/styles/${deviceTypes.mobile}/`, `${page}.css`);
+      css(includedCss[page][deviceTypes.desktop], `assets/styles/${deviceTypes.desktop}/`, `${page}.css`);
+    });
+}
 
-gulp.watch('./_includes/css/**/*.css', build);
+gulp.watch('./_includes/components/**/*.css', build);
 
 exports.watch = gulp.watch;
 exports.default = build;

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Добавление данных в Компонент
 seoDescription: Импорт модели в компонент Angular и создание контента на основе модели.
 seoKeywords: angular, spa, model

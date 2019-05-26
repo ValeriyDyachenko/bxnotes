@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Создание общей модели
 seoDescription: Создание модели в Angular, для использования в компонентах. Короткий синтаксис в конструкторе.
 seoKeywords: angular, spa, model

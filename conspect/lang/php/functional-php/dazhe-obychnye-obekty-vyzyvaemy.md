@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Даже обычные объекты вызываемы
 seoDescription: Использование магического метода invoke() для запуска объекта как функции.
 seoKeywords: php, __invoke(), __construct()

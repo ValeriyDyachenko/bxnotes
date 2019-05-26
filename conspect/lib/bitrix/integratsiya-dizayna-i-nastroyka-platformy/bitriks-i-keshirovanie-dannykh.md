@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:integratsiya-dizayna-i-nastroyka-platformy, postInSubject:bitrix, postInSection:lib]
-conspect: integratsiya-dizayna-i-nastroyka-platformy
-section: lib
-subject: bitrix
 title: Типы кеширования
 seoDescription: Как работают различные типы кеширования в CMS 1С-Битрикс
 seoKeywords: битрикс, кеширование

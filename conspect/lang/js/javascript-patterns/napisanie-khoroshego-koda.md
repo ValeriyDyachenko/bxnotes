@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Написание хорошего кода
 seoDescription: Как писать код, который будет способен дорабатываться с минимальными усилиями и трудозатратами.
 seoKeywords: js, good practices

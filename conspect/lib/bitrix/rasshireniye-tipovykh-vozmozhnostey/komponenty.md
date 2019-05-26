@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
 title: Компоненты
 seoDescription: Создание собственных простых и комплексных компонентов в 1С-Битрикс.
 seoKeywords: битрикс, компоненты

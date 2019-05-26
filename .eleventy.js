@@ -15,7 +15,7 @@ const getNav = (collections, conspectName, title) => {
 }
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addShortcode('logger', _ => console.log(JSON.stringify(_)));
+  // eleventyConfig.addShortcode('logger', _ => console.log(JSON.stringify(_)));
   eleventyConfig.addShortcode('home', () => `<a href="/"><span class="breadcrumbs-home-ico">🏠 </span> <span class="breadcrumbs-home-text">главная</span></a>`);
   eleventyConfig.addShortcode('postPagination', (collections, conspectName, title) => {
     const {prev, next} = getNav(collections, conspectName, title);
@@ -59,7 +59,7 @@ module.exports = function(eleventyConfig) {
             content += '<div class="conspect-block">';
             for (let conInd = 0, conLen = nestedConspects.length; conInd < conLen; conInd++) {
               const isConActive = nestedConspects[conInd].data.conspect === conspectActive ? 'active' : '';
-              content += `<a class="conspect-item ${isConActive}" href="${nestedConspects[conInd].url}" >${nestedConspects[conInd].data.title}</a>`;
+              content += `<a class="conspect-item ${isConActive}" href="${nestedConspects[conInd].url}" >${nestedConspects[conInd].data.conspectTitle}</a>`;
             }
             content += '</div>';
           }
@@ -77,6 +77,32 @@ module.exports = function(eleventyConfig) {
       </div>  
     `;
   });
+  
+  
+  eleventyConfig.addShortcode('getMainConspectBlocks', (collections) => {
+    let layout = ``;
+    collections['subject'].forEach(subjectElement => {
+      const subjectName = subjectElement.data.subject;
+      layout += `
+        <div class="block">
+          <h2>${subjectName}</h2>
+          <ul class="base-list">
+        `;
+      collections[`conspectInSubject:${subjectName}`].forEach(conspectElement => {
+        layout += `
+            <li>
+              <a href="${conspectElement.url}">${conspectElement.data.conspectTitle}</a>
+            </li>
+        `;
+      });
+      layout += `
+          </ul>
+        </div>  
+      `;
+    });
+    return layout;
+  });
+
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");

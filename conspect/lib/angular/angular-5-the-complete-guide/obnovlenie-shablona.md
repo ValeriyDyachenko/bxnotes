@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Обновление шаблона
 seoDescription:  Обновление шаблона при динамическом роутинге и отписка от наблюдения.
 seoKeywords: angular, spa, ActivatedRoute, subscribe, Subscription, unsubscribe

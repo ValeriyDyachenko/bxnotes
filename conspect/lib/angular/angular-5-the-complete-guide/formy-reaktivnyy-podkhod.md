@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Формы. Реактивный подход.
 seoDescription: Работа с формами. Реактивный подход (Reactive).
 seoKeywords: angular, spa, forms, reactive

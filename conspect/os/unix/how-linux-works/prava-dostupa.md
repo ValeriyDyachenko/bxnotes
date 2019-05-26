@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Права доступа
 seoDescription: Устройство прав в системе Linux. Изменение прав командой chmod, описание команды umask, типы пользователей и режимы доступа.
 seoKeywords: linux, chmod, umask

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Директива ngFor
 seoDescription: Вывод данных в цикле с помощью директивы ngFor.
 seoKeywords: angular, spa, ngFor

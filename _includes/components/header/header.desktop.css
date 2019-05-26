@@ -1,0 +1,36 @@
+.header {
+  margin: 20px 0 0 0;
+}
+
+.header .bold, .header .thin {
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000000;
+}
+
+.header .thin {
+  color: #676767;
+}
+
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.breadcrumbs li {
+  display: inline-block;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+  content: "⯈";
+  margin: 0 1.1rem;
+  color: #ff3faa;
+}
+
+.breadcrumbs li:not(:first-child) {
+  font-size: 1.3rem;
+  color: #676767;
+  margin: 1rem 0 2rem 0;
+  display: inline;
+}

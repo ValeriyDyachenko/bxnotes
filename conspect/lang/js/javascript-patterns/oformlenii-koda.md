@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Оформлении кода
 seoDescription: Общепринятые правила оформления кода в JavaScript.
 seoKeywords: js, good practices

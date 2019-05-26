@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
 title: API Битрикса, частые задачи
 seoDescription: API Битрикса - уменьшение изображения, получения данных пользователя, установка мета тегов страницы, получение и установка параметров модуля, отправка писем, использование агентов, работа с журналом событий.
 seoKeywords: битрикс, API, CFile, CUser, GetOptionString, CEvent, CAgent, CEventLog

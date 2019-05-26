@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Установка и первый запуск
 seoDescription: Установка Angular и настройка окружения. Создание первого приложения на Angular.
 seoKeywords: angular, spa, npm, IDE, ng, serve

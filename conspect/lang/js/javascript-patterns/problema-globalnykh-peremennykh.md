@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Глобальные переменные
 seoDescription: О использование var для избегания создания глобальных переменных, антипаттерн цепочки присваиваний, а так же срытые особенности глобальных переменных.
 seoKeywords: js, global, антипаттерн, var

@@ -1,7 +1,4 @@
 ---
-layout: section.njk
-tags: [section, sectionName:db]
-section: db
 title: Базы данных
 breadcrumbName: базы данных
 seoDescription: Конспекты и уроки по базам банных.

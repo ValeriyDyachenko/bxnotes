@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:murach-mysql, postInSubject:mysql, postInSection:db]
-conspect: murach-mysql
-section: db
-subject: mysql
 title: Устройство реляционной базы данных
 seoDescription: Принцип реляционных БД. Строение таблиц, и их отношения. Ключи и колонки.
 seoKeywords: db, mysql

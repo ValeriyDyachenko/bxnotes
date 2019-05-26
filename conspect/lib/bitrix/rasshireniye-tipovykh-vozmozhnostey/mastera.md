@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
 title: Мастера
 seoDescription: Структура и API мастера в 1С-Битрикс. Кастомизация и пример реализации.
 seoKeywords: битрикс, wizards

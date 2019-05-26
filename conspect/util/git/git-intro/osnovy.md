@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:git-intro, postInSubject:git, postInSection:util]
-conspect: git-intro
-section: util
-subject: git
 title: Основы
 seoDescription: Концепции Git, которые нужно усвоить перед началом работы.
 seoKeywords: git

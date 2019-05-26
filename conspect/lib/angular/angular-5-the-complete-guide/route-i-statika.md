@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Route и статика
 seoDescription:  Как передать статичные данные в компонент с помощью настроек роута.
 seoKeywords: angular, spa, route, data

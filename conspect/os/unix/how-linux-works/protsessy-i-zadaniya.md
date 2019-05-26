@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Процессы и задания
 seoDescription: Управление процессами и задачами в Linux. Их завершение, откладывание и фоновые процессы.
 seoKeywords: linux

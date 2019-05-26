@@ -37,5 +37,27 @@ table tr td, table tr th {
 
 .base-list {
   list-style: none;
-  padding-left: 1rem;
+  padding-left: 0;
+}
+
+h2 {
+  display: table;
+}
+
+@media (max-width: 1279px) {
+  #page-wrapper {
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  body {
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+
+  .base-list {
+    padding-left: 1rem;
+  }
 }
