@@ -59,7 +59,7 @@ module.exports = function(eleventyConfig) {
             content += '<div class="conspect-block">';
             for (let conInd = 0, conLen = nestedConspects.length; conInd < conLen; conInd++) {
               const isConActive = nestedConspects[conInd].data.conspect === conspectActive ? 'active' : '';
-              content += `<div class="conspect-item ${isConActive}"><a href="${nestedConspects[conInd].url}" >${nestedConspects[conInd].data.title}</a></div>`;
+              content += `<a class="conspect-item ${isConActive}" href="${nestedConspects[conInd].url}" >${nestedConspects[conInd].data.title}</a>`;
             }
             content += '</div>';
           }
