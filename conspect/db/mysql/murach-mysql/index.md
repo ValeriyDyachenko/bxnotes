@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:murach-mysql, conspectInSubject:mysql, conspectInSection:db]
-conspect: murach-mysql
-section: db
-subject: mysql
-title: Murach's MySQL
+title: О конспекте
+conspectTitle: Murach's MySQL
 seoDescription: Конспект Murach's MySQL.
 seoKeywords: db, mysql
+date: 2018-08-19 00:00:00
 ---
 # Murach's MySQL
 

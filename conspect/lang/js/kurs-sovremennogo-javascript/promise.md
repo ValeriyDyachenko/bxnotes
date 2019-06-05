@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Promise
 seoDescription: Использования объекта Promise для рефакторинга паттерна "Callback Hell"
 seoKeywords: js, promise, resolve, reject

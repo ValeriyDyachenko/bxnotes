@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:integratsiya-dizayna-i-nastroyka-platformy, postInSubject:bitrix, postInSection:lib]
-conspect: integratsiya-dizayna-i-nastroyka-platformy
-section: lib
-subject: bitrix
 title: Кеш компонента
 seoDescription: Использование кеша компонентов, сохранение ключей кеша в $arResult, кейс использования CPhpCache для вызова компонента снаружи кешированной области
 seoKeywords: битрикс, кеширование, CBitrixComponent, StartResultCache(), setResultCacheKeys(), CPhpCach

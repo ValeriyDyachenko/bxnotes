@@ -1,7 +1,4 @@
 ---
-layout: section.njk
-tags: [section, sectionName:util]
-section: util
 title: Утилиты
 breadcrumbName: утилиты
 seoDescription: Утилиты для программистов.

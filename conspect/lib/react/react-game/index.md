@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:react-game, conspectInSubject:react, conspectInSection:lib]
-conspect: react-game
-section: lib
-subject: react
-title: Создание игры на React
+title: О конспекте
+conspectTitle: Создание игры на React
 seoDescription: Создание игры на React.
 seoKeywords: React, game
+date: 2018-07-05 00:00:00
 ---
 # Создание игры на React
 

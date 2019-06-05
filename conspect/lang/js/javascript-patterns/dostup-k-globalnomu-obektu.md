@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Доступ к глобальному объекту
 seoDescription: Как получить доступ к глобальному объекту без хард-кода window.
 seoKeywords: js, global

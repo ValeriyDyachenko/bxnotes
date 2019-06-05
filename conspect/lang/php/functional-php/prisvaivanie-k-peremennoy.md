@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Присваивание к переменной
 seoDescription: С функциями можно обращаться, как с любыми другими объектами, а значит, можно присваивать переменным.
 seoKeywords: php, is_callable()

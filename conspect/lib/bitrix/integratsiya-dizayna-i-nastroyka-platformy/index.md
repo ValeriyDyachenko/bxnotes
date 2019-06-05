@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:integratsiya-dizayna-i-nastroyka-platformy, conspectInSubject:bitrix, conspectInSection:lib]
-conspect: integratsiya-dizayna-i-nastroyka-platformy
-section: lib
-subject: bitrix
-title: Подготовка к первому экзамену Битрикс
+title: О конспекте
+conspectTitle: Подготовка к первому экзамену Битрикс
 seoDescription: Интеграция дизайна и настройка платформы 1С-Битрикс.
 seoKeywords: bitrix, экзамен, конспект
+date: 2018-01-02 00:00:00
 ---
 # Подготовка к первому экзамену Битрикс
 

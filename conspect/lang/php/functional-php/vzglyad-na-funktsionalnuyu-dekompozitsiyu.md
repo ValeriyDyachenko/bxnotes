@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Взгляд на функциональную декомпозицию
 seoDescription: Применение принципа модульности для создания чистого повторно используемого кода.
 seoKeywords: php, Loosely coupled, highly cohesive, single purpose

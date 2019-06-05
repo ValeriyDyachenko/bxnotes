@@ -1,0 +1,60 @@
+#conspect-checkbox {
+  display: none;
+}
+
+#conspect-checkbox:checked ~ #page-wrapper .container .conspect-menu {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+#conspect-burger {
+  z-index: 4;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+#conspect-checkbox:checked ~ #conspect-burger .conspect-ico.menu {
+  opacity: 0;
+}
+
+#conspect-checkbox:checked ~ #conspect-burger .conspect-ico.close {
+  opacity: 1;
+}
+
+.conspect-ico-wrapper {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 14px rgba(0,0,0,0.3);
+}
+
+.conspect-ico {
+  position: absolute;
+}
+
+.conspect-ico.menu {
+  width: 26px;
+  height: 26px;
+  opacity: 1;
+}
+
+.conspect-ico.close {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  margin: 3px 0 0 3px;
+}

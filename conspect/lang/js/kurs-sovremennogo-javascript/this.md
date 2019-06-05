@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: This
 seoDescription: Как работает this в JavaScript.
 seoKeywords: js, this, scope, bind, apply, call

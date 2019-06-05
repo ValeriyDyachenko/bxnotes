@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Здравствуй, FP
 seoDescription: Зачем нужно функциональное программирование в PHP?
 seoKeywords: php, compose

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Функции
 seoDescription: Функции как объекты первого класса. Функциональные выражения и декларация. Область видимости функций.
 seoKeywords: js, function, first, class, object, scope

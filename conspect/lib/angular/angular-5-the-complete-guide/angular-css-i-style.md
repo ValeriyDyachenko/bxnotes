@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Angular CSS и Style
 seoDescription: Создание динамических стилей и классов приложения.
 seoKeywords: angular, spa, ngStyle, ngClass

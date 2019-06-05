@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Формы. Шаблонный подход.
 seoDescription: Работа с формами. Шаблонный подход (Template-driven).
 seoKeywords: angular, spa, forms, template-driven

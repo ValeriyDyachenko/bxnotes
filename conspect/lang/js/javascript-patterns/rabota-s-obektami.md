@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Объекты
 seoDescription: Создание объектов в JavaScript. Рассмотрение работы конструктора.
 seoKeywords: js, object, new

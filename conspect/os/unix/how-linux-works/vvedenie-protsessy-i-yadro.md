@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Процессы и ядро Linux
 seoDescription: Введение в Unix. Кратко об архитектуре ОС.
 seoKeywords: linux

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Защита роутера
 seoDescription:  Использование интерфейсов CanActivate и CanActivateChild для принятия решения об активации роутера.
 seoKeywords: angular, spa, route, CanActivate, CanActivateChild

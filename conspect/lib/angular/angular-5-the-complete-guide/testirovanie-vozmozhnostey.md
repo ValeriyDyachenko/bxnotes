@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Пример приложения на Angular 5
 seoDescription: Создание простого приложения с динамически обновляющимся текстом.
 seoKeywords: angular, spa

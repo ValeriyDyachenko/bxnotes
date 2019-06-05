@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Ссылка
 seoDescription: Что такое символическая ссылка. Создание и использование символических ссылок в Linux.
 seoKeywords: linux, symlink

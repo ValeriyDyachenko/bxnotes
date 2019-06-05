@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Primitive wrapper objects
 seoDescription: Обертки примитивов в JavaScript.
 seoKeywords: js, primitive, primitive wrapper objects

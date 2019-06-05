@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Паттерны
 seoDescription: Для чего важно знать паттерны. Преимущества использования паттернов и их типы.
 seoKeywords: паттерны, js

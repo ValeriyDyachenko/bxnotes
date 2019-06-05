@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:git-intro, postInSubject:git, postInSection:util]
-conspect: git-intro
-section: util
-subject: git
 title: Контрибьют
 seoDescription: Как принять участие в разработке Github проекта.
 seoKeywords: git, contribute

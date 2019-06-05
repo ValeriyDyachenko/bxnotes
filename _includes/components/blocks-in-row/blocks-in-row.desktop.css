@@ -1,0 +1,13 @@
+.blocks-in-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blocks-in-row h2 {
+  margin-top: 2rem;
+}
+
+.blocks-in-row .block {
+  min-width: 270px;
+}

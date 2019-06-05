@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Каталоги
 seoDescription: Структура каталогов в Linux.
 seoKeywords: linux

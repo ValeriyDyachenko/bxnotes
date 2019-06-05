@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Архитектура среды
 seoDescription: Рассмотрим такие понятия как Heap, Call Stack, Event Table, Event Queue и Event Loop и их роль в выполнении JavaScript программ.
 seoKeywords: js, heap, call, stack, event loop

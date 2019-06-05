@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Компоновщик
 seoDescription: Обзор паттерна "Компоновщик" и его реализация в JavaScript.
 seoKeywords: js, компоновщик, паттерны

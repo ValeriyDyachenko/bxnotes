@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:git-intro, postInSubject:git, postInSection:util]
-conspect: git-intro
-section: util
-subject: git
 title: Введение в Git
 seoDescription: Что такое система контроля версий
 seoKeywords: git

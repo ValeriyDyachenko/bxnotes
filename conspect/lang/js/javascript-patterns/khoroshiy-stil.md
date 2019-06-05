@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Хороший стиль
 seoDescription: Следование хорошим практикам сделает JS код чище и поможет предотвратить возможные ошибки и трудноуловимые баги.
 seoKeywords: js, switch, compare, eval(), setInterval(), setTimeout(), parseInt()

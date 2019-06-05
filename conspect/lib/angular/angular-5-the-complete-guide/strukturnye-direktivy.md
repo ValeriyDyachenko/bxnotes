@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Структурные директивы
 seoDescription: Что такое структурные директивы. Встроенные и собственные структурные директивы.
 seoKeywords: angular, spa, structural directives
@@ -72,7 +67,7 @@ export class UnlessDirective {
         class="list-group-item">
         {{even}}  
     </li>
-</ul>	
+</ul>
 ```
 
 ## Выпадающий список

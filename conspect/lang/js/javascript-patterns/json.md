@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: JSON
 seoDescription: Синтаксис, парсинг, конвертация объекта в строку в JavaScript.
 seoKeywords: js, json

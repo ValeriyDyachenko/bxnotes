@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Let, const, var.
 seoDescription: Объявление переменных с помощью var, let, const.
 seoKeywords: var, let, const, js

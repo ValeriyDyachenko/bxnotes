@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Наблюдатель
 seoDescription: Обзор паттерна "Наблюдатель" и его реализация в JavaScript.
 seoKeywords: js, наблюдатель, паттерны

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Добавление свойств
 seoDescription: Добавление свойств к стандартным объектам языка может добавить проблем в ваш код. Следуйте общепринятой практике, если возникла такая необходимость.
 seoKeywords: js, property

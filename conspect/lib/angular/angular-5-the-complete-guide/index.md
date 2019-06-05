@@ -1,12 +1,9 @@
 ---
-layout: conspect.njk
-tags: [conspect, conspectName:angular-5-the-complete-guide, conspectInSubject:angular, conspectInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
-title: Angular 5 - Полное руководство
+title: О конспекте
+conspectTitle: Angular 5 - Полное руководство
 seoDescription: Курс Angular 5.
 seoKeywords: js, angular, курс
+date: 2018-01-12 00:00:00
 ---
 # Angular 5 - Полное руководство
 

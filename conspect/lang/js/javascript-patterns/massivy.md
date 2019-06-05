@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Массивы
 seoDescription: Работа с массивами в JavaScript, литеральная запись. Проверка на массив в ES5. Реализация собственной проверки является ли объект массивом.
 seoKeywords: js, array

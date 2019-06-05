@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
 title: Многоязычность
 seoDescription: Настройка многоязычности на сайтах 1С-Битрикс. Организация нескольких языковых версий на одном сайте.
 seoKeywords: битрикс, многоязычность

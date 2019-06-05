@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Binding свойств директив
 seoDescription: Привязка входных и вторичных свойств директивы атрибута в Angular5.
 seoKeywords: angular, spa, binding

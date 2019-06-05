@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Контроль навигации с помощью сервиса
 seoDescription:  Деактивации роута в Angular5 и контроль навигации.
 seoKeywords: angular, spa, route, CanDeactivate

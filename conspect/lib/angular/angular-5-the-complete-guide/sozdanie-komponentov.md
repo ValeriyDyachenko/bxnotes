@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Создание компонентов
 seoDescription: Angular компоненты, их архитектура и как создать собственный компонент.
 seoKeywords: angular, spa, component, cli, ng, generate component

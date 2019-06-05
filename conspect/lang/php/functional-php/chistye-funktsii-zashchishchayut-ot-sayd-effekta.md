@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Чистые функции защищают от сайд эффекта
 seoDescription: Избегайте монолитных функций, выполняющих много задач
 seoKeywords: php, array_map

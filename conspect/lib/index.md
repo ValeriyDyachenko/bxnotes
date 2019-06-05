@@ -1,7 +1,4 @@
 ---
-layout: section.njk
-tags: [section, sectionName:lib]
-section: lib
 title: Фреймворки и библиотеки
 breadcrumbName: фреймворки
 seoDescription: Библиотеки и фреймворки для веб разработки

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Параметры
 seoDescription: Практическое применение функций высшего порядка.
 seoKeywords: php, callable, higher-order

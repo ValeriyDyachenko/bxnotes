@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Декларативный код
 seoDescription: В декларативном стиле программирования, конструкции языка позволяют получить результат, не прибегая к низкоуровневой манипуляции данных.
 seoKeywords: php, array_map, array_reduce

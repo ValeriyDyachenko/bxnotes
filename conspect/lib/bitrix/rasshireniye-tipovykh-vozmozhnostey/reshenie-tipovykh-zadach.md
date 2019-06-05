@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
 title: Решение типовых задач
 seoDescription: Получение полей и свойств связанных элементов с помощью параметров компонентов и с помощью API Битрикса. Получения значений связанных элементов в шаблоне компонента. Примеры решения типовых задач.
 seoKeywords: битрикс

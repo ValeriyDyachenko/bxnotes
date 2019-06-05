@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
 title: Отложенные функции
 seoDescription: Отложенные функции Битрикса, примеры SetViewTarget(), EndViewTarget(). Обработка вывода с помощью события OnEpilog.
 seoKeywords: битрикс, AddBufferContent(), SetViewTarget(), EndViewTarget(), ShowViewContent(), OnEpilog

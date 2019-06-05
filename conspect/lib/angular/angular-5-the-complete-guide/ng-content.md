@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: ng-content
 seoDescription: Использование тега ng-content и размещения верстки из шаблона в теге вызова компонента в Angular5.
 seoKeywords: angular, spa, ng-content

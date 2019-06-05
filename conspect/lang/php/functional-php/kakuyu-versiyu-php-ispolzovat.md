@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Какую версию PHP использовать?
 seoDescription: О выборе версии PHP и тонкостях неявного преобразования типов.
 seoKeywords: php, сlosure, strict_types, declare

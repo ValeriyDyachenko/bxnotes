@@ -1,0 +1,27 @@
+.pagination-bottom {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+  margin: 42px 0 0 0;
+}
+
+.pagination-bottom li {
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.pagination-bottom a {
+  color: #0067cc;
+}
+
+.pagination-bottom a {
+  color: #0067cc;
+  display: block;
+  padding: 12px 20px;
+  border: 1px solid #0067cc;
+  border-radius: 2px;
+}

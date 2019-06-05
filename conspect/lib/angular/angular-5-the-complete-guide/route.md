@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: Route
 seoDescription:  Работа с роутером и ссылками в Angualr5.
 seoKeywords: angular, spa, route, routerLinkActive

@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:kurs_sovremennogo_javascript, postInSubject:js, postInSection:lang]
-conspect: kurs_sovremennogo_javascript
-section: lang
-subject: js
 title: Async/Await
 seoDescription: Преимущество Asinc/Await функций. Последовательное и конкурентное выполнение кода. Запуск неизвестного числа Promise функций.
 seoKeywords: js, async, await, promise

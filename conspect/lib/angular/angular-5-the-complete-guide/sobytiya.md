@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:angular-5-the-complete-guide, postInSubject:angular, postInSection:lib]
-conspect: angular-5-the-complete-guide
-section: lib
-subject: angular
 title: События
 seoDescription: Связывание событий и получение данных события в Angular 5.
 seoKeywords: angular, spa, event, binding

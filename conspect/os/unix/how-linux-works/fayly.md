@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:how-linux-works, postInSubject:unix, postInSection:os]
-conspect: how-linux-works
-section: os
-subject: unix
 title: Файлы
 seoDescription: Команды Linux (создание, просмотр, копирование, перемещение, удаление файлов и вывод в поток).
 seoKeywords: linux

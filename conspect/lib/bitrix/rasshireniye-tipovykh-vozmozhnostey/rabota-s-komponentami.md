@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:rasshireniye-tipovykh-vozmozhnostey, postInSubject:bitrix, postInSection:lib]
-conspect: rasshireniye-tipovykh-vozmozhnostey
-section: lib
-subject: bitrix
 title: Работа с компонентами
 seoDescription: Порядок выполнения компонентов в 1С-Битрикс. Работа с параметрами. Кеширование компонентов.
 seoKeywords: битрикс, component.php, result_modifier.php, template.php, component.php, $arResult

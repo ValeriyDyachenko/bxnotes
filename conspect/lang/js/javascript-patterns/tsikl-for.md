@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Цикл For
 seoDescription: Итерация массивов и подобных массивам объектов, таких как arguments и HTMLCollection, способы применения и микро-оптимизация.
 seoKeywords: js, for, arguments, HTMLCollection

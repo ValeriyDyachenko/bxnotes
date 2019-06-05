@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:functional-php, postInSubject:php, postInSection:lang]
-conspect: functional-php
-section: lang
-subject: php
 title: Функции первого класса и функции высшего порядка
 seoDescription: Функции высшего порядка и первоклассные функции в PHP
 seoKeywords: php, Closure

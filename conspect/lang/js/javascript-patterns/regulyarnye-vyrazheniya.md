@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Регулярные выражения
 seoDescription: Создание регулярного выражения с помощью литеральной записи и конструктора в JavaScript.
 seoKeywords: js, regex

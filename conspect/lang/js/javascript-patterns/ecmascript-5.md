@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: ECMAScript 5
 seoDescription: Строгий режим в ECMAScript 5.
 seoKeywords: js, es5

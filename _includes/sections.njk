@@ -1,38 +1,13 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{seoDescription}}" />
-    <meta name="keywords" content="{{seoKeywords}}" />
-    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/common/commonPage.css">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/desktop/commonPage.css" media="(min-width: 1280px)">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/mobile/commonPage.css" media="(max-width: 1279px)">
-    <title>{{title}}</title>
-  </head>
+  {% include 'components/head/head.njk' %}
   <body>
-    <input id="nav-panel-burger" type="checkbox" value="burger" />
-    <label id="mobile-burger" for="nav-panel-burger">
-      <div class="hamburger hamburger--3dx js-hamburger">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
-        </div>
-      </div>
-    </label>
+    {% include 'components/nav-burger/nav-burger.njk' %}
     <div id="page-wrapper">
-      <div class="container">
-        <nav class=nav-panel>
-          {% getSiteMenu collections, section, subject %}
-        </nav>
-        <section class="page-content">
-          {% include 'header.njk' %}
-          <nav>
-            <ul class="breadcrumbs">
-              <li>{% home %}</li>
-              <li>{{ breadcrumbName }}</li>
-            </ul>
-          </nav>
-          <h1>{{ title }}</h1>
+      <div class="container" data-include-component="container">
+        {% include 'components/site-nav/site-nav.njk' %}
+        <section class="page-content" data-include-component="page-content">
+          {% include 'components/header/header.njk' %}
           <ul class="base-list">
             {%- for section in collections['section'] -%}
               <li><a href="{{section.url}}">{{ section.data.title }}</a></li>
@@ -41,7 +16,7 @@
           {{ content | safe }}
         </section>
       </div>
-      {% include 'footer.njk' %}
+      {% include 'components/footer/footer.njk' %}
     </div>
   </body>
 </html>

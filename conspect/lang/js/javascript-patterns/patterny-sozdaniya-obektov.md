@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Паттерны создания объектов
 seoDescription: Способы создания объектов в JavaScript.
 seoKeywords: js, constructor

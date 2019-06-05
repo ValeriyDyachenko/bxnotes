@@ -1,8 +1,4 @@
 ---
-layout: subject.njk
-tags: [subject, subjectInSection:lang, subjectName:js]
-subject: js
-section: lang
 title: JavaScript
 breadcrumbName: js
 seoDescription: Уроки JavaScript.

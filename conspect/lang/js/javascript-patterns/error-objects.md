@@ -1,9 +1,4 @@
 ---
-layout: post.njk
-tags: [post, postInConspect:javascript-patterns, postInSubject:js, postInSection:lang]
-conspect: javascript-patterns
-section: lang
-subject: js
 title: Error Objects
 seoDescription: Встроенные и собственные объекты ошибок в JS.
 seoKeywords: js, throw, error
