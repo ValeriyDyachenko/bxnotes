@@ -23,7 +23,7 @@ ul.breadcrumbs li {
 }
 
 .breadcrumbs li:not(:first-child)::before {
-  content: "⯈";
+  content: "\2BC8";
   margin: 0 1.1rem;
   color: #ff3faa;
 }

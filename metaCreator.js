@@ -1,6 +1,9 @@
-const paramsFromPath = (path) => {
-  const parser = /\\conspect\\([^\\]*)\\?([^\\]*)\\?([^\\]*)/g;
-  const [, section, subject, conspect] = parser.exec(path);
+const path = require('path');
+const SEP = `\\${path.sep}`
+const paramsFromPath = (dir) => {
+  const regex = `${SEP}conspect${SEP}([^${SEP}]*)${SEP}?([^${SEP}]*)${SEP}?([^${SEP}]*)`;
+  var parser = new RegExp(regex,"g");
+  const [, section, subject, conspect] = parser.exec(dir);
   return {section, subject, conspect};
 }
 
