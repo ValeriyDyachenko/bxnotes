@@ -1,0 +1,209 @@
+# angular
+/conspect/angular-5-the-complete-guide/                           /conspect/lib/angular/angular-5-the-complete-guide/
+/article/vvedenie-v-angular/                                      /conspect/lib/angular/angular-5-the-complete-guide/vvedenie-v-angular/
+/article/typescript-bootstrap-main-ts/                            /conspect/lib/angular/angular-5-the-complete-guide/typescript-bootstrap-main-ts/
+/article/shablon-i-stili-komponenta/                              /conspect/lib/angular/angular-5-the-complete-guide/shablon-i-stili-komponenta/
+/article/komponent-i-dannye/                                      /conspect/lib/angular/angular-5-the-complete-guide/komponent-i-dannye/
+/article/dinamicheskie-shablony-v-angular5/                       /conspect/lib/angular/angular-5-the-complete-guide/dinamicheskie-shablony-v-angular5/
+/article/angular-css-i-style/                                     /conspect/lib/angular/angular-5-the-complete-guide/angular-css-i-style/
+/article/direktiva-ngfor-v-angular/                               /conspect/lib/angular/angular-5-the-complete-guide/direktiva-ngfor-v-angular/
+/article/komponent-i-model/                                       /conspect/lib/angular/angular-5-the-complete-guide/komponent-i-model/
+/article/dobavlenie-dannykh-v-komponent/                          /conspect/lib/angular/angular-5-the-complete-guide/dobavlenie-dannykh-v-komponent/
+/article/sozdanie-obshchey-modeli/                                /conspect/lib/angular/angular-5-the-complete-guide/sozdanie-obshchey-modeli/
+/article/ng-content/                                              /conspect/lib/angular/angular-5-the-complete-guide/ng-content/
+/article/sobitiya-i-jiznenniy-tcikl/                              /conspect/lib/angular/angular-5-the-complete-guide/sobitiya-i-jiznenniy-tcikl/
+/article/otladka/                                                 /conspect/lib/angular/angular-5-the-complete-guide/otladka/
+/article/inkapsulyatsiya-stiley-i-ssylki/                         /conspect/lib/angular/angular-5-the-complete-guide/inkapsulyatsiya-stiley-i-ssylki/
+/article/navigatsiya/                                             /conspect/lib/angular/angular-5-the-complete-guide/navigatsiya/
+/article/direktiva-atributa/                                      /conspect/lib/angular/angular-5-the-complete-guide/direktiva-atributa/
+/article/hostlistener-i-hostbinding/                              /conspect/lib/angular/angular-5-the-complete-guide/hostlistener-i-hostbinding/
+/article/binding-svoystv-direktiv/                                /conspect/lib/angular/angular-5-the-complete-guide/binding-svoystv-direktiv/
+/article/testirovanie-vozmozhnostey/                              /conspect/lib/angular/angular-5-the-complete-guide/testirovanie-vozmozhnostey/
+/article/sozdanie-komponentov/                                    /conspect/lib/angular/angular-5-the-complete-guide/sozdanie-komponentov/
+/article/sobytiya/                                                /conspect/lib/angular/angular-5-the-complete-guide/sobytiya/
+/article/svyazyvanie-svoystv-i-sobytiy/                           /conspect/lib/angular/angular-5-the-complete-guide/svyazyvanie-svoystv-i-sobytiy/
+/article/peredacha-dannykh-sobytiyami/                            /conspect/lib/angular/angular-5-the-complete-guide/peredacha-dannykh-sobytiyami/
+/article/strukturnye-direktivy/                                   /conspect/lib/angular/angular-5-the-complete-guide/strukturnye-direktivy/
+/article/servisy/                                                 /conspect/lib/angular/angular-5-the-complete-guide/servisy/
+/article/js-operatory/                                            /conspect/lib/angular/angular-5-the-complete-guide/js-operatory/
+/article/route/                                                   /conspect/lib/angular/angular-5-the-complete-guide/route/
+/article/route-chast-2/                                           /conspect/lib/angular/angular-5-the-complete-guide/route-chast-2/
+/article/obnovlenie-shablona/                                     /conspect/lib/angular/angular-5-the-complete-guide/obnovlenie-shablona/
+/article/route-prodolzhenie/                                      /conspect/lib/angular/angular-5-the-complete-guide/route-prodolzhenie/
+/article/vynos-nastroek-routera/                                  /conspect/lib/angular/angular-5-the-complete-guide/vynos-nastroek-routera/
+/article/zashchita-routera/                                       /conspect/lib/angular/angular-5-the-complete-guide/zashchita-routera/
+/article/kontrol-navigatsii-s-pomoshchyu-servisa/                 /conspect/lib/angular/angular-5-the-complete-guide/kontrol-navigatsii-s-pomoshchyu-servisa/
+/article/route-i-statika/                                         /conspect/lib/angular/angular-5-the-complete-guide/route-i-statika/
+/article/route-resolving/                                         /conspect/lib/angular/angular-5-the-complete-guide/route-resolving/
+/article/observable/                                              /conspect/lib/angular/angular-5-the-complete-guide/observable/
+/article/unsubscribe/                                             /conspect/lib/angular/angular-5-the-complete-guide/unsubscribe/
+/article/subject/                                                 /conspect/lib/angular/angular-5-the-complete-guide/subject/
+/article/formy/                                                   /conspect/lib/angular/angular-5-the-complete-guide/formy/
+/article/formy-shablonnyy-podkhod/                                /conspect/lib/angular/angular-5-the-complete-guide/formy-shablonnyy-podkhod/
+/article/formy-reaktivnyy-podkhod/                                /conspect/lib/angular/angular-5-the-complete-guide/formy-reaktivnyy-podkhod/
+
+# bitrix 1
+/conspect/integratsiya-dizayna-i-nastroyka-platformy/             /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/
+/article/bitriks-kurs-1-vvedenie/                                 /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/bitriks-kurs-1-vvedenie/
+/article/bitriks-kurs-1-tekhnologii/                              /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/bitriks-kurs-1-tekhnologii/
+/article/bitriks-i-keshirovanie-dannykh/                          /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/bitriks-i-keshirovanie-dannykh/
+/article/keshirovanie-v-komponente/                               /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/keshirovanie-v-komponente/
+/article/menyu/                                                   /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/menyu/
+/article/rabota-s-komponentami/
+
+# bitrix 2
+/conspect/podgotovka-ko-vtoromu-ekzamenu-bitriks/                 /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/
+/article/api-bitriksa-chastye-zadachi/                            /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/api-bitriksa-chastye-zadachi/
+/article/reshenie-tipovykh-zadach/                                /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/reshenie-tipovykh-zadach/
+/article/sobytiya-v-cms-1s-bitriks/                               /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/sobytiya-v-cms-1s-bitriks/
+/article/otlozhennye-funktsii/                                    /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/otlozhennye-funktsii/
+/article/komponenty/                                              /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/komponenty/
+/article/dostup-i-bezopasnost/                                    /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/dostup-i-bezopasnost/
+/article/gadzhety/                                                /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/gadzhety/
+/article/mastera/                                                 /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/mastera/
+/article/mnogosaytovost/                                          /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/mnogosaytovost/
+/article/mnogoyazychnost/                                         /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/mnogoyazychnost/
+
+# JavaScript Patterns
+/conspect/javascript-patterns/                                    /conspect/lang/js/javascript-patterns/
+/article/kontseptsii-javascript/                                  /conspect/lang/js/javascript-patterns/kontseptsii-javascript/
+/article/ecmascript-5/                                            /conspect/lang/js/javascript-patterns/ecmascript-5/                                       
+/article/jslint/                                                  /conspect/lang/js/javascript-patterns/jslint/
+/article/napisanie-khoroshego-koda/                               /conspect/lang/js/javascript-patterns/napisanie-khoroshego-koda/
+/article/problema-globalnykh-peremennykh/                         /conspect/lang/js/javascript-patterns/problema-globalnykh-peremennykh/
+/article/dostup-k-globalnomu-obektu/                              /conspect/lang/js/javascript-patterns/dostup-k-globalnomu-obektu/
+/article/pattern-odin-var/                                        /conspect/lang/js/javascript-patterns/pattern-odin-var/
+/article/tsikl-for/                                               /conspect/lang/js/javascript-patterns/tsikl-for/
+/article/tsikl-for-in/                                            /conspect/lang/js/javascript-patterns/tsikl-for-in/
+/article/dobavlenie-svoystv-k-standartnym-obektam/                /conspect/lang/js/javascript-patterns/dobavlenie-svoystv-k-standartnym-obektam/
+/article/khoroshiy-stil/                                          /conspect/lang/js/javascript-patterns/khoroshiy-stil/
+/article/oformlenii-koda/                                         /conspect/lang/js/javascript-patterns/oformlenii-koda/
+/article/rabota-s-obektami/                                       /conspect/lang/js/javascript-patterns/rabota-s-obektami/
+/article/patterny-sozdaniya-obektov/                              /conspect/lang/js/javascript-patterns/patterny-sozdaniya-obektov/
+/article/massivy/                                                 /conspect/lang/js/javascript-patterns/massivy/
+/article/json/                                                    /conspect/lang/js/javascript-patterns/json/
+/article/regulyarnye-vyrazheniya/                                 /conspect/lang/js/javascript-patterns/regulyarnye-vyrazheniya/
+/article/obertki-primitivov/                                      /conspect/lang/js/javascript-patterns/obertki-primitivov/
+/article/error-objects/                                           /conspect/lang/js/javascript-patterns/error-objects/
+/article/funktsii/                                                /conspect/lang/js/javascript-patterns/funktsii/
+
+# Functional PHP
+/conspect/functional-php/                                         /conspect/lang/php/functional-php/
+/article/vvedenie/                                                /conspect/lang/php/functional-php/vvedenie/
+/article/kakuyu-versiyu-php-ispolzovat/                           /conspect/lang/php/functional-php/kakuyu-versiyu-php-ispolzovat/
+/article/zdravstvuy-fp/                                           /conspect/lang/php/functional-php/zdravstvuy-fp/
+/article/deklarativnyy-koding/                                    /conspect/lang/php/functional-php/deklarativnyy-koding/
+/article/immutabelnyy-dizayn/                                     /conspect/lang/php/functional-php/immutabelnyy-dizayn/
+/article/chistye-funktsii-zashchishchayut-ot-sayd-effekta/        /conspect/lang/php/functional-php/chistye-funktsii-zashchishchayut-ot-sayd-effekta/
+/article/ssylochnaya-prozrachnost/                                /conspect/lang/php/functional-php/ssylochnaya-prozrachnost/
+/article/vzglyad-na-funktsionalnuyu-dekompozitsiyu/               /conspect/lang/php/functional-php/vzglyad-na-funktsionalnuyu-dekompozitsiyu/
+/article/funktsii-pervogo-klassa-i-funktsii-vysshego-poryadka/    /conspect/lang/php/functional-php/funktsii-pervogo-klassa-i-funktsii-vysshego-poryadka/
+/article/prisvaivanie-k-peremennoy/                               /conspect/lang/php/functional-php/prisvaivanie-k-peremennoy/
+/article/vozvrashchenie-funktsii/                                 /conspect/lang/php/functional-php/vozvrashchenie-funktsii/
+/article/parametr/                                                /conspect/lang/php/functional-php/parametr/
+/article/dazhe-obychnye-obekty-vyzyvaemy/                         /conspect/lang/php/functional-php/dazhe-obychnye-obekty-vyzyvaemy/
+/article/ispolzovanie-konteynerov-dlya-uluchsheniya-api/          /conspect/lang/php/functional-php/ispolzovanie-konteynerov-dlya-uluchsheniya-api/
+/article/zamykaniya/                                              /conspect/lang/php/functional-php/zamykaniya/
+
+# курс современнго js
+/conspect/kurs-sovremennogo-javascript/                           /conspect/lang/js/kurs-sovremennogo-javascript/
+/article/javascript-ecma-babel/                                   /conspect/lang/js/kurs-sovremennogo-javascript/javascript-ecma-babel/
+/article/vsplytie-hoisting/                                       /conspect/lang/js/kurs-sovremennogo-javascript/vsplytie-hoisting/
+/article/oblast-vidimosti-scope/                                  /conspect/lang/js/kurs-sovremennogo-javascript/oblast-vidimosti-scope/
+/article/let-const-var/                                           /conspect/lang/js/kurs-sovremennogo-javascript/let-const-var/
+/article/zamykaniya-closure/                                      /conspect/lang/js/kurs-sovremennogo-javascript/zamykaniya-closure/
+/article/patterny/                                                /conspect/lang/js/kurs-sovremennogo-javascript/paterny/
+/article/modul/                                                   /conspect/lang/js/kurs-sovremennogo-javascript/modul/
+/article/stroitel/                                                /conspect/lang/js/kurs-sovremennogo-javascript/stroitel/
+/article/fasad/                                                   /conspect/lang/js/kurs-sovremennogo-javascript/fasad/
+/article/komponovshchik/                                          /conspect/lang/js/kurs-sovremennogo-javascript/komponovshchik/
+/article/nablyudatel/                                             /conspect/lang/js/kurs-sovremennogo-javascript/nablyudatel/
+/article/this/                                                    /conspect/lang/js/kurs-sovremennogo-javascript/this/
+/article/arkhitektura-sredy/                                      /conspect/lang/js/kurs-sovremennogo-javascript/arkhitektura-sredy/
+/article/callback-hell/                                           /conspect/lang/js/kurs-sovremennogo-javascript/callback-hell/
+/article/promise/                                                 /conspect/lang/js/kurs-sovremennogo-javascript/promise/
+/article/async-await/                                             /conspect/lang/js/kurs-sovremennogo-javascript/async-await/
+
+# Внутреннее устройство Linux
+/conspect/how-linux-works/                                        /conspect/os/unix/how-linux-works/
+/article/vvedenie-protsessy-i-yadro/                              /conspect/os/unix/how-linux-works/vvedenie-protsessy-i-yadro/
+/article/fayly/                                                   /conspect/os/unix/how-linux-works/fayly/
+/article/direktorii/                                              /conspect/os/unix/how-linux-works/direktorii/
+/article/dzhokernye-simvoly/                                      /conspect/os/unix/how-linux-works/dzhokernye-simvoly/
+/article/utility/                                                 /conspect/os/unix/how-linux-works/utility/
+/article/peremennye/                                              /conspect/os/unix/how-linux-works/peremennye/
+/article/sochetaniya-klavish/                                     /conspect/os/unix/how-linux-works/sochetaniya-klavish/
+/article/vstroennaya-dokumentatsiya/                              /conspect/os/unix/how-linux-works/vstroennaya-dokumentatsiya/
+/article/potoki/                                                  /conspect/os/unix/how-linux-works/potoki/
+/article/protsessy-i-zadaniya/                                    /conspect/os/unix/how-linux-works/protsessy-i-zadaniya/
+/article/prava-dostupa/                                           /conspect/os/unix/how-linux-works/prava-dostupa/
+/article/ssylka/                                                  /conspect/os/unix/how-linux-works/ssylka/
+/article/arkhivatsiya/                                            /conspect/os/unix/how-linux-works/arkhivatsiya/
+/article/katalogi/                                                /conspect/os/unix/how-linux-works/katalogi/
+/article/zapusk-ot-administratora/                                /conspect/os/unix/how-linux-works/zapusk-ot-administratora/
+
+# git osnovy
+/conspect/git/                                                    /conspect/util/git/git-intro/
+/article/vvedenie-git/                                            /conspect/util/git/git-intro/vvedenie-git/
+/article/osnovy/                                                  /conspect/util/git/git-intro/osnovy/
+/article/kontribyut/                                              /conspect/util/git/git-intro/kontribyut/
+/article/bazovye-komandy/                                         /conspect/util/git/git-intro/bazovye-komandy/
+
+# igra na reakte
+/conspect/praktika-react/                                         /conspect/lib/react/react-game/
+/article/igra-na-reakte/                                          /conspect/lib/react/react-game/game/
+
+# murach-mysql
+/conspect/murach-s-mysql/                                         /conspect/db/mysql/murach-mysql/
+/article/vvedenie-mysql/                                          /conspect/db/mysql/murach-mysql/vvedenie-mysql/
+
+# all articles
+/article/                                                         /conspect/
+
+# lib
+/article/tags/frameworks/                                         /conspect/lib/
+/conspect/tags/frameworks/                                        /conspect/lib/
+
+# angular
+/article/tags/frameworks/angular/                                 /conspect/lib/angular/
+/conspect/tags/frameworks/angular/                                /conspect/lib/angular/
+
+# bitrix
+/article/tags/frameworks/bitrix/                                  /conspect/lib/bitrix/
+/conspect/tags/frameworks/bitrix/                                 /conspect/lib/bitrix/
+
+# js
+/article/tags/js/
+/conspect/tags/js/                                                /conspect/lang/js/
+
+# php 
+/article/tags/php/                                                /conspect/lang/php/
+/conspect/tags/php/                                               /conspect/lang/php/
+
+# util
+/article/tags/techs/                                              /conspect/util/
+/conspect/tags/techs/                                             /conspect/util/
+
+# git
+/article/tags/techs/git/                                          /conspect/util/git/
+/conspect/tags/techs/git/                                         /conspect/util/git/
+
+# db
+/article/tags/db/                                                 /conspect/db/
+/conspect/tags/db/                                                /conspect/db/
+
+# mysql
+/article/tags/db/mysql/                                           /conspect/db/mysql/
+/conspect/tags/db/mysql/                                          /conspect/db/mysql/
+
+# os
+/article/tags/os/                                                 /conspect/os/
+/conspect/tags/os/                                                /conspect/os/
+
+# unix
+/article/tags/os/linux/                                           /conspect/os/unix/
+/conspect/tags/os/linux/                                          /conspect/os/unix/
+
+# react
+/article/tags/frameworks/react/                                   /conspect/lib/react/
+/conspect/tags/frameworks/react/                                  /conspect/lib/react/

@@ -10,6 +10,7 @@ const pages = [
   {name: 'section', path: '_includes/section.njk'},
   {name: 'sections', path: '_includes/sections.njk'},
   {name: 'home', path: '_includes/home.njk'},
+  {name: '404', path: '_includes/404.njk'},
 ];
 
 const deviceTypes = {

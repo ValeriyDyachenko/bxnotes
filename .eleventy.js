@@ -15,22 +15,19 @@ const getNav = (collections, conspectName, title) => {
 }
 
 module.exports = function(eleventyConfig) {
-  // eleventyConfig.addShortcode('logger', _ => console.log(JSON.stringify(_)));
+  eleventyConfig.addFilter('htmlDate', (dateObj) => {
+    return new Date(dateObj.getTime() - (dateObj.getTimezoneOffset() * 60000 ))
+      .toISOString()
+      .split("T")[0];
+  });
+
   eleventyConfig.addShortcode('home', () => `<a href="/"><span class="breadcrumbs-home-ico">🏠 </span> <span class="breadcrumbs-home-text">главная</span></a>`);
   eleventyConfig.addShortcode('postPagination', (collections, conspectName, title) => {
     const {prev, next} = getNav(collections, conspectName, title);
     if (prev || next) {
-      return `<ul class="pagination-bottom">${prev ? `<li class="prev"><a href="${prev.url}">← ${prev.data.title}</a></li>` : ''}${next ? `<li class="next"><a href="${next.url}">${next.data.title} →</a></li>` : ''}</ul>`;
+      return `<ul class="pagination-bottom">${prev ? `<li class="prev"><a href="${prev.url}">&#8592; ${prev.data.title}</a></li>` : ''}${next ? `<li class="next"><a href="${next.url}">${next.data.title} &#8594;</a></li>` : ''}</ul>`;
     }
     return ' ';
-  });
-  eleventyConfig.addShortcode('getPrevPostLink', (collections, conspectName, title) => {
-    const {prev} = getNav(collections, conspectName, title);
-    return prev ? `<div class="arrow-placeholder"></div><div class="arrow"><a href="${prev.url}">⯇</a></div>` : ' ';
-  });
-  eleventyConfig.addShortcode('getNextPostLink', (collections, conspectName, title) => {
-    const {next} = getNav(collections, conspectName, title);
-    return next ? `<div class="arrow-placeholder"></div><div class="arrow"><a href="${next.url} ">⯈</a></div>` : ' ';
   });
   eleventyConfig.addShortcode('getSiteMenu', (collections, sectionActive, subjectActive, conspectActive) => {
     if (!collections) {
