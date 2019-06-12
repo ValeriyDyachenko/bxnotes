@@ -66,7 +66,7 @@ function css(src, dest, fileName) {
     .pipe(gulp.dest(dest));
 }
 
-const build = () => {
+const build = cb => {
   del.sync(['_site/assets/styles/**']);
   css(globalStyles, `assets/styles/`, `common.css`);
   const pages = Object.keys(includedCss);
@@ -74,9 +74,11 @@ const build = () => {
       css(includedCss[page][deviceTypes.mobile], `assets/styles/${deviceTypes.mobile}/`, `${page}.css`);
       css(includedCss[page][deviceTypes.desktop], `assets/styles/${deviceTypes.desktop}/`, `${page}.css`);
     });
+  cb();
 }
 
-gulp.watch('./_includes/components/**/*.css', build);
+const watch = () =>
+  gulp.watch('./_includes/components/**/*.css', build);
 
-exports.watch = gulp.watch;
+exports.watch = watch;
 exports.default = build;
