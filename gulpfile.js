@@ -67,7 +67,6 @@ function css(src, dest, fileName) {
 }
 
 const build = cb => {
-  del.sync(['_site/assets/styles/**']);
   css(globalStyles, `assets/styles/`, `common.css`);
   const pages = Object.keys(includedCss);
   pages.forEach(page => {
@@ -77,8 +76,16 @@ const build = cb => {
   cb();
 }
 
-const watch = () =>
-  gulp.watch('./_includes/components/**/*.css', build);
+const cleanCss = cb => {
+  del.sync('_site/assets/styles/**');
+  cb();
+}
+
+const watch = cb => {
+  gulp.watch('./_includes/**/*.css', build);
+  cb();
+}
 
 exports.watch = watch;
-exports.default = build;
+exports.cleanCss = cleanCss;
+exports.default = gulp.series(cleanCss, build);

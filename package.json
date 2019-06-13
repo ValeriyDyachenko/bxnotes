@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Valerii Diachenko",
   "scripts": {
-    "dev": "concurrently \"gulp watch\" \"eleventy --serve\"",
+    "dev": "gulp cleanCss && concurrently \"gulp watch\" \"eleventy --serve --watch\"",
     "prod": "gulp && eleventy",
     "debug": "set DEBUG=Eleventy*&&eleventy"
   },
