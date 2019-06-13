@@ -81,5 +81,11 @@ const cleanCss = cb => {
   cb();
 }
 
-exports.watch = gulp.watch('./_includes/**/*.css', build);
+const watch = cb => {
+  gulp.watch('./_includes/**/*.css', build);
+  cb();
+}
+
+exports.watch = watch;
+exports.cleanCss = cleanCss;
 exports.default = gulp.series(cleanCss, build);
