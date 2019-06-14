@@ -120,6 +120,7 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts).use(markdownItEmoji)
   );
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("css_bundle");
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {

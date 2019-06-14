@@ -49,7 +49,7 @@
 /article/bitriks-i-keshirovanie-dannykh/                          /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/bitriks-i-keshirovanie-dannykh/
 /article/keshirovanie-v-komponente/                               /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/keshirovanie-v-komponente/
 /article/menyu/                                                   /conspect/lib/bitrix/integratsiya-dizayna-i-nastroyka-platformy/menyu/
-/article/rabota-s-komponentami/
+/article/rabota-s-komponentami/                                   /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/rabota-s-komponentami/
 
 # bitrix 2
 /conspect/podgotovka-ko-vtoromu-ekzamenu-bitriks/                 /conspect/lib/bitrix/rasshireniye-tipovykh-vozmozhnostey/
@@ -173,7 +173,7 @@
 /conspect/tags/frameworks/bitrix/                                 /conspect/lib/bitrix/
 
 # js
-/article/tags/js/
+/article/tags/js/                                                 /conspect/lang/js/
 /conspect/tags/js/                                                /conspect/lang/js/
 
 # php 

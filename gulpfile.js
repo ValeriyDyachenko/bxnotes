@@ -59,32 +59,39 @@ pages.forEach(page => {
   }
 });
 
-function css(src, dest, fileName) {
+function mergeAndCopyCss(src, dest, fileName) {
   return gulp.src(src)
     .pipe(concat(fileName))
     .pipe(cleanCSS())
     .pipe(gulp.dest(dest));
 }
 
-const build = cb => {
-  css(globalStyles, `assets/styles/`, `common.css`);
+const makeCssBundle = cb => {
+  mergeAndCopyCss(globalStyles, `css_bundle/`, `common.css`);
   const pages = Object.keys(includedCss);
   pages.forEach(page => {
-      css(includedCss[page][deviceTypes.mobile], `assets/styles/${deviceTypes.mobile}/`, `${page}.css`);
-      css(includedCss[page][deviceTypes.desktop], `assets/styles/${deviceTypes.desktop}/`, `${page}.css`);
-    });
+    mergeAndCopyCss(includedCss[page][deviceTypes.mobile], `css_bundle/${deviceTypes.mobile}/`, `${page}.css`);
+    mergeAndCopyCss(includedCss[page][deviceTypes.desktop], `css_bundle/${deviceTypes.desktop}/`, `${page}.css`);
+  });
   cb();
 }
 
-const cleanCss = cb => {
-  del.sync('_site/assets/styles/**');
+const removeOldCssBundle = cb => {
+  del.sync('_site/css_bundle/**');
   cb();
 }
 
-const watch = () => {
-  gulp.watch('./_includes/**/*.css', {ignoreInitial: false}, build);
+const watchCssAndMakeBundle = () => {
+  gulp.watch('./_includes/**/*.css', {ignoreInitial: false}, makeCssBundle);
 }
 
-exports.watch = watch;
-exports.cleanCss = cleanCss;
-exports.default = gulp.series(cleanCss, build);
+const copyRedirectFile = (cb) => {
+  gulp.src('_redirects')
+    .pipe(gulp.dest('./_site/'));
+  cb();  
+}
+
+exports.removeOldCssBundle = removeOldCssBundle;
+exports.makeCssBundle = makeCssBundle;
+exports.watchCssAndMakeBundle = watchCssAndMakeBundle;
+exports.copyRedirectFile = copyRedirectFile;
