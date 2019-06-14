@@ -5,8 +5,8 @@
   "main": "index.js",
   "author": "Valerii Diachenko",
   "scripts": {
-    "dev": "gulp cleanCss && concurrently \"gulp watch\" \"eleventy --serve --watch\"",
-    "prod": "gulp && eleventy",
+    "dev": "gulp removeOldCssBundle && concurrently \"gulp watchCssAndMakeBundle\" \"eleventy --serve --watch\"",
+    "prod": "gulp removeOldCssBundle && gulp makeCssBundle && eleventy && gulp copyRedirectFile",
     "debug": "set DEBUG=Eleventy*&&eleventy"
   },
   "devDependencies": {
