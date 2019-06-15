@@ -5,8 +5,8 @@
   "main": "index.js",
   "author": "Valerii Diachenko",
   "scripts": {
-    "dev": "gulp removeOldCssBundle && concurrently \"gulp watchCssAndMakeBundle\" \"eleventy --serve --watch\"",
-    "prod": "gulp removeOldCssBundle && gulp makeCssBundle && eleventy && gulp copyRedirectFile",
+    "dev": "gulp removeSiteData && gulp copyMinifyedManifest && gulp copyIcons && concurrently \"gulp watchCssAndMakeBundle\" \"eleventy --serve --watch\"",
+    "prod": "gulp removeSiteData && gulp makeCssBundle && gulp copyRedirectFile && gulp copyMinifyedManifest && gulp copyIcons && eleventy",
     "debug": "set DEBUG=Eleventy*&&eleventy"
   },
   "devDependencies": {
@@ -20,7 +20,8 @@
     "html-minifier": "4.0.0",
     "markdown-it": "8.4.2",
     "markdown-it-anchor": "5.0.2",
-    "markdown-it-emoji": "1.4.0"
+    "markdown-it-emoji": "1.4.0",
+    "gulp-jsonminify": "1.1.0"
   },
   "license": "MIT"
 }
