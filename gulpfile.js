@@ -26,39 +26,7 @@ const globalStyles = [
   '_includes/css/common/custom.css',
 ];
 
-const includedCss = {};
-
 const parser = /({% *include.*components[^\/]*\/[^\/]*\/((?:(?!\.njk).)+)|data-include-component="?'?([^"']*)"?'?)/g;
-
-pages.forEach(page => {
-  const content = fs.readFileSync(page.path).toString();
-  let match = parser.exec(content);
-  while (match != null) {
-    if (!includedCss[page.name]) includedCss[page.name] = {};
-    if (!includedCss[page.name][deviceTypes.mobile]) includedCss[page.name][deviceTypes.mobile] = [];
-    if (!includedCss[page.name][deviceTypes.desktop]) includedCss[page.name][deviceTypes.desktop] = [];
-    const componentName = match[2] || match[3];
-    if (componentName) {
-      const componentCss = [
-        {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.mobile}.css`, device: deviceTypes.mobile},
-        {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.desktop}.css`, device: deviceTypes.desktop},
-      ];
-      try {
-        componentCss.forEach(css => {
-          if (fs.existsSync(css.path)) {
-            includedCss[page.name][css.device].push(css.path);
-            console.log(`Css ${css.path} is included to page ${page.name}`);
-          } else {
-            console.warn(`Css ${css.path} not exist`);
-          }
-        })
-      } catch(err) {
-        console.error(err)
-      }
-    }
-    match = parser.exec(content);
-  }
-});
 
 function mergeAndCopyCss(src, dest, fileName) {
   return gulp.src(src)
@@ -67,18 +35,53 @@ function mergeAndCopyCss(src, dest, fileName) {
     .pipe(gulp.dest(dest));
 }
 
+const getIncludedCss = () => {
+  const includedCss = {};
+  pages.forEach(page => {
+    const content = fs.readFileSync(page.path).toString();
+    let match = parser.exec(content);
+    while (match != null) {
+      if (!includedCss[page.name]) includedCss[page.name] = {};
+      if (!includedCss[page.name][deviceTypes.mobile]) includedCss[page.name][deviceTypes.mobile] = [];
+      if (!includedCss[page.name][deviceTypes.desktop]) includedCss[page.name][deviceTypes.desktop] = [];
+      const componentName = match[2] || match[3];
+      if (componentName) {
+        const componentCss = [
+          {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.mobile}.css`, device: deviceTypes.mobile},
+          {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.desktop}.css`, device: deviceTypes.desktop},
+        ];
+        try {
+          componentCss.forEach(css => {
+            if (fs.existsSync(css.path)) {
+              includedCss[page.name][css.device].push(css.path);
+              console.log(`Css ${css.path} is included to page ${page.name}`);
+            } else {
+              console.warn(`Css ${css.path} not exist`);
+            }
+          })
+        } catch(err) {
+          console.error(err)
+        }
+      }
+      match = parser.exec(content);
+    }
+  });
+  return includedCss;
+};
+
 const makeCssBundle = cb => {
-  mergeAndCopyCss(globalStyles, `css_bundle/`, `common.css`);
+  const includedCss = getIncludedCss();
+  mergeAndCopyCss(globalStyles, `_site/css_bundle/`, `common.css`);
   const pages = Object.keys(includedCss);
   pages.forEach(page => {
-    mergeAndCopyCss(includedCss[page][deviceTypes.mobile], `css_bundle/${deviceTypes.mobile}/`, `${page}.css`);
-    mergeAndCopyCss(includedCss[page][deviceTypes.desktop], `css_bundle/${deviceTypes.desktop}/`, `${page}.css`);
+    mergeAndCopyCss(includedCss[page][deviceTypes.mobile], `_site/css_bundle/${deviceTypes.mobile}/`, `${page}.css`);
+    mergeAndCopyCss(includedCss[page][deviceTypes.desktop], `_site/css_bundle/${deviceTypes.desktop}/`, `${page}.css`);
   });
   cb();
 }
 
-const removeOldCssBundle = cb => {
-  del.sync('_site/css_bundle/**');
+const removeSiteData = cb => {
+  del.sync('_site/**');
   cb();
 }
 
@@ -93,19 +96,19 @@ const copyRedirectFile = (cb) => {
 }
 
 const copyMinifyedManifest = (cb) => {
-  gulp.src('assets/manifest/webmanifest')
+  gulp.src('manifest/webmanifest')
     .pipe(jsonminify())
     .pipe(gulp.dest('./_site/'));
   cb();  
 }
 
 const copyIcons = (cb) => {
-  gulp.src('assets/manifest/icons/*.*')
+  gulp.src('manifest/icons/*.*')
     .pipe(gulp.dest('./_site/'));
   cb();  
 }
 
-exports.removeOldCssBundle = removeOldCssBundle;
+exports.removeSiteData = removeSiteData;
 exports.makeCssBundle = makeCssBundle;
 exports.watchCssAndMakeBundle = watchCssAndMakeBundle;
 exports.copyRedirectFile = copyRedirectFile;
