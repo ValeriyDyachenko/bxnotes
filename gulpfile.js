@@ -3,6 +3,7 @@ const del = require('del');
 const gulp = require("gulp");
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const jsonminify = require('gulp-jsonminify');
 
 const pages = [
   {name: 'post', path: '_includes/post.njk'},
@@ -91,7 +92,22 @@ const copyRedirectFile = (cb) => {
   cb();  
 }
 
+const copyMinifyedManifest = (cb) => {
+  gulp.src('assets/manifest/webmanifest')
+    .pipe(jsonminify())
+    .pipe(gulp.dest('./_site/'));
+  cb();  
+}
+
+const copyIcons = (cb) => {
+  gulp.src('assets/manifest/icons/*.*')
+    .pipe(gulp.dest('./_site/'));
+  cb();  
+}
+
 exports.removeOldCssBundle = removeOldCssBundle;
 exports.makeCssBundle = makeCssBundle;
 exports.watchCssAndMakeBundle = watchCssAndMakeBundle;
 exports.copyRedirectFile = copyRedirectFile;
+exports.copyMinifyedManifest = copyMinifyedManifest;
+exports.copyIcons = copyIcons;
