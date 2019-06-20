@@ -1,0 +1,16 @@
+language: node_js
+branches:
+  only:
+    - master
+sudo: true
+node_js:
+  - "lts/*"
+before_install:
+  - sudo apt-get update
+  - sudo sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/' /etc/ssh/sshd_config
+  - sudo service ssh restart
+  - sudo apt-get install sshpass
+script:
+  - yarn prod
+after_success:
+  - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && sh .travis_deploy.sh
