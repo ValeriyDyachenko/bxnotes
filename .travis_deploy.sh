@@ -23,4 +23,4 @@ git checkout -b deploy
 git add .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
 git push origin +deploy --quiet
-sshpass -p${BXN_PASS} ssh -o StrictHostKeyChecking=no ${BXN_UNAME}@${BXN_HOST} "cd ${BXN_PATH}; git fetch --all; git reset --hard upstream/deploy;"
+sshpass -p${BXN_PASS} ssh -o StrictHostKeyChecking=no ${BXN_UNAME}@${BXN_HOST} "cd ${BXN_PATH}; git fetch --all; git reset --hard upstream/master;"
