@@ -90,7 +90,7 @@ const watchCssAndMakeBundle = () => {
 }
 
 const copyRedirectFile = (cb) => {
-  gulp.src('.htaccess')
+  gulp.src(['.htaccess', '_redirects'])
     .pipe(gulp.dest('./_site/'));
   cb();  
 }
