@@ -1,3 +1,5 @@
+ErrorDocument 404 /404.html
+
 # angular
 Redirect 301 /conspect/angular-5-the-complete-guide/                           https://bxnotes.ru/conspect/lib/angular/angular-5-the-complete-guide/
 Redirect 301 /article/vvedenie-v-angular/                                      https://bxnotes.ru/conspect/lib/angular/angular-5-the-complete-guide/vvedenie-v-angular/
