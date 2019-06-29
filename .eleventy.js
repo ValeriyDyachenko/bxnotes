@@ -14,6 +14,8 @@ const getNav = (collections, conspectName, title) => {
   }
 }
 
+const getFirstArticleinConspect = (conspectName, collections) => collections[`postInConspect:${conspectName}`][1]; // index 0 is "about page"
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('htmlDate', (dateObj) => {
     return new Date(dateObj.getTime() - (dateObj.getTimezoneOffset() * 60000 ))
@@ -56,7 +58,9 @@ module.exports = function(eleventyConfig) {
             content += '<div class="conspect-block">';
             for (let conInd = 0, conLen = nestedConspects.length; conInd < conLen; conInd++) {
               const isConActive = nestedConspects[conInd].data.conspect === conspectActive ? 'active' : '';
-              content += `<a class="conspect-item ${isConActive}" href="${nestedConspects[conInd].url}" >${nestedConspects[conInd].data.conspectTitle}</a>`;
+              const conspectName = nestedConspects[conInd].data.conspect;
+              const firstConspectArticle = getFirstArticleinConspect(conspectName, collections);
+              content += `<a class="conspect-item ${isConActive}" href="${firstConspectArticle.url}">${nestedConspects[conInd].data.conspectTitle}</a>`;
             }
             content += '</div>';
           }
@@ -86,9 +90,11 @@ module.exports = function(eleventyConfig) {
           <ul class="base-list">
         `;
       collections[`conspectInSubject:${subjectName}`].forEach(conspectElement => {
+        const conspectName = conspectElement.data.conspect;
+        const firstConspectArticle = getFirstArticleinConspect(conspectName, collections);
         layout += `
             <li>
-              <a href="${conspectElement.url}">${conspectElement.data.conspectTitle}</a>
+              <a href="${firstConspectArticle.url}">${conspectElement.data.conspectTitle}</a>
             </li>
         `;
       });

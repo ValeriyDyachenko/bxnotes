@@ -35,3 +35,8 @@
   color: #000;
   display: block;
 }
+
+.conspect-menu li.about{
+  margin-top: 1.5rem;
+  padding-top: 0.3em;
+}

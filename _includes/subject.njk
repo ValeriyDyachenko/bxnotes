@@ -10,7 +10,9 @@
           {% include 'components/header/header.njk' %}
           <ul class="base-list">
             {%- for conspect in collections['conspectInSubject:' + subject] -%}
-              <li><a href="{{conspect.url}}">{{ conspect.data.conspectTitle }}</a></li>
+              {% set conspectName = conspect.data.conspect %}
+              {% set firstArticle = collections['postInConspect:'+conspectName][1] %}
+              <li><a href="{{firstArticle.url}}">{{ conspect.data.conspectTitle }}</a></li>
             {%- endfor -%}
           </ul>
           {{ content | safe }}
