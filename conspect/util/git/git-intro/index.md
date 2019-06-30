@@ -4,6 +4,7 @@ conspectTitle: Основы Git
 seoDescription: Git руководство по использованию
 seoKeywords: основы git
 date: 2018-05-06 03:00:00
+origin: bxnotes
 ---
 # Основы Git. Руководство по использованию
 

@@ -4,10 +4,21 @@ conspectTitle: Angular 5 - Полное руководство
 seoDescription: Курс Angular 5.
 seoKeywords: js, angular, курс
 date: 2018-01-12 00:00:00
+origin: курс &laquo;Angular 5 the complete guide&raquo;, Maximilian Schwarzmüller
 ---
 # Angular 5 - Полное руководство
 
+> **Курс**: Angular 5 the complete guide
 > **Автор**: Maximilian Schwarzmüller
-> **Статус конспекта**: не завершен
 
-Курс расскажет о многих аспектах **Angular 5**, с самого начала, до продвинутых тем. Настройки окружения, Компоненты, Директивы, Сервисы, Формы, Http доступ, Аутентификация, Оптимизация, и многое другое.
+
+**Angular 5**, с самого начала, до продвинутых тем:
+
+* настройки окружения
+* компоненты
+* директивы
+* сервисы
+* формы
+* http доступ
+* аутентификация
+* оптимизация
