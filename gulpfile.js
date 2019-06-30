@@ -4,6 +4,7 @@ const gulp = require("gulp");
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const jsonminify = require('gulp-jsonminify');
+const path = require('path');
 
 const pages = [
   {name: 'post', path: '_includes/post.njk'},
@@ -80,6 +81,54 @@ const makeCssBundle = cb => {
   cb();
 }
 
+// create 11tydata files
+const tyDataDir = {
+  section: '_includes/eleventydata/section/index.11tydata.js',
+  subject: '_includes/eleventydata/subject/index.11tydata.js',
+  conspect: '_includes/eleventydata/conspect/index.11tydata.js',
+  post: '_includes/eleventydata/post/11tydata.js',
+}
+
+const conspectDir = 'conspect';
+
+const getFolders = dir => {
+  return fs.readdirSync(dir)
+    .map(file => path.join(dir, file))
+    .filter(function(file) {
+      return fs.statSync(file).isDirectory();
+    });
+}
+
+const getFoldersFromArray = arr => {
+  return arr.reduce((dirs, dir) => dirs.concat(getFolders(dir)), []);
+}
+
+const copy11tydataFile = (src, dest, isNotPost) => {
+  const filename = isNotPost ? 'index.11tydata.js' : `${path.basename(dest)}.11tydata.js`;
+  fs.copyFile(src, path.join(dest, filename), (err) => {
+    if (err) throw err;
+    console.log(`${src} was copied to ${path.join(dest, filename)}`);
+  }); 
+}
+
+const copy11tydataFiles = (src, destArray, isNotPost) => {
+  destArray.forEach(dest => {
+    copy11tydataFile(src, dest, isNotPost);
+  });
+}
+
+const add11tydataIntoConspectSubdirs = cb => {
+  const sectionDirs = getFolders(conspectDir);
+  const subjectDirs = getFoldersFromArray(sectionDirs);
+  const conspectsDirs = getFoldersFromArray(subjectDirs);
+  copy11tydataFiles(tyDataDir.section, sectionDirs, true);
+  copy11tydataFiles(tyDataDir.subject, subjectDirs, true);
+  copy11tydataFiles(tyDataDir.conspect, conspectsDirs, true);
+  copy11tydataFiles(tyDataDir.post, conspectsDirs, false);
+  cb();
+}
+// end create 11tydata files
+
 const removeSiteData = cb => {
   del.sync('_site/**');
   cb();
@@ -114,3 +163,4 @@ exports.watchCssAndMakeBundle = watchCssAndMakeBundle;
 exports.copyRedirectFile = copyRedirectFile;
 exports.copyMinifyedManifest = copyMinifyedManifest;
 exports.copyIcons = copyIcons;
+exports.add11tydataIntoConspectSubdirs = add11tydataIntoConspectSubdirs;
