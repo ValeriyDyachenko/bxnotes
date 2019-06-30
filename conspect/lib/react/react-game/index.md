@@ -4,6 +4,7 @@ conspectTitle: Создание игры на React
 seoDescription: Создание игры на React.
 seoKeywords: React, game
 date: 2018-07-05 00:00:00
+origin: bxnotes
 ---
 # Создание игры на React
 
