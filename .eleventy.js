@@ -27,7 +27,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode('postPagination', (collections, conspectName, title) => {
     const {prev, next} = getNav(collections, conspectName, title);
     if (prev || next) {
-      return `<ul class="pagination-bottom">${prev ? `<li class="prev"><a href="${prev.url}">&#8592; ${prev.data.title}</a></li>` : ''}${next ? `<li class="next"><a href="${next.url}">${next.data.title} &#8594;</a></li>` : ''}</ul>`;
+      return `<ul class="pagination-bottom">${next ? `<li class="next"><a href="${next.url}">${next.data.title} &#8594;</a></li>` : ''}${prev ? `<li class="prev"><a href="${prev.url}">&#8592; ${prev.data.title}</a></li>` : ''}</ul>`;
     }
     return ' ';
   });

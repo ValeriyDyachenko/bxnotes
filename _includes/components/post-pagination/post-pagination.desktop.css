@@ -9,13 +9,16 @@
   margin: 42px 0 0 0;
 }
 
-.pagination-bottom li {
+.pagination-bottom li.next, .pagination-bottom li.prev {
+  text-transform: uppercase;
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 1rem 0 0 0;
+  width: 100%;
+  text-align: center;
 }
 
-.pagination-bottom a {
-  color: #0067cc;
+.pagination-bottom li.prev a {
+  border-color: #d8ecff
 }
 
 .pagination-bottom a {
