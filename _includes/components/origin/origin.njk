@@ -1,6 +1,6 @@
 {% set originValue = origin or collections['conspectName:' + conspect][0].data.origin %}
-{% if originValue %}
-  <div class="origin-block">
+<div class="origin-block">
+  {% if not conspectTitle and originValue %}
     Источник &ndash; {{ originValue | safe }}
-  </div> 
-{% endif %}
+  {% endif %}  
+</div> 
