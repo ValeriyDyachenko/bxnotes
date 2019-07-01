@@ -5,14 +5,15 @@ const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const jsonminify = require('gulp-jsonminify');
 const path = require('path');
+const fse = require("fs-extra");
 
 const pages = [
-  {name: 'post', path: '_includes/post.njk'},
-  {name: 'subject', path: '_includes/subject.njk'},
-  {name: 'section', path: '_includes/section.njk'},
-  {name: 'sections', path: '_includes/sections.njk'},
-  {name: 'home', path: '_includes/home.njk'},
-  {name: '404', path: '_includes/404.njk'},
+  {name: 'post', path: '_server/_includes/post.njk'},
+  {name: 'subject', path: '_server/_includes/subject.njk'},
+  {name: 'section', path: '_server/_includes/section.njk'},
+  {name: 'sections', path: '_server/_includes/sections.njk'},
+  {name: 'home', path: '_server/_includes/home.njk'},
+  {name: '404', path: '_server/_includes/404.njk'},
 ];
 
 const deviceTypes = {
@@ -21,10 +22,10 @@ const deviceTypes = {
 };
 
 const globalStyles = [
-  '_includes/css/common/markdown.css',
-  '_includes/css/common/prism.css',
-  '_includes/css/common/hilighted-prism.css',
-  '_includes/css/common/custom.css',
+  '_server/_includes/css/common/markdown.css',
+  '_server/_includes/css/common/prism.css',
+  '_server/_includes/css/common/hilighted-prism.css',
+  '_server/_includes/css/common/custom.css',
 ];
 
 const parser = /({% *include.*components[^\/]*\/[^\/]*\/((?:(?!\.njk).)+)|data-include-component="?'?([^"']*)"?'?)/g;
@@ -48,8 +49,8 @@ const getIncludedCss = () => {
       const componentName = match[2] || match[3];
       if (componentName) {
         const componentCss = [
-          {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.mobile}.css`, device: deviceTypes.mobile},
-          {path: `_includes/components/${componentName}/${componentName}.${deviceTypes.desktop}.css`, device: deviceTypes.desktop},
+          {path: `_server/_includes/components/${componentName}/${componentName}.${deviceTypes.mobile}.css`, device: deviceTypes.mobile},
+          {path: `_server/_includes/components/${componentName}/${componentName}.${deviceTypes.desktop}.css`, device: deviceTypes.desktop},
         ];
         try {
           componentCss.forEach(css => {
@@ -72,24 +73,24 @@ const getIncludedCss = () => {
 
 const makeCssBundle = cb => {
   const includedCss = getIncludedCss();
-  mergeAndCopyCss(globalStyles, `_site/css_bundle/`, `common.css`);
+  mergeAndCopyCss(globalStyles, `_server/_site/css_bundle/`, `common.css`);
   const pages = Object.keys(includedCss);
   pages.forEach(page => {
-    mergeAndCopyCss(includedCss[page][deviceTypes.mobile], `_site/css_bundle/${deviceTypes.mobile}/`, `${page}.css`);
-    mergeAndCopyCss(includedCss[page][deviceTypes.desktop], `_site/css_bundle/${deviceTypes.desktop}/`, `${page}.css`);
+    mergeAndCopyCss(includedCss[page][deviceTypes.mobile], `_server/_site/css_bundle/${deviceTypes.mobile}/`, `${page}.css`);
+    mergeAndCopyCss(includedCss[page][deviceTypes.desktop], `_server/_site/css_bundle/${deviceTypes.desktop}/`, `${page}.css`);
   });
   cb();
 }
 
 // create 11tydata files
 const tyDataDir = {
-  section: '_includes/eleventydata/section/index.11tydata.js',
-  subject: '_includes/eleventydata/subject/index.11tydata.js',
-  conspect: '_includes/eleventydata/conspect/index.11tydata.js',
-  post: '_includes/eleventydata/post/11tydata.js',
+  section: '_server/_includes/eleventydata/section/index.11tydata.js',
+  subject: '_server/_includes/eleventydata/subject/index.11tydata.js',
+  conspect: '_server/_includes/eleventydata/conspect/index.11tydata.js',
+  post: '_server/_includes/eleventydata/post/11tydata.js',
 }
 
-const conspectDir = 'conspect';
+const conspectDir = '_server/conspect';
 
 const getFolders = dir => {
   return fs.readdirSync(dir)
@@ -130,34 +131,52 @@ const add11tydataIntoConspectSubdirs = cb => {
 // end create 11tydata files
 
 const removeSiteData = cb => {
-  del.sync('_site/**');
+  del.sync('_server/_site/**');
+  cb();
+}
+
+const removeConspectData = cb => {
+  del.sync('_server/conspect/**');
+  cb();
+}
+
+const copyContentToConspectData = cb => {
+  fse.copy('content', conspectDir, function (err) {
+      if (err){
+          console.log('An error occured while copying content.');
+          return console.error(err);
+      }
+      console.log('Content copying completed.');
+  });
   cb();
 }
 
 const watchCssAndMakeBundle = () => {
-  gulp.watch('./_includes/**/*.css', {ignoreInitial: false}, makeCssBundle);
+  gulp.watch('./_server/_includes/**/*.css', {ignoreInitial: false}, makeCssBundle);
 }
 
 const copyRedirectFile = (cb) => {
-  gulp.src(['.htaccess', '_redirects'])
-    .pipe(gulp.dest('./_site/'));
+  gulp.src(['_server/.htaccess', '_server/_redirects'])
+    .pipe(gulp.dest('./_server/_site/'));
   cb();  
 }
 
 const copyMinifyedManifest = (cb) => {
-  gulp.src('manifest/webmanifest')
+  gulp.src('_server/manifest/webmanifest')
     .pipe(jsonminify())
-    .pipe(gulp.dest('./_site/'));
+    .pipe(gulp.dest('./_server/_site/'));
   cb();  
 }
 
 const copyIcons = (cb) => {
-  gulp.src('manifest/icons/*.*')
-    .pipe(gulp.dest('./_site/'));
+  gulp.src('_server/manifest/icons/*.*')
+    .pipe(gulp.dest('./_server/_site/'));
   cb();  
 }
 
 exports.removeSiteData = removeSiteData;
+exports.removeConspectData = removeConspectData;
+exports.copyContentToConspectData = copyContentToConspectData;
 exports.makeCssBundle = makeCssBundle;
 exports.watchCssAndMakeBundle = watchCssAndMakeBundle;
 exports.copyRedirectFile = copyRedirectFile;
