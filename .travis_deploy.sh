@@ -1,7 +1,7 @@
 #!/bin/sh
 
 for f in *; do
-    if [ $f != "_site" ]
+    if [ $f != "_server" ]
       then
         if [ -d $f ]
           then
@@ -12,8 +12,8 @@ for f in *; do
     fi
 done
 
-cp -r ./_site/* ./
-rm -rf _site
+cp -r ./_server/_site/* ./
+rm -rf _server
 rm -rf .git
 git init
 git config --global user.email "bxnotes@travis-ci.org"

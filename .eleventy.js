@@ -12,7 +12,7 @@ const getNav = (collections, conspectName, title) => {
       return {prev, next};
     }
   }
-}
+};
 
 const getFirstArticleinConspect = (conspectName, collections) => collections[`postInConspect:${conspectName}`][1]; // index 0 is "about page"
 
@@ -125,7 +125,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts).use(markdownItEmoji)
   );
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("_server/assets");
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
@@ -141,5 +141,9 @@ module.exports = function(eleventyConfig) {
     templateFormats : ['njk', 'md'],
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
+    dir: {
+      input: "_server",
+      output: "_server/_site",
+    }
   };
 };
