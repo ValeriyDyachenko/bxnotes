@@ -2,11 +2,10 @@
   "name": "bxnotes",
   "version": "1.0.0",
   "description": "blog about web developing and coding",
-  "main": "index.js",
   "author": "Valerii Diachenko",
   "scripts": {
-    "dev": "gulp removeSiteData && gulp removeConspectData && gulp copyContentToConspectData && gulp copyMinifyedManifest && gulp copyIcons && gulp add11tydataIntoConspectSubdirs && concurrently \"gulp watchCssAndMakeBundle\" \"eleventy --serve --watch\"",
-    "prod": "gulp removeSiteData && gulp removeConspectData && gulp copyContentToConspectData && gulp makeCssBundle && gulp copyRedirectFile && gulp copyMinifyedManifest && gulp copyIcons && gulp add11tydataIntoConspectSubdirs && eleventy",
+    "dev": "gulp removeSiteData && gulp removeConspectData && gulp gitIgnoreConspectFolder && gulp copyContentToConspectData && gulp copyMinifyedManifest && gulp copyIcons && gulp add11tydataIntoConspectSubdirs && concurrently \"gulp watchCssAndMakeBundle\" \"eleventy --serve --watch\" \"gulp watchContentAndCopyToConspects\"",
+    "prod": "gulp removeSiteData && gulp removeConspectData && gulp gitIgnoreConspectFolder && gulp copyContentToConspectData && gulp makeCssBundle && gulp copyRedirectFile && gulp copyMinifyedManifest && gulp copyIcons && gulp add11tydataIntoConspectSubdirs && eleventy",
     "debug": "set DEBUG=Eleventy*&&eleventy"
   },
   "devDependencies": {

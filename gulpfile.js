@@ -151,8 +151,33 @@ const copyContentToConspectData = cb => {
   cb();
 }
 
+const gitIgnoreConspectFolder = cb => {
+  const file = `*
+*/
+!.gitignore
+`;
+
+  var conspectDir = '_server/conspect';
+
+  if (!fs.existsSync(conspectDir)){
+    fs.mkdirSync(conspectDir);
+  }
+
+  fs.writeFile(`${conspectDir}/.gitignore`, file, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("Conspect gitignore wes created.");
+  });
+  cb();
+}
+
 const watchCssAndMakeBundle = () => {
   gulp.watch('./_server/_includes/**/*.css', {ignoreInitial: false}, makeCssBundle);
+}
+
+const watchContentAndCopyToConspects = () => {
+  gulp.watch('./content/**/*', {ignoreInitial: true}, copyContentToConspectData);
 }
 
 const copyRedirectFile = (cb) => {
@@ -176,7 +201,9 @@ const copyIcons = (cb) => {
 
 exports.removeSiteData = removeSiteData;
 exports.removeConspectData = removeConspectData;
+exports.watchContentAndCopyToConspects = watchContentAndCopyToConspects;
 exports.copyContentToConspectData = copyContentToConspectData;
+exports.gitIgnoreConspectFolder = gitIgnoreConspectFolder;
 exports.makeCssBundle = makeCssBundle;
 exports.watchCssAndMakeBundle = watchCssAndMakeBundle;
 exports.copyRedirectFile = copyRedirectFile;
