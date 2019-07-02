@@ -12,7 +12,7 @@ const getNav = (collections, conspectName, title) => {
       return {prev, next};
     }
   }
-}
+};
 
 const getFirstArticleinConspect = (conspectName, collections) => collections[`postInConspect:${conspectName}`][1]; // index 0 is "about page"
 
