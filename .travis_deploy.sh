@@ -12,7 +12,7 @@ for f in *; do
     fi
 done
 
-cp -r ./_server/_site/* ./
+cp -rT ./_server/_site ./
 rm -rf _server
 rm -rf .git
 git init
