@@ -181,11 +181,8 @@ const watchContentAndCopyToConspects = () => {
 }
 
 const copyRedirectFile = (cb) => {
-  gulp.src('_server/.htaccess')
+  gulp.src(['_server/.htaccess', '_server/_redirects'])
     .pipe(gulp.dest('./_server/_site/'));
-    
-  gulp.src('_server/_redirects')
-    .pipe(gulp.dest('./_server/_site/'));  
   cb();  
 }
 
