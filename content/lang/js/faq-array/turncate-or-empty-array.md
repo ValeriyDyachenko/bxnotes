@@ -7,7 +7,7 @@ origin: <a rel="nofollow" href="https://www.freecodecamp.org/news/9-neat-javascr
 ---
 # Сократить массив
 
-Используйте свойство ```length```, чтобы быстро очисть или сократить массив в JavaScript.
+Используйте свойство ```length```, чтобы быстро очисть или сократить массив.
 
 ```js
 const arr = [11, 22, 33, 44, 55, 66];

@@ -7,7 +7,7 @@ origin: <a rel="nofollow" href="https://www.freecodecamp.org/news/9-neat-javascr
 ---
 # Спарсить строку в переменные
 
-Разбить строку с на массив с помощью `String.prototype.split()`, деструктурировать массив в переменные.
+Разбить строку на массив с помощью `String.prototype.split()`, деструктурировать массив в переменные.
 
 ```js
 const csvFileLine = '1997,John Doe,US,john@doe.com,New York';
