@@ -126,6 +126,7 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts).use(markdownItEmoji)
   );
   eleventyConfig.addPassthroughCopy("_server/assets");
+  eleventyConfig.addPassthroughCopy("_server/apps");
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {

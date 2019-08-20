@@ -2,3 +2,4 @@ node_modules/
 _server/_site/
 .idea/
 yarn-error.log
+_server/apps
