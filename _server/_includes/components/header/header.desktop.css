@@ -23,9 +23,14 @@ ul.breadcrumbs li {
 }
 
 .breadcrumbs li:not(:first-child)::before {
-  content: "\2BC8";
+  content: "";
   margin: 0 1.1rem;
-  color: #ff3faa;
+  display: inline-block;
+  width: 0;
+  height: 0px;
+  border-top: 0.45rem solid transparent;
+  border-bottom: 0.45rem solid transparent;
+  border-left: 0.71rem solid #ff3faa;
 }
 
 .breadcrumbs li:not(:first-child) {
