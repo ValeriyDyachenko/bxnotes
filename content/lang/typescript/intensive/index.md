@@ -6,7 +6,7 @@ seoKeywords: TypeScript, ts.
 date: 2019-11-24 00:00:00
 origin: курс &laquo;Интенсив по TypeScript&raquo;, Игорь Непипенко
 ---
-# Angular 5 - Полное руководство
+# Интенсив по TypeScript
 
 > **Курс**: Интенсив по TypeScript (learn.javascript.ru)
 > **Автор**: Игорь Непипенко
