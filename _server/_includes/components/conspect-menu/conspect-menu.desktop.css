@@ -21,7 +21,7 @@
   max-height: 100vh;
   overflow-y: auto;
   font-size: .875rem;
-  padding: 0;
+  padding: 0 0 0 1px;
   line-height: 1.45rem;
 }
 

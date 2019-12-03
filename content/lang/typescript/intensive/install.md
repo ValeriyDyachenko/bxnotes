@@ -40,7 +40,9 @@ TS может работать в разном режиме строгости.
 
 ### Webpack и стандартные пакеты
 
-`npm add webpack webpack-cli webpack-dev-server ts-loader html-webpack-plugin -D`
+```bash
+npm add webpack webpack-cli webpack-dev-server ts-loader html-webpack-plugin -D
+```
 
 ### Code quality tools
 
