@@ -51,7 +51,7 @@ getUserInfo(1)
     .catch(console.log("err"));
 ```
 
-Полый код рефакторинга:
+Полый код после рефакторинга:
 
 ```js
 const getUserInfo = id => {
