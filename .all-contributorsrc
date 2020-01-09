@@ -1,0 +1,64 @@
+{
+  "projectName": "bxnotes",
+  "projectOwner": "ValeriyDyachenko",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "ValeriyDyachenko",
+      "name": "Valeriy Dyachenko",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/26274813?v=4",
+      "profile": "https://github.com/ValeriyDyachenko",
+      "contributions": [
+        "code",
+        "design",
+        "content"
+      ]
+    },
+    {
+      "login": "marsgpl",
+      "name": "marsgpl",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1058743?v=4",
+      "profile": "http://lemix.net",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    },
+    {
+      "login": "zlocate",
+      "name": "Denis",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/43764701?v=4",
+      "profile": "https://ingodwetrust.ru",
+      "contributions": [
+        "ideas",
+        "content"
+      ]
+    },    
+    {
+      "login": "paulcodeman",
+      "name": "Pavel",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/27310867?v=4",
+      "profile": "https://paulcodeman.github.io",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "zikfrid",
+      "name": "zikfrid",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/14260015?v=4",
+      "profile": "https://github.com/zikfrid",
+      "contributions": [
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
