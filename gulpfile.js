@@ -199,6 +199,12 @@ const copyIcons = (cb) => {
   cb();  
 }
 
+const copyRobotsTxt = (cb) => {
+  gulp.src('_server/robots.txt', { dot: true })
+    .pipe(gulp.dest('./_server/_site/'));
+  cb();  
+}
+
 exports.removeSiteData = removeSiteData;
 exports.removeConspectData = removeConspectData;
 exports.watchContentAndCopyToConspects = watchContentAndCopyToConspects;
@@ -209,4 +215,5 @@ exports.watchCssAndMakeBundle = watchCssAndMakeBundle;
 exports.copyRedirectFile = copyRedirectFile;
 exports.copyMinifyedManifest = copyMinifyedManifest;
 exports.copyIcons = copyIcons;
+exports.copyRobotsTxt = copyRobotsTxt;
 exports.add11tydataIntoConspectSubdirs = add11tydataIntoConspectSubdirs;
