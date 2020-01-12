@@ -4,26 +4,27 @@
 
 Bxnotes &ndash; это опенсорс уроки по программированию для веб разработчиков. Здесь вы найдете краткие конспекты книг, курсов, статей и личный опыт.
 
-## Контрибьюторы ✨
+## Контрибьюторы
 
- Спасибо всем, кто помогает проекту развиваться!
+Спасибо всем, кто помогает проекту развиваться! Список участников:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/ValeriyDyachenko"><img src="https://avatars0.githubusercontent.com/u/26274813?v=4" width="100px;" alt=""/><br /><sub><b>Valeriy Dyachenko</b></sub></a><br /><a href="https://github.com/ValeriyDyachenko/bxnotes/commits?author=ValeriyDyachenko" title="Code">💻</a> <a href="#design-ValeriyDyachenko" title="Design">🎨</a> <a href="#content-ValeriyDyachenko" title="Content">🖋</a></td>
-    <td align="center"><a href="http://lemix.net"><img src="https://avatars1.githubusercontent.com/u/1058743?v=4" width="100px;" alt=""/><br /><sub><b>marsgpl</b></sub></a><br /><a href="#maintenance-marsgpl" title="Maintenance">🚧</a> <a href="https://github.com/ValeriyDyachenko/bxnotes/commits?author=marsgpl" title="Code">💻</a></td>
-    <td align="center"><a href="https://ingodwetrust.ru"><img src="https://avatars1.githubusercontent.com/u/43764701?v=4" width="100px;" alt=""/><br /><sub><b>Denis</b></sub></a><br /><a href="#ideas-zlocate" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-zlocate" title="Content">🖋</a></td>
-    <td align="center"><a href="https://paulcodeman.github.io"><img src="https://avatars2.githubusercontent.com/u/27310867?v=4" width="100px;" alt=""/><br /><sub><b>Pavel</b></sub></a><br /><a href="#content-paulcodeman" title="Content">🖋</a></td>
-    <td align="center"><a href="https://github.com/zikfrid"><img src="https://avatars3.githubusercontent.com/u/14260015?v=4" width="100px;" alt=""/><br /><sub><b>zikfrid</b></sub></a><br /><a href="#content-zikfrid" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/ValeriyDyachenko"><img src="https://avatars0.githubusercontent.com/u/26274813?v=4" width="100px;" alt=""/><br /><sub><b>Valeriy Dyachenko</b></sub></a><br /><a href="https://github.com/ValeriyDyachenko/bxnotes/commits?author=ValeriyDyachenko" title="Code">💻</a> <a href="https://github.com/ValeriyDyachenko/bxnotes/commits?author=ValeriyDyachenko" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://lemix.net"><img src="https://avatars1.githubusercontent.com/u/1058743?v=4" width="100px;" alt=""/><br /><sub><b>marsgpl</b></sub></a><br /><a href="https://github.com/ValeriyDyachenko/bxnotes/commits?author=marsgpl" title="Code">💻</a></td>
+    <td align="center"><a href="https://ingodwetrust.ru"><img src="https://avatars1.githubusercontent.com/u/43764701?v=4" width="100px;" alt=""/><br /><sub><b>Denis</b></sub></a><br /><a href="https://github.com/ValeriyDyachenko/bxnotes/commits?author=zlocate" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/zikfrid"><img src="https://avatars3.githubusercontent.com/u/14260015?v=4" width="100px;" alt=""/><br /><sub><b>zikfrid</b></sub></a><br /><a href="https://github.com/ValeriyDyachenko/bxnotes/commits?author=zikfrid" title="Documentation">📖</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Этот проект следует спецификации  <a href="https://allcontributors.org/">all-contributors</a>. Приветствуются все контрибьюторы.
 
 ## Как это работает?
 
