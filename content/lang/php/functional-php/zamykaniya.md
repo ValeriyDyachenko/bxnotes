@@ -1,10 +1,9 @@
 ---
-title: Замыкания
-seoDescription: Динамические замыкания в PHP и возможности их применения.
-seoKeywords: php, Closure, callback, use, bindTo()
+title:  Замыкания
+description: Динамические замыкания в PHP и возможности их применения.
+keywords: php, Closure, callback, use, bindTo()
 date: 2017-11-08 14:00:00
 ---
-# Замыкания
 
 Замыкания в *PHP* отличаются от замыканий в *Java Script*. В *PHP* необходимо явно указывать, к каким переменным будет разрешен доступ:
 

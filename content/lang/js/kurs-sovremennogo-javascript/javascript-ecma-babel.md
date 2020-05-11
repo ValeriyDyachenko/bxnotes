@@ -1,10 +1,9 @@
 ---
-title: JavaScript, ECMA, Babel
-seoDescription: Язык программирования JavaScript и стандарт ECMA.
-seoKeywords: js, ecma, babel
+title:  JavaScript, ECMA, Babel
+description: Язык программирования JavaScript и стандарт ECMA.
+keywords: js, ecma, babel
 date: 2018-09-22 00:00:00
 ---
-# JavaScript, ECMA, Babel
 
 **JavaScript** это популярный скриптовый язык, поддерживаемый всеми браузерами и реализующий стандарт **ECMAScript**.
 

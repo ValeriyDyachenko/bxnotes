@@ -1,11 +1,10 @@
 ---
-title: Flex
-seoDescription: Flex
-seoKeywords: Flex
+title:  Flex
+description: Flex
+keywords: Flex
 date: 2019-12-03 00:12:00
 origin: <a rel="nofollow" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">css-tricks</a>
 ---
-# Flex
 
 ## Container
 

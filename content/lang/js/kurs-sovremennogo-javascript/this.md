@@ -1,10 +1,9 @@
 ---
-title: This
-seoDescription: Как работает this в JavaScript.
-seoKeywords: js, this, scope, bind, apply, call
+title:  This
+description: Как работает this в JavaScript.
+keywords: js, this, scope, bind, apply, call
 date: 2018-09-22 05:00:00
 ---
-# This
 
 В данной статье рассматривается работа с `this`. Будут изучены различные кейсы употребления `this` и их особенности. Понимание работы `this` очень важно для понимания языка JavaScript.
 

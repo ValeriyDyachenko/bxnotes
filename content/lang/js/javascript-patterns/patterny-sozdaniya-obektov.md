@@ -1,10 +1,9 @@
 ---
-title: Паттерны создания объектов
-seoDescription: Способы создания объектов в JavaScript.
-seoKeywords: js, constructor
+title:  Паттерны создания объектов
+description: Способы создания объектов в JavaScript.
+keywords: js, constructor
 date: 2017-11-14 13:00:00
 ---
-# Паттерны создания объектов
 
 ## Вызов конструктора без new
 

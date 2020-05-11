@@ -1,10 +1,9 @@
 ---
-title: Observable
-seoDescription:  Stream и работа с Observable в Angular5.
-seoKeywords: angular, spa, route, observable
+title:  Observable
+description:  Stream и работа с Observable в Angular5.
+keywords: angular, spa, route, observable
 date: 2018-01-15 08:00:00
 ---
-# Observable
 
 ## Observable
 

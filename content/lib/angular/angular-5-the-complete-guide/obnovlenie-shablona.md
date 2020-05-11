@@ -1,10 +1,9 @@
 ---
-title: Обновление шаблона
-seoDescription:  Обновление шаблона при динамическом роутинге и отписка от наблюдения.
-seoKeywords: angular, spa, ActivatedRoute, subscribe, Subscription, unsubscribe
+title:  Обновление шаблона
+description:  Обновление шаблона при динамическом роутинге и отписка от наблюдения.
+keywords: angular, spa, ActivatedRoute, subscribe, Subscription, unsubscribe
 date: 2018-01-15 01:00:00
 ---
-# Обновление шаблона
 
 Если есть динамическая ссылка, например:
 

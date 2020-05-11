@@ -1,10 +1,9 @@
 ---
-title: Навигация
-seoDescription: Навигация в Angular5 на основе событий.
-seoKeywords: angular, spa, EventEmitter
+title:  Навигация
+description: Навигация в Angular5 на основе событий.
+keywords: angular, spa, EventEmitter
 date: 2018-01-14 15:00:00
 ---
-# Навигация
 
 Главный копонент обрабатывает событие клика по навигации:
 

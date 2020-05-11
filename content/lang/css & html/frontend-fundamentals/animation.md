@@ -1,11 +1,10 @@
 ---
-title: Animation
-seoDescription: Animation
-seoKeywords: Animation
+title:  Animation
+description: Animation
+keywords: Animation
 date: 2019-12-03 00:06:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">MDN</a>, <a rel="nofollow" href="https://css.30secondsofcode.org/snippet/donut-spinner/" target="_blank">30 seconds of css</a>
 ---
-# Animation
 
 ## Shorthand
 

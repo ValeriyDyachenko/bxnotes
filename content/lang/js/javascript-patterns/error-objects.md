@@ -1,10 +1,9 @@
 ---
-title: Error Objects
-seoDescription: Встроенные и собственные объекты ошибок в JS.
-seoKeywords: js, throw, error
+title:  Error Objects
+description: Встроенные и собственные объекты ошибок в JS.
+keywords: js, throw, error
 date: 2017-11-14 18:00:00
 ---
-# Error Objects
 
 В *JavaScript* предусмотрены такие объекты ошибок, как `Error()`, `SyntaxError()`, `TypeError()`. Их можно запускать как в виде конструктора, так и в виде функции, результат один.
 

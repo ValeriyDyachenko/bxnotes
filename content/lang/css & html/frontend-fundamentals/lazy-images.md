@@ -1,11 +1,10 @@
 ---
-title: Ленивые изображения
-seoDescription: Ленивые изображения
-seoKeywords: Ленивые изображения
+title:  Ленивые изображения
+description: Ленивые изображения
+keywords: Ленивые изображения
 date: 2019-12-03 00:03:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">MDN</a>, <a rel="nofollow" href="https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video" target="_blank">Google developers</a>
 ---
-# Ленивые изображения
 
 ## Img
 

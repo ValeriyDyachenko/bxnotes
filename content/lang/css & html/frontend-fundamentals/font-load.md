@@ -1,11 +1,10 @@
 ---
-title: Стратегии загрузки шрифтов
-seoDescription: Стратегии загрузки шрифтов
-seoKeywords: Стратегии загрузки шрифтов
+title:  Стратегии загрузки шрифтов
+description: Стратегии загрузки шрифтов
+keywords: Стратегии загрузки шрифтов
 date: 2019-12-03 00:04:00
 origin: <a rel="nofollow" href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization" target="_blank">MDN</a>, <a rel="nofollow" href="https://m.habr.com/ru/company/ruvds/blog/470870/" target="_blank">habr</a>
 ---
-# Стратегии загрузки шрифтов
 
 ## Форматы
 

@@ -1,10 +1,9 @@
 ---
-title: Всплытие. Hoisting
-seoDescription: Процесс всплытия переменных в JavaScript.
-seoKeywords: hoisting
+title:  Всплытие. Hoisting
+description: Процесс всплытия переменных в JavaScript.
+keywords: hoisting
 date: 2018-09-22 01:00:00
 ---
-# Всплытие. Hoisting.
 
 Говоря формально, объявление переменных и функций в исполняемом контексте, всплывает наверх контекста.
 

@@ -1,11 +1,10 @@
 ---
-title: Селекторы
-seoDescription: Селекторы
-seoKeywords: Селекторы
+title:  Селекторы
+description: Селекторы
+keywords: Селекторы
 date: 2019-12-03 00:14:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">CSS Selectors</a>, <a rel="nofollow" href="https://developer.mozilla.org/ru/docs/Web/CSS/Specificity" target="_blank">Specificity</a>
 ---
-# Селекторы
 
 ## Базовые селекторы
 

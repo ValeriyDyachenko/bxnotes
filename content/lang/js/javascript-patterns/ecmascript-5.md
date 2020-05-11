@@ -1,10 +1,9 @@
 ---
-title: ECMAScript 5
-seoDescription: Строгий режим в ECMAScript 5.
-seoKeywords: js, es5
+title:  ECMAScript 5
+description: Строгий режим в ECMAScript 5.
+keywords: js, es5
 date: 2017-11-14 01:00:00
 ---
-# ECMAScript 5
 
 Наиболее значимое нововведение в 5 версии ECMAScript это `strict mode` (строгий режим), который удаляет из языка некоторые особенности, делая программы проще и надежнее.
 

@@ -1,10 +1,9 @@
 ---
-title: Концепции JavaScript
-seoDescription: Обзор языка программирования Java Script, и чем он отличается от языков программирования, основанных на классах.
-seoKeywords: js, number, string, boolean, null, undefined, prototype
+title:  Концепции JavaScript
+description: Обзор языка программирования Java Script, и чем он отличается от языков программирования, основанных на классах.
+keywords: js, number, string, boolean, null, undefined, prototype
 date: 2017-11-14 00:00:00
 ---
-# Концепции JavaScript
 
 ## Объектно ориентированный
 

@@ -1,10 +1,9 @@
 ---
-title: Создание компонентов
-seoDescription: Angular компоненты, их архитектура и как создать собственный компонент.
-seoKeywords: angular, spa, component, cli, ng, generate component
+title:  Создание компонентов
+description: Angular компоненты, их архитектура и как создать собственный компонент.
+keywords: angular, spa, component, cli, ng, generate component
 date: 2018-01-14 00:00:00
 ---
-# Создание компонентов
 
 > Компоненты ключевая особенность Angular. Приложение строится из компонентов.
 
@@ -102,5 +101,5 @@ declarations: [
 
 Компоненты могут быть вложены друг в друга. Это помогает создать удобную структуру проекта:
 
-![alt text](/assets/img/angular/angular-5-the-complete-guide/sozdanie-komponentov/accb37eb3210f43f62b6850c64cea269.jpg)
+![структура проекта](./assets/sozdanie-komponentov/structure.jpg "структура проекта")
 

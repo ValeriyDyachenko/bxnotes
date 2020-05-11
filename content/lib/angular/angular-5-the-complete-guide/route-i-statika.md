@@ -1,10 +1,9 @@
 ---
-title: Route и статика
-seoDescription:  Как передать статичные данные в компонент с помощью настроек роута.
-seoKeywords: angular, spa, route, data
+title:  Route и статика
+description:  Как передать статичные данные в компонент с помощью настроек роута.
+keywords: angular, spa, route, data
 date: 2018-01-15 06:00:00
 ---
-# Route и статика
 
 Статичные данные можно передать в `Route` с помощью ключа `data`:
 

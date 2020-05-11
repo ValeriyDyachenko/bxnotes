@@ -1,10 +1,9 @@
 ---
-title: Типизация контекста
-seoDescription: Типизация контекста | TypeScript.
-seoKeywords: Типизация контекста | Typescript
+title:  Типизация контекста
+description: Типизация контекста | TypeScript.
+keywords: Типизация контекста | Typescript
 date: 2019-11-27 12:00:00
 ---
-# Типизация контекста
 
 `this` позволяет типизировать контекст вызова, например:
 

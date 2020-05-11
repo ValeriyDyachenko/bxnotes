@@ -1,10 +1,9 @@
 ---
-title: HostListener и HostBinding
-seoDescription: Использование декораторов HostListener и HostBinding для реагирования на события и работы со стилями в Angular5.
-seoKeywords: angular, spa, @HostListener, @HostBinding
+title:  HostListener и HostBinding
+description: Использование декораторов HostListener и HostBinding для реагирования на события и работы со стилями в Angular5.
+keywords: angular, spa, @HostListener, @HostBinding
 date: 2018-01-14 18:00:00
 ---
-# HostListener и HostBinding
 
 Декоратор `@HostListener` принимает в качестве аргумента имя события и позволяет запустить определенную функцию в тот момент, когда указанное событие наступит для данного элемента.
 

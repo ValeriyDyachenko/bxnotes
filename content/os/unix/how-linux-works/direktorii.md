@@ -1,10 +1,9 @@
 ---
-title: Директории
-seoDescription: Создание и удаление директорий в Linux.
-seoKeywords: linux, cd, mkdir, rmdir
+title:  Директории
+description: Создание и удаление директорий в Linux.
+keywords: linux, cd, mkdir, rmdir
 date: 2018-08-05 02:00:00
 ---
-# Директории
 
 Путь, который не начинается с символа `/` называется относительным.
 

@@ -1,10 +1,9 @@
 ---
-title: Mixins
-seoDescription: Mixins | TypeScript.
-seoKeywords: Mixins | Typescript
+title:  Mixins
+description: Mixins | TypeScript.
+keywords: Mixins | Typescript
 date: 2019-11-27 14:00:00
 ---
-# Mixins
 
 Миксин - это функция, которая:
 

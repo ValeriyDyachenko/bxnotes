@@ -1,10 +1,9 @@
 ---
-title: Unsubscribe
-seoDescription:  Пример отписки в ngOnDestroy().
-seoKeywords: angular, spa, unscribe
+title:  Unsubscribe
+description:  Пример отписки в ngOnDestroy().
+keywords: angular, spa, unscribe
 date: 2018-01-15 09:00:00
 ---
-# Unsubscribe
 
 Для отписки от события, используется метод `unsubcribe()` класса `Subscription`. 
 

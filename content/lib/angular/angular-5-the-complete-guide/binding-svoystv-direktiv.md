@@ -1,10 +1,9 @@
 ---
-title: Binding свойств директив
-seoDescription: Привязка входных и вторичных свойств директивы атрибута в Angular5.
-seoKeywords: angular, spa, binding
+title:  Binding свойств директив
+description: Привязка входных и вторичных свойств директивы атрибута в Angular5.
+keywords: angular, spa, binding
 date: 2018-01-14 19:00:00
 ---
-# Binding свойств директив
 
 Базовый вариант:
 
@@ -31,7 +30,7 @@ date: 2018-01-14 19:00:00
 
 Существует сокращенный вариант написания имен без скобок:
 
-```html/2
+```html{2}
 <p 
   [appBetterHilight]="'yellow'" 
   defaultColor='green'

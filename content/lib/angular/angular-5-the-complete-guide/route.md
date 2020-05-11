@@ -1,10 +1,9 @@
 ---
-title: Route
-seoDescription:  Работа с роутером и ссылками в Angualr5.
-seoKeywords: angular, spa, route, routerLinkActive
+title:  Route
+description:  Работа с роутером и ссылками в Angualr5.
+keywords: angular, spa, route, routerLinkActive
 date: 2018-01-14 23:00:00
 ---
-# Route
 
 ## Route (роутинг)
 

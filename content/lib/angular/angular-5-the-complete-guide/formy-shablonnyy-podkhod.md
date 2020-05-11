@@ -1,10 +1,9 @@
 ---
-title: Формы. Шаблонный подход.
-seoDescription: Работа с формами. Шаблонный подход (Template-driven).
-seoKeywords: angular, spa, forms, template-driven
+title:  Формы. Шаблонный подход.
+description: Работа с формами. Шаблонный подход (Template-driven).
+keywords: angular, spa, forms, template-driven
 date: 2018-01-15 12:00:00
 ---
-# Формы. Шаблонный подход.
 
 ## Создание формы и регистрация контроллеров
 

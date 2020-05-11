@@ -1,10 +1,9 @@
 ---
-title: Route продолжение
-seoDescription:  Параметры роутера, фрагмент, родительский роутинг, редирект в Angular5.
-seoKeywords: angular, spa, route, fragment, redirect
+title:  Route продолжение
+description:  Параметры роутера, фрагмент, родительский роутинг, редирект в Angular5.
+keywords: angular, spa, route, fragment, redirect
 date: 2018-01-15 02:00:00
 ---
-# Route продолжение
 
 ## Передача параметров и фрагментов запроса
 

@@ -1,11 +1,10 @@
 ---
-title: Поток
-seoDescription: Поток
-seoKeywords: Поток
+title:  Поток
+description: Поток
+keywords: Поток
 date: 2019-12-03 00:10:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank">Box Model</a>, <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout" target="_blank">Css layout</a>
 ---
-# Поток
 
 Расположение контента может быть блочным (следующий блок располагается под предыдущим), или строчным (блоки выстраиваются в линию).
 

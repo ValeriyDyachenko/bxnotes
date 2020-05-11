@@ -1,10 +1,9 @@
 ---
-title: Добавление данных в Компонент
-seoDescription: Импорт модели в компонент Angular и создание контента на основе модели.
-seoKeywords: angular, spa, model
+title:  Добавление данных в Компонент
+description: Импорт модели в компонент Angular и создание контента на основе модели.
+keywords: angular, spa, model
 date: 2018-01-14 08:00:00
 ---
-# Добавление данных в Компонент
 
 `\app\recipes\recipe-list\recipe-list.component.ts`:
 

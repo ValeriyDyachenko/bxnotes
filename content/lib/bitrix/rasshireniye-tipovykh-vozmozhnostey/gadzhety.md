@@ -1,10 +1,9 @@
 ---
-title: Гаджеты
-seoDescription: Создание собственных гаджетов в CMS 1С-Битрикс.
-seoKeywords: битрикс, гаджеты
+title:  Гаджеты
+description: Создание собственных гаджетов в CMS 1С-Битрикс.
+keywords: битрикс, гаджеты
 date: 2018-01-05 07:00:00
 ---
-# Гаджеты
 
 ## Определение
 
@@ -29,7 +28,7 @@ date: 2018-01-05 07:00:00
 
 ## .description.php:
 
-### Структура `.description.php`:
+### Структура .description.php:
 
 ```php
 $arDescription = Array(
@@ -46,7 +45,7 @@ $arDescription = Array(
 );
 ```
 
-### Ключи `.description.php`:
+### Ключи .description.php:
 
 Параметр | Описание
 --- | --- | ---

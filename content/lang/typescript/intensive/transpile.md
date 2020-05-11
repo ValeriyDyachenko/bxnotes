@@ -1,10 +1,9 @@
 ---
-title: Транспиляция и Definition files
-seoDescription: Транспиляция и Definition files | TypeScript.
-seoKeywords: Транспиляция и Definition files | Typescript
+title:  Транспиляция и Definition files
+description: Транспиляция и Definition files | TypeScript.
+keywords: Транспиляция и Definition files | Typescript
 date: 2019-11-27 01:00:00
 ---
-# Транспиляция, Declare, Definition files
 
 ## Особенности транспилирования кода
 

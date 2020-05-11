@@ -1,10 +1,9 @@
 ---
-title: Сервисы
-seoDescription: Централизация логики и упрощение коммуникации между компонентами с помощью сервисов.
-seoKeywords: angular, spa, services
+title:  Сервисы
+description: Централизация логики и упрощение коммуникации между компонентами с помощью сервисов.
+keywords: angular, spa, services
 date: 2018-01-14 21:00:00
 ---
-# Сервисы
 
 Внедрение зависимости следует принципу иерархии:
 
@@ -60,7 +59,7 @@ export class LoggingService {
 
 Для инициализации объекта сервиса можно использовать сокращение - `constructor(private accountsService: AccountsService) {}`
 
-```typescript/10
+```typescript{10}
 //...
 import { AccountsService } from './accounts.service';
 

@@ -1,10 +1,9 @@
 ---
-title: Рекурсия
-seoDescription: Рекурсия | TypeScript.
-seoKeywords: Рекурсия | Typescript
+title:  Рекурсия
+description: Рекурсия | TypeScript.
+keywords: Рекурсия | Typescript
 date: 2019-11-27 10:00:00
 ---
-# Рекурсия
 
 Есть рекурсивное меню:
 

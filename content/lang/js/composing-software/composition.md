@@ -1,10 +1,9 @@
 ---
-title: Функциональная композиция
-seoDescription: Композиция в JavaScript?
-seoKeywords: js, composition
+title:  Функциональная композиция
+description: Композиция в JavaScript?
+keywords: js, composition
 date: 2019-07-11 00:00:00
 ---
-# Функциональная композиция
 
 > Композиция &ndash; суть разработки софта.
 

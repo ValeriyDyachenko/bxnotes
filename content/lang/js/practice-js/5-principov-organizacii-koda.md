@@ -1,16 +1,16 @@
 ---
-title: 5 принципов организации кода
-seoDescription: 5 принципов организации кода.
-seoKeywords: js
+title:  5 принципов организации кода
+description: 5 принципов организации кода.
+keywords: js
 date: 2019-06-25 22:37:00
 origin: <a rel="nofollow" href="https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/" target="_blank">Node Hero - Node.js Project Structure Tutorial</a>
 ---
-# 5 принципов организации кода
 
 ## 1. Организуйте код по фичам, не по ролям.
 
 
 :heavy_check_mark:
+
 ```
 .
 ├── product
@@ -26,6 +26,7 @@ origin: <a rel="nofollow" href="https://blog.risingstack.com/node-hero-node-js-p
 <br/>
 
 :x:
+
 ```
 .
 ├── controllers

@@ -1,10 +1,9 @@
 ---
-title: События
-seoDescription: Связывание событий и получение данных события в Angular 5.
-seoKeywords: angular, spa, event, binding
+title:  События
+description: Связывание событий и получение данных события в Angular 5.
+keywords: angular, spa, event, binding
 date: 2018-01-14 03:00:00
 ---
-# События
 
 ## Event Binding
 

@@ -1,10 +1,9 @@
 ---
-title: Generic
-seoDescription: Generic | TypeScript.
-seoKeywords: Generic | Typescript
+title:  Generic
+description: Generic | TypeScript.
+keywords: Generic | Typescript
 date: 2019-11-27 08:00:00
 ---
-# Generic
 
 Generic - это аргумент для типа. Как у функции есть аргумент, так и у типа может быть аргумент.
 

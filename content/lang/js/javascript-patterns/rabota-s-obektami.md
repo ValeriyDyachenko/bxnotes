@@ -1,10 +1,9 @@
 ---
-title: Объекты
-seoDescription: Создание объектов в JavaScript. Рассмотрение работы конструктора.
-seoKeywords: js, object, new
+title:  Объекты
+description: Создание объектов в JavaScript. Рассмотрение работы конструктора.
+keywords: js, object, new
 date: 2017-11-14 12:00:00
 ---
-# Объекты
 
 ## Создание объекта
 

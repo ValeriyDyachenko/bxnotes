@@ -1,11 +1,10 @@
 ---
-title: Псевдоклассы
-seoDescription: Псевдоклассы
-seoKeywords: Псевдоклассы
+title:  Псевдоклассы
+description: Псевдоклассы
+keywords: Псевдоклассы
 date: 2019-12-03 00:15:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">MDN</a>
 ---
-## Псевдоклассы
 
 Псевдоклассы позволяют создавать селекторы по специфичному состоянию элемента.
 

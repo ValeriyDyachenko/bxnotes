@@ -1,10 +1,9 @@
 ---
-title: Отладка
-seoDescription: Инструменты отладки Angular 5.
-seoKeywords: angular, spa, отладка, augury
+title:  Отладка
+description: Инструменты отладки Angular 5.
+keywords: angular, spa, отладка, augury
 date: 2018-01-14 10:00:00
 ---
-# Отладка
 
 Для отладки ошибки в скрипте нужно поставить *breakpoint* (в *chrome* он ставится кликом на номер строки кода) и обновить страницу. Это можно сделать несколькими способами:
 

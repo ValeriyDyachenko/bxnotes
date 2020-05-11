@@ -1,11 +1,10 @@
 ---
-title: Псевдоэлементы
-seoDescription: Псевдоэлементы
-seoKeywords: Псевдоэлементы
+title:  Псевдоэлементы
+description: Псевдоэлементы
+keywords: Псевдоэлементы
 date: 2019-12-03 00:16:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">MDN</a>
 ---
-# Псевдоэлементы
 
 Псевдоэлементы &ndash; это селекторы по специфической части (или виртуальной части) элемента.
 

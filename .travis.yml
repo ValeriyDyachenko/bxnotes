@@ -11,6 +11,6 @@ before_install:
   - sudo service ssh restart
   - sudo apt-get install sshpass
 script:
-  - yarn prod
+  - gatsby build
 after_success:
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && sh .travis_deploy.sh

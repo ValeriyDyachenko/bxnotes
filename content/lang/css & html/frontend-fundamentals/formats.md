@@ -1,11 +1,10 @@
 ---
-title: Форматы изображений
-seoDescription: Форматы изображений
-seoKeywords: Форматы изображений
+title:  Форматы изображений
+description: Форматы изображений
+keywords: Форматы изображений
 date: 2019-12-03 00:08:00
 origin: <a rel="nofollow" href="http://users.wfu.edu/matthews/misc/jpg_vs_gif/JpgVsGif.html" target="_blank">jpg vs gif</a>
 ---
-# Форматы изображений
 
 ## Gif
 

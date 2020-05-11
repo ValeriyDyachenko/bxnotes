@@ -1,10 +1,9 @@
 ---
-title: Классы
-seoDescription: Классы | TypeScript.
-seoKeywords: Классы | Typescript
+title:  Классы
+description: Классы | TypeScript.
+keywords: Классы | Typescript
 date: 2019-11-27 13:00:00
 ---
-# Классы
 
 ## Базовый пример
 

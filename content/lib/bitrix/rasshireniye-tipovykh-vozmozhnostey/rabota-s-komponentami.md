@@ -1,10 +1,9 @@
 ---
-title: Работа с компонентами
-seoDescription: Порядок выполнения компонентов в 1С-Битрикс. Работа с параметрами. Кеширование компонентов.
-seoKeywords: битрикс, component.php, result_modifier.php, template.php, component.php, $arResult
+title:  Работа с компонентами
+description: Порядок выполнения компонентов в 1С-Битрикс. Работа с параметрами. Кеширование компонентов.
+keywords: битрикс, component.php, result_modifier.php, template.php, component.php, $arResult
 date: 2018-01-05 00:00:00
 ---
-# Работа с компонентами
 
 ## Порядок выполнения компонента
 

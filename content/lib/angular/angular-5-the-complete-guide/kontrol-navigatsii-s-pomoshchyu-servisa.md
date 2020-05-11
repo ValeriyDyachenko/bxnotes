@@ -1,10 +1,9 @@
 ---
-title: Контроль навигации с помощью сервиса
-seoDescription:  Деактивации роута в Angular5 и контроль навигации.
-seoKeywords: angular, spa, route, CanDeactivate
+title:  Контроль навигации с помощью сервиса
+description:  Деактивации роута в Angular5 и контроль навигации.
+keywords: angular, spa, route, CanDeactivate
 date: 2018-01-15 05:00:00
 ---
-# Контроль навигации с помощью сервиса
 
 Интерфейс `CanDeactivate` применяется классом, который должен принимать решение, можно ли деактивировать роут. Напишем сервис реализующий интерфейс `CanDeactivate`:
 

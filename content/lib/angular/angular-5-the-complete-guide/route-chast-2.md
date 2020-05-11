@@ -1,10 +1,9 @@
 ---
-title: Route (переключение и параметры)
-seoDescription:  Программное переключение роутера и параметры пути в Angular5.
-seoKeywords: angular, spa, route
+title:  Route (переключение и параметры)
+description:  Программное переключение роутера и параметры пути в Angular5.
+keywords: angular, spa, route
 date: 2018-01-15 00:00:00
 ---
-# Route (переключение и параметры)
 
 ## Переключение роутера с помощью API
 

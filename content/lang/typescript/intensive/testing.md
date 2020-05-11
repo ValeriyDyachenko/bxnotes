@@ -1,10 +1,9 @@
 ---
-title: Тестирование
-seoDescription: Тестирование | TypeScript.
-seoKeywords: Тестирование | Typescript
+title:  Тестирование
+description: Тестирование | TypeScript.
+keywords: Тестирование | Typescript
 date: 2019-11-27 16:00:00
 ---
-# Тестирование
 
 Рассмотрим применение такого стека:
 

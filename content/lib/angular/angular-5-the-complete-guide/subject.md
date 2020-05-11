@@ -1,10 +1,9 @@
 ---
-title: Subject
-seoDescription:  Использование класса Subject для создания сервиса, реализующего observable и observer в Angular5.
-seoKeywords: angular, spa, Subject
+title:  Subject
+description:  Использование класса Subject для создания сервиса, реализующего observable и observer в Angular5.
+keywords: angular, spa, Subject
 date: 2018-01-15 10:00:00
 ---
-# Subject
 
 Класс `Subject` импортируется из `rxjs/Subject`. Данный класс объединяет `observable` и `observer` в одном объекте. Он реализует следующие методы:
 

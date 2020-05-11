@@ -1,11 +1,10 @@
 ---
-title: Доступность
-seoDescription: Доступность
-seoKeywords: Доступность
+title:  Доступность
+description: Доступность
+keywords: Доступность
 date: 2019-12-03 00:13:00
 origin: <a rel="nofollow" href="https://medium.com/@ABatickaya/%D0%BF%D0%B8%D1%88%D0%B5%D0%BC-html-%D0%BD%D0%B5-%D0%B7%D0%B0%D0%B1%D1%8B%D0%B2%D0%B0%D1%8F-%D0%BE-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D0%B8-9ffbf97ecbe7" target="_blank">medium</a>, <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank">MDN</a>, <a rel="nofollow" href="https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9" target="_blank">medium</a>
 ---
-# Доступность
 
 Доступность дает возможность пользоваться сайтом не только мышью, но и клавиатурой, и делает сайт работоспособным на различных устройствах (мобильный, планшет, читалки и других устройствах). И в различных контекстах (например, текстовые браузеры, аудио браузеры, плагины). Сайт должен быть доступен для всех.
 

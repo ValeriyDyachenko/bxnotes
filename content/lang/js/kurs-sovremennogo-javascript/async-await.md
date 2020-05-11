@@ -1,10 +1,9 @@
 ---
-title: Async/Await
-seoDescription: Преимущество Asinc/Await функций. Последовательное и конкурентное выполнение кода. Запуск неизвестного числа Promise функций.
-seoKeywords: js, async, await, promise
+title:  Async/Await
+description: Преимущество Asinc/Await функций. Последовательное и конкурентное выполнение кода. Запуск неизвестного числа Promise функций.
+keywords: js, async, await, promise
 date: 2018-09-22 15:00:00
 ---
-# Async/Await
 
 Рассмотрим Promise функцию, которая вычисляет число увеличенное на 1 через 1 секунду:
 

@@ -1,11 +1,10 @@
 ---
-title: Виды верстки
-seoDescription: Виды верстки
-seoKeywords: Виды верстки
+title:  Виды верстки
+description: Виды верстки
+keywords: Виды верстки
 date: 2019-12-03 00:11:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries" target="_blank">media queries</a>, <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">responsive design</a>
 ---
-# Виды верстки
 
 ## Фиксированная
 

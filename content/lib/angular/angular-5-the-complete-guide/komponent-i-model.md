@@ -1,10 +1,9 @@
 ---
-title: Компонент и модель
-seoDescription: Angilar создание обычных и вложенных компонентов через CLI. Описание модели.
-seoKeywords: angular, spa, cli, component, model
+title:  Компонент и модель
+description: Angilar создание обычных и вложенных компонентов через CLI. Описание модели.
+keywords: angular, spa, cli, component, model
 date: 2018-01-14 07:00:00
 ---
-# Компонент и модель
 
 ## Компонент
 

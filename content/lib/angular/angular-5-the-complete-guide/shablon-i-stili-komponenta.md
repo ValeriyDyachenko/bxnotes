@@ -1,10 +1,9 @@
 ---
-title: Шаблон и стили компонента
-seoDescription: Подключение шаблона и стилей в Angular 5
-seoKeywords: angular, spa, component, template, style
+title:  Шаблон и стили компонента
+description: Подключение шаблона и стилей в Angular 5
+keywords: angular, spa, component, template, style
 date: 2018-01-14 01:00:00
 ---
-# Шаблон и стили компонента
 
 ## Подключение шаблона
 
@@ -19,7 +18,7 @@ date: 2018-01-14 01:00:00
 
 Шаблон не обязательно должен быть внешним файлом:
 
-```typescript/2
+```typescript{2}
 @Component({
   selector: 'app-servers',
   template: '<app-server></app-server><app-server></app-server>'

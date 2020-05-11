@@ -1,10 +1,9 @@
 ---
-title: Защита роутера
-seoDescription:  Использование интерфейсов CanActivate и CanActivateChild для принятия решения об активации роутера.
-seoKeywords: angular, spa, route, CanActivate, CanActivateChild
+title:  Защита роутера
+description:  Использование интерфейсов CanActivate и CanActivateChild для принятия решения об активации роутера.
+keywords: angular, spa, route, CanActivate, CanActivateChild
 date: 2018-01-15 04:00:00
 ---
-# Защита роутера
 
 ## CanActivate
 

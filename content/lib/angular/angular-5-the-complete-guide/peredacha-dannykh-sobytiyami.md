@@ -1,10 +1,9 @@
 ---
-title: Передача данных событиями
-seoDescription: Передача данных между вложенными компонентами с помощью событий в Angular5.
-seoKeywords: angular, spa, EventEmitter
+title:  Передача данных событиями
+description: Передача данных между вложенными компонентами с помощью событий в Angular5.
+keywords: angular, spa, EventEmitter
 date: 2018-01-14 16:00:00
 ---
-# Передача данных событиями
 
 `EventEmitter` может не возвращать значение:
 
