@@ -59,14 +59,13 @@ export const ArticleInfo: FC<Props> = ({ slug, origin, date }) => {
   if (!slugIsArticle(slug)) {
     return null
   }
+  const articleGithubPath = `https://github.com/ValeriyDyachenko/bxnotes/blob/master${slug.replace(
+    /^\/conspect\//,
+    '/content/'
+  )}`.replace(/\/$/, '.md')
   return (
     <AdditionalInfo>
-      <GoToEdit
-        href={`https://github.com/ValeriyDyachenko/bxnotes/blob/master${slug.replace(
-          /^\/conspect\//,
-          '/content/'
-        )}`}
-      >
+      <GoToEdit href={articleGithubPath}>
         <GoPencil /> редактировать статью
       </GoToEdit>
       <OriginWrapper>
