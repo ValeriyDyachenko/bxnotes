@@ -1,10 +1,9 @@
 ---
-title: Процессы и ядро Linux
-seoDescription: Введение в Unix. Кратко об архитектуре ОС.
-seoKeywords: linux
+title:  Процессы и ядро Linux
+description: Введение в Unix. Кратко об архитектуре ОС.
+keywords: linux
 date: 2018-08-05 00:00:00
 ---
-# Процессы и ядро Linux
 
 Система юникс это *пользовательские процессы* и *ядро*.
 

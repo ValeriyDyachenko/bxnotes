@@ -1,10 +1,9 @@
 ---
-title: graphql
-seoDescription: graphql | React.
-seoKeywords: graphql, React
+title:  graphql
+description: graphql | React.
+keywords: graphql, React
 date: 2020-01-19 06:00:00
 ---
-# graphql
 
 ## введение
 

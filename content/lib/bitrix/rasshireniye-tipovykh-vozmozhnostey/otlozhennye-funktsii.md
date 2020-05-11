@@ -1,10 +1,9 @@
 ---
-title: Отложенные функции
-seoDescription: Отложенные функции Битрикса, примеры SetViewTarget(), EndViewTarget(). Обработка вывода с помощью события OnEpilog.
-seoKeywords: битрикс, AddBufferContent(), SetViewTarget(), EndViewTarget(), ShowViewContent(), OnEpilog
+title:  Отложенные функции
+description: Отложенные функции Битрикса, примеры SetViewTarget(), EndViewTarget(). Обработка вывода с помощью события OnEpilog.
+keywords: битрикс, AddBufferContent(), SetViewTarget(), EndViewTarget(), ShowViewContent(), OnEpilog
 date: 2018-01-05 04:00:00
 ---
-# Отложенные функции
 
 ## AddBufferContent
 

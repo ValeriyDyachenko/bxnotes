@@ -1,10 +1,9 @@
 ---
-title: Встроенная документация
-seoDescription: Встроенная документация Linux.
-seoKeywords: linux, man, --help, -h
+title:  Встроенная документация
+description: Встроенная документация Linux.
+keywords: linux, man, --help, -h
 date: 2018-08-05 07:00:00
 ---
-# Встроенная документация
 
 ## man
 

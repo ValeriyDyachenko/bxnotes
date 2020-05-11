@@ -1,10 +1,9 @@
 ---
-title: JS операторы
-seoDescription:  JS операторы, которые важно знать для работы с Angular.
-seoKeywords: angular, spa, slice, spread
+title:  JS операторы
+description:  JS операторы, которые важно знать для работы с Angular.
+keywords: angular, spa, slice, spread
 date: 2018-01-14 22:00:00
 ---
-# JS операторы
 
 ## Получение копии массива
 

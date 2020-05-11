@@ -1,0 +1,8 @@
+.gatsby-highlight {
+  margin-bottom: 2rem;
+}
+
+.gatsby-highlight-code-line {
+  margin-right: -14px !important;
+  margin-left: -14px !important;
+}

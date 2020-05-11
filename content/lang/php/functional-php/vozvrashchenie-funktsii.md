@@ -1,10 +1,9 @@
 ---
-title: Возвращение функции
-seoDescription: Функции могут возвращать функции.
-seoKeywords: php, return, function
+title:  Возвращение функции
+description: Функции могут возвращать функции.
+keywords: php, return, function
 date: 2017-11-08 10:00:00
 ---
-# Возвращение функции
 
 ```php
 function concatWith(string $a): callable {

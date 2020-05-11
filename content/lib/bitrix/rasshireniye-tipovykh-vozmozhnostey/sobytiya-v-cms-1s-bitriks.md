@@ -1,10 +1,9 @@
 ---
-title: События в CMS 1С-Битрикс
-seoDescription: Обработка событий в CMS 1С-Битрикс и решение типовых задач.
-seoKeywords: битрикс, AddEventHandler, OnBeforeIBlockElementUpdate, OnBeforeEventAdd, OnBeforeUserAdd
+title:  События в CMS 1С-Битрикс
+description: Обработка событий в CMS 1С-Битрикс и решение типовых задач.
+keywords: битрикс, AddEventHandler, OnBeforeIBlockElementUpdate, OnBeforeEventAdd, OnBeforeUserAdd
 date: 2018-01-05 03:00:00
 ---
-# События в CMS 1С-Битрикс
 
 ## Принцип обработки событий
 

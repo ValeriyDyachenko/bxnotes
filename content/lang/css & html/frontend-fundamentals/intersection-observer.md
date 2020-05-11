@@ -1,11 +1,10 @@
 ---
-title: Intersection Observer
-seoDescription: Intersection Observer
-seoKeywords: Intersection Observer
+title:  Intersection Observer
+description: Intersection Observer
+keywords: Intersection Observer
 date: 2019-12-03 00:02:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank">MDN</a>
 ---
-# Intersection Observer
 
 Области применения:
 

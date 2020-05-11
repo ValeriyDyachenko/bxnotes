@@ -1,10 +1,9 @@
 ---
-title: Утилиты
-seoDescription: Утилиты Linux.
-seoKeywords: linux, grep, less, more, pwd, file, find, head, tail, sort, passwd
+title:  Утилиты
+description: Утилиты Linux.
+keywords: linux, grep, less, more, pwd, file, find, head, tail, sort, passwd
 date: 2018-08-05 04:00:00
 ---
-# Утилиты
 
 ## grep (поиск по условию)
 

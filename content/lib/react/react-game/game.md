@@ -1,10 +1,9 @@
 ---
-title: Игра на реакте
-seoDescription: Пример игры "Сбивание мишеней" на React.
-seoKeywords: react, game
+title:  Игра на реакте
+description: Пример игры "Сбивание мишеней" на React.
+keywords: react, game
 date: 2018-07-07 00:00:00
 ---
-# Игра на реакте
 
 ## Описание игры
 
@@ -25,7 +24,7 @@ date: 2018-07-07 00:00:00
 
 ## Структура проекта
 
-![структура проекта](/assets/img/lib/react/react-game/struct.png "структура проекта")
+![структура проекта](./assets/game/struct.png "структура проекта")
 
 ### Компоненты
 

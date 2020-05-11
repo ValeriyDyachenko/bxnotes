@@ -1,10 +1,9 @@
 ---
-title: Технологии 1C-Битрикс
-seoDescription: Базовые технологии 1С-Битрикс. Поиск, эрмитаж, кеширование, композит.
-seoKeywords: birix:search.form, bitrix:search.page, addEditAction(), addDeleteAction(), getEditAreaId(), кеширование
+title:  Технологии 1C-Битрикс
+description: Базовые технологии 1С-Битрикс. Поиск, эрмитаж, кеширование, композит.
+keywords: birix:search.form, bitrix:search.page, addEditAction(), addDeleteAction(), getEditAreaId(), кеширование
 date: 2018-01-04 01:00:00
 ---
-# Технологии 1C-Битрикс
 
 ## Поиск
 

@@ -1,10 +1,9 @@
 ---
-title: Директива ngFor
-seoDescription: Вывод данных в цикле с помощью директивы ngFor.
-seoKeywords: angular, spa, ngFor
+title:  Директива ngFor
+description: Вывод данных в цикле с помощью директивы ngFor.
+keywords: angular, spa, ngFor
 date: 2018-01-14 06:00:00
 ---
-# Директива ngFor
 
 В файле `\app\servers\servers.component.html`:
 

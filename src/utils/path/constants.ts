@@ -1,0 +1,7 @@
+export enum PATH_TYPE {
+  'CONSPECTS_ROOT' = 1,
+  'CATEGORY_COMMON' = 2,
+  'CATEGORY_DETAIL' = 3,
+  'CONSPECT_INSTANCE' = 4,
+  'ARTICLE' = 5,
+}

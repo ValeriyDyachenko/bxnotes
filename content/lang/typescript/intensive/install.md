@@ -1,10 +1,9 @@
 ---
-title: Установка TypeScript
-seoDescription: Установка TypeScript.
-seoKeywords: Установка Typescript
+title:  Установка TypeScript
+description: Установка TypeScript.
+keywords: Установка Typescript
 date: 2019-11-27 00:00:00
 ---
-# Установка
 
 ## Установка Typescript
 

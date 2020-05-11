@@ -1,10 +1,9 @@
 ---
-title: Оформлении кода
-seoDescription: Общепринятые правила оформления кода в JavaScript.
-seoKeywords: js, good practices
+title:  Оформлении кода
+description: Общепринятые правила оформления кода в JavaScript.
+keywords: js, good practices
 date: 2017-11-14 11:00:00
 ---
-# Оформлении кода
 
 ## Горизонтальные отступы
 

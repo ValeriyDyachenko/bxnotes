@@ -1,10 +1,9 @@
 ---
-title: Декораторы и reflect-metadata
-seoDescription: Декораторы и пакет reflect-metadata | TypeScript.
-seoKeywords: Декораторы и пакет reflect-metadata | Typescript
+title:  Декораторы и reflect-metadata
+description: Декораторы и пакет reflect-metadata | TypeScript.
+keywords: Декораторы и пакет reflect-metadata | Typescript
 date: 2019-11-27 15:00:00
 ---
-# Декораторы и reflect-metadata
 
 *Декораторы* дают возможность декларативно модифицировать класс и его члены.
 

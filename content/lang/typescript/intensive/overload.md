@@ -1,10 +1,9 @@
 ---
-title: Перегрузки
-seoDescription: Перегрузки | TypeScript.
-seoKeywords: Перегрузки | Typescript
+title:  Перегрузки
+description: Перегрузки | TypeScript.
+keywords: Перегрузки | Typescript
 date: 2019-11-27 11:00:00
 ---
-# Перегрузки
 
 Сигнатура имплементации всегда последняя и обобщает предыдущие сигнатуры.
 

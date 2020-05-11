@@ -1,10 +1,9 @@
 ---
-title: Primitive wrapper objects
-seoDescription: Обертки примитивов в JavaScript.
-seoKeywords: js, primitive, primitive wrapper objects
+title:  Primitive wrapper objects
+description: Обертки примитивов в JavaScript.
+keywords: js, primitive, primitive wrapper objects
 date: 2017-11-14 17:00:00
 ---
-# Primitive wrapper objects
 
 В *JavaScript* есть 5 типов примитивов: `number`, `string`, `boolean`, `null` и `undefined`. При этом типы `number`, `string` и `boolean` имеют так называемые объекты обертки. Объекты обертки могут быть созданы с помощью конструкторов `Number()`, `String()` и `Boolean()`.
 

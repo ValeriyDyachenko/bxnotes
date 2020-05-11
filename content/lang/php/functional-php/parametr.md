@@ -1,10 +1,9 @@
 ---
-title: Параметры
-seoDescription: Практическое применение функций высшего порядка.
-seoKeywords: php, callable, higher-order
+title:  Параметры
+description: Практическое применение функций высшего порядка.
+keywords: php, callable, higher-order
 date: 2017-11-08 11:00:00
 ---
-# Параметры
 
 Рассмотрим код:
 

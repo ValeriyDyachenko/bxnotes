@@ -1,19 +1,20 @@
 ---
-title: Архивация
-seoDescription: Обзор популярных архиваторов в Linux и примеры их использования.
-seoKeywords: linux, gzip, tar
+title:  Архивация
+description: Обзор популярных архиваторов в Linux и примеры их использования.
+keywords: linux, gzip, tar
 date: 2018-08-05 12:00:00
 ---
-# Архивация
 
 ## Однофайловая архивация
 
 архивировать:
+
 ```bash
 gzip file
 ```
 
 разархивировать:
+
 ```bash
 gunzip file.gz
 ```
@@ -22,7 +23,7 @@ gunzip file.gz
 
 Команда `gzip` не создает многофайловые архивы, для их создания используется `tar`.
 
-### Архивация `tar`
+### Архивация tar
 
 ```bash
 tar cvf archive.tar file1 file2
@@ -46,6 +47,7 @@ x | режим распаковки
 p | сохранение оригинальных прав
 
 ### Просмотр tar архива
+
 ```bash
 tar tvf archive.tar
 ```
@@ -53,6 +55,7 @@ tar tvf archive.tar
 ## Сжатые архивы .tar.gz
 
 Чтобы распаковать такой архив, действуйте справа налево, например файл file.tar.gz распаковывается последовательностью:
+
 ```bash
 gunzip file.tar.gz
 tar xvf file.tar
@@ -61,6 +64,7 @@ tar xvf file.tar
 ## Архивирование и компрессия в виде конвейера
 
 Распаковка файла вида [file].tar.gz:
+
 ```bash
 zcat file.tar.gz | tar xvf —
 ```
@@ -74,6 +78,7 @@ zcat file.tar.gz | tar xvf —
 - | в конце tar означает, что используется стандартный ввод.
 
 В команде `tar` есть атрибут, позволяющий использовать режим `gzip` (в режимах `c` `x` `t`), например:
+
 ```bash
 tar ztvf file.tar.gz
 ```

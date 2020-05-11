@@ -1,7 +1,7 @@
 ---
-title: Композиция промисов
-seoDescription: Композиция промисов в JavaScript.
-seoKeywords: js, промисы, promise, compose, композиция
+title:  Композиция промисов
+description: Композиция промисов в JavaScript.
+keywords: js, промисы, promise, compose, композиция
 date: 2019-09-16 04:00:00
 ---
 

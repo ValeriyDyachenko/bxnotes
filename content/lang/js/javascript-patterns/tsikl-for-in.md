@@ -1,10 +1,9 @@
 ---
-title: Цикл for in
-seoDescription: Обход объектов циклом for-in в JavaScript и использование метода hasOwnProperty() для безопасного обхода.
-seoKeywords: js, for-in, hasOwnProperty()
+title:  Цикл for in
+description: Обход объектов циклом for-in в JavaScript и использование метода hasOwnProperty() для безопасного обхода.
+keywords: js, for-in, hasOwnProperty()
 date: 2017-11-14 07:00:00
 ---
-# Цикл for in
 
 Цикл `for in` применяется для обхода объектов, которые не являются массивами. Обход `for in` так же называется `enumeration`.
 

@@ -1,10 +1,9 @@
 ---
-title: Кеш компонента
-seoDescription: Использование кеша компонентов, сохранение ключей кеша в $arResult, кейс использования CPhpCache для вызова компонента снаружи кешированной области
-seoKeywords: битрикс, кеширование, CBitrixComponent, StartResultCache(), setResultCacheKeys(), CPhpCach
+title:  Кеш компонента
+description: Использование кеша компонентов, сохранение ключей кеша в $arResult, кейс использования CPhpCache для вызова компонента снаружи кешированной области
+keywords: битрикс, кеширование, CBitrixComponent, StartResultCache(), setResultCacheKeys(), CPhpCach
 date: 2018-01-04 03:00:00
 ---
-# Кеш компонента
 
 ## Методы класса CBitrixComponent
 

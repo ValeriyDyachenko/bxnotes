@@ -1,10 +1,9 @@
 ---
-title: JSLint
-seoDescription: Строгий режим в ECMAScript 5.
-seoKeywords: js, JSLint, strict mode
+title:  JSLint
+description: Строгий режим в ECMAScript 5.
+keywords: js, JSLint, strict mode
 date: 2017-11-14 02:00:00
 ---
-# JSLint
 
 *JSLint*, это утилита для проверки качества *JavaScript* кода. Утилита сначала может ранить ваши чувства, как предупреждает её разработчик, но со временем, она помогает повысить качество кода, привить профессиональные привычки и находить опечатки и упущения.
 

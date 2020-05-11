@@ -1,10 +1,9 @@
 ---
-title: Let, const, var.
-seoDescription: Объявление переменных с помощью var, let, const.
-seoKeywords: var, let, const, js
+title:  Let, const, var.
+description: Объявление переменных с помощью var, let, const.
+keywords: var, let, const, js
 date: 2018-09-22 03:00:00
 ---
-# Let, const, var
 
 В ES5 переменные декларировались с помощью `var`. Переменные объявленные таким образом, могут быть переопределены в области блока, так как относятся к области видимости функции, а не блока.
 

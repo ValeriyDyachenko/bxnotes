@@ -1,10 +1,9 @@
 ---
-title: Callback Hell
-seoDescription: Что такое Callback Hell. История известного антипаттерна.
-seoKeywords: js, callback hell
+title:  Callback Hell
+description: Что такое Callback Hell. История известного антипаттерна.
+keywords: js, callback hell
 date: 2018-09-22 13:00:00
 ---
-# Callback Hell
 
 Callback Hell - это паттерн для управления конкурирующими (асинхронными) запросами, который обеспечивает последовательность их выполнения.
 

@@ -1,11 +1,10 @@
 ---
-title: Transition
-seoDescription: Transition
-seoKeywords: Transition
+title:  Transition
+description: Transition
+keywords: Transition
 date: 2019-12-03 00:05:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank">MDN</a>
 ---
-# Примеры transition
 
 ```css
 /* Apply to 1 property */

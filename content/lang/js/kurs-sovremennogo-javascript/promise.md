@@ -1,10 +1,9 @@
 ---
-title: Promise
-seoDescription: Использования объекта Promise для рефакторинга паттерна "Callback Hell"
-seoKeywords: js, promise, resolve, reject
+title:  Promise
+description: Использования объекта Promise для рефакторинга паттерна "Callback Hell"
+keywords: js, promise, resolve, reject
 date: 2018-09-22 14:00:00
 ---
-# Promise
 
 Объект **Promise** служит удобной оберткой для обслуживания асинхронного функционала. Основное назначение Promise создавать цепочки вызовов асинхронных функций.
 

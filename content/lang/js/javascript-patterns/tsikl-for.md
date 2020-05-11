@@ -1,10 +1,9 @@
 ---
-title: Цикл For
-seoDescription: Итерация массивов и подобных массивам объектов, таких как arguments и HTMLCollection, способы применения и микро-оптимизация.
-seoKeywords: js, for, arguments, HTMLCollection
+title:  Цикл For
+description: Итерация массивов и подобных массивам объектов, таких как arguments и HTMLCollection, способы применения и микро-оптимизация.
+keywords: js, for, arguments, HTMLCollection
 date: 2017-11-14 06:00:00
 ---
-# Цикл For
 
 С помощью цикла `for` можно обходить массивы и подобные массивам объекты, такие как `arguments` и `HTMLCollection`.
 

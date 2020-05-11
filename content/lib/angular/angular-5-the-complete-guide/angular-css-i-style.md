@@ -1,10 +1,9 @@
 ---
-title: Angular CSS и Style
-seoDescription: Создание динамических стилей и классов приложения.
-seoKeywords: angular, spa, ngStyle, ngClass
+title:  Angular CSS и Style
+description: Создание динамических стилей и классов приложения.
+keywords: angular, spa, ngStyle, ngClass
 date: 2018-01-14 05:00:00
 ---
-# Angular CSS и Style
 
 ## ngStyle динамические стили
 

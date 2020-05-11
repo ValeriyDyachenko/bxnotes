@@ -1,10 +1,9 @@
 ---
-title: Специальные возможности
-seoDescription: Readonly, ReadonlyArray, as const, |, &, Type Guardian | TypeScript.
-seoKeywords: Readonly, ReadonlyArray, as const, |, &, Type Guardian | Typescript
+title:  Специальные возможности
+description: Readonly, ReadonlyArray, as const, |, &, Type Guardian | TypeScript.
+keywords: Readonly, ReadonlyArray, as const, |, &, Type Guardian | Typescript
 date: 2019-11-27 05:00:00
 ---
-# Специальные возможности
 
 ## Readonly
 

@@ -1,10 +1,9 @@
 ---
-title: Формы. Реактивный подход.
-seoDescription: Работа с формами. Реактивный подход (Reactive).
-seoKeywords: angular, spa, forms, reactive
+title:  Формы. Реактивный подход.
+description: Работа с формами. Реактивный подход (Reactive).
+keywords: angular, spa, forms, reactive
 date: 2018-01-15 13:00:00
 ---
-# Формы. Реактивный подход.
 
 ## Конфигурация реактивной формы
 

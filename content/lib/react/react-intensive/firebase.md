@@ -1,10 +1,9 @@
 ---
-title: firebase
-seoDescription: firebase | React.
-seoKeywords: firebase | React
+title:  firebase
+description: firebase | React.
+keywords: firebase | React
 date: 2020-01-19 02:00:00
 ---
-# firebase
 
 Облачное решение, позволяет использовать готовую инфраструктуру от *google* без собственного сервера.
 
@@ -49,4 +48,4 @@ export const firebaseConfig = {
 }
 ```
 
-*Redux-saga* позволяет [подписаться на websocket](https://bxnotes.ru/conspect/lib/react/react-intensive/saga/#%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%81%D0%BE%D0%BA%D0%B5%D1%82%D0%B0%D0%BC) события *firebase* и синхронизировать с ними стейт приложения.
+*Redux-saga* позволяет [подписаться на websocket](http://localhost:8080/conspect/lib/react/react-intensive/saga/#%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%81%D0%BE%D0%BA%D0%B5%D1%82%D0%B0%D0%BC) события *firebase* и синхронизировать с ними стейт приложения.

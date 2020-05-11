@@ -1,10 +1,9 @@
 ---
-title: JSON
-seoDescription: Синтаксис, парсинг, конвертация объекта в строку в JavaScript.
-seoKeywords: js, json
+title:  JSON
+description: Синтаксис, парсинг, конвертация объекта в строку в JavaScript.
+keywords: js, json
 date: 2017-11-14 15:00:00
 ---
-# JSON
 
 ## Синтаксис
 

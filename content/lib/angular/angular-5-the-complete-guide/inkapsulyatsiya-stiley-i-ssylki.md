@@ -1,10 +1,9 @@
 ---
-title: Инкапсуляция стилей и ссылки
-seoDescription: Режимы инкапсуляции стилей, локальная ссылка в шаблоне Angular. Доступ к шаблону и DOM из компонента с помощью @ViewChild и @ContentChild.
-seoKeywords: angular, spa, ViewEncapsulation, @ViewChild, @ContentChild
+title:  Инкапсуляция стилей и ссылки
+description: Режимы инкапсуляции стилей, локальная ссылка в шаблоне Angular. Доступ к шаблону и DOM из компонента с помощью @ViewChild и @ContentChild.
+keywords: angular, spa, ViewEncapsulation, @ViewChild, @ContentChild
 date: 2018-01-14 12:00:00
 ---
-# Инкапсуляция стилей и ссылки
 
 ## Инкапсуляция стилей
 

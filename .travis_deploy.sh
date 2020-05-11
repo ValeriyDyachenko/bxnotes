@@ -1,19 +1,21 @@
 #!/bin/sh
 
+cp ./.htaccess ./public
+
 for f in *; do
-    if [ $f != "_server" ]
+    if [ $f != "public" ]
       then
         if [ -d $f ]
           then
             rm -rf $f
           else
             rm $f
-        fi     
+        fi
     fi
 done
 
-cp -rT ./_server/_site ./
-rm -rf _server
+cp -rT ./public ./
+rm -rf public
 rm -rf .git
 git init
 git config --global user.email "bxnotes@travis-ci.org"

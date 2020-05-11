@@ -1,10 +1,9 @@
 ---
-title: Mapping
-seoDescription: Mapping | TypeScript.
-seoKeywords: Mapping | Typescript
+title:  Mapping
+description: Mapping | TypeScript.
+keywords: Mapping | Typescript
 date: 2019-11-27 09:00:00
 ---
-# Mapping
 
 Пример реализации мэппинга для получения `not read only` типов из `readonly`:
 

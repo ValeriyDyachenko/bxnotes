@@ -1,11 +1,10 @@
 ---
-title: Обязательные параметры
-seoDescription: Обязательные параметры в JavaScript.
-seoKeywords: js
+title:  Обязательные параметры
+description: Обязательные параметры в JavaScript.
+keywords: js
 date: 2019-07-06 11:00:00
 origin: <a rel="nofollow" href="https://gist.github.com/MarkTiedemann/17ebf5b38b5b7566478de7f623e1defd" target="_blank">An Easier Way to Enforce Required Parameters in ES6</a>
 ---
-# Обязательные параметры
 
 Если в качестве дефолтного параметра указать функцию, бросающую ошибку, то явное указание данного параметра станет обязательным, иначе произойдет выброс ошибки.
 
@@ -26,7 +25,7 @@ login({ username: 'C-3PO' }) // ==> Error: Missing password
 
 <br />
 
-### P.S.
+### Tagged templates
 
 Вы могли заметить, в примере выше такой код:
 

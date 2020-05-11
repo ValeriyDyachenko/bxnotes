@@ -1,11 +1,10 @@
 ---
-title: Извлечь вложенное свойство объекта
-seoDescription: Как безопасно извлечь вложенное свойство объекта в JavaScript?
-seoKeywords: js, object
+title:  Извлечь вложенное свойство объекта
+description: Как безопасно извлечь вложенное свойство объекта в JavaScript?
+keywords: js, object
 date: 2019-07-07 21:00:00
 origin: <a rel="nofollow" href="https://codeburst.io/accessing-nested-objects-in-javascript-c2ed249fe576" target="_blank">Accessing Nested Objects in JavaScript</a>
 ---
-# Извлечь вложенное свойство объекта
 
 > Как извлечь вложенное свойство объекта, без риска получить ошибку *Uncaught TypeError: Cannot read property 'bar' of undefined*.
 

@@ -1,11 +1,10 @@
 ---
-title: CDN
-seoDescription: CDN
-seoKeywords: CDN
+title:  CDN
+description: CDN
+keywords: CDN
 date: 2019-12-03 00:01:00
 origin: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Glossary/CDN" target="_blank">MDN</a>
 ---
-# CDN
 
 Широко применяется для доставки css и js. 
 

@@ -1,10 +1,9 @@
 ---
-title: Директива атрибута
-seoDescription: Создание директивы атрибута и использование класса Renderer2 в Angular5.
-seoKeywords: angular, spa, directine, renderer2
+title:  Директива атрибута
+description: Создание директивы атрибута и использование класса Renderer2 в Angular5.
+keywords: angular, spa, directine, renderer2
 date: 2018-01-14 17:00:00
 ---
-# Директива атрибута
 
 ## Создание директивы атрибута
 

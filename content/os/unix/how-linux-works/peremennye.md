@@ -1,10 +1,9 @@
 ---
-title: Переменные
-seoDescription: Переменные linux.
-seoKeywords: linux, vars
+title:  Переменные
+description: Переменные linux.
+keywords: linux, vars
 date: 2018-08-05 05:00:00
 ---
-# Переменные
 
 ## Переменные оболочки
 

@@ -1,10 +1,9 @@
 ---
-title: Хороший стиль
-seoDescription: Следование хорошим практикам сделает JS код чище и поможет предотвратить возможные ошибки и трудноуловимые баги.
-seoKeywords: js, switch, compare, eval(), setInterval(), setTimeout(), parseInt()
+title:  Хороший стиль
+description: Следование хорошим практикам сделает JS код чище и поможет предотвратить возможные ошибки и трудноуловимые баги.
+keywords: js, switch, compare, eval(), setInterval(), setTimeout(), parseInt()
 date: 2017-11-14 10:00:00
 ---
-# Хороший стиль
 
 ## switch
 

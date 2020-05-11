@@ -1,11 +1,10 @@
 ---
-title: Деструктуризация аргумента функции
-seoDescription: Деструктуризация аргумента в JavaScript. Паттерн RORO.
-seoKeywords: js
+title:  Деструктуризация аргумента функции
+description: Деструктуризация аргумента в JavaScript. Паттерн RORO.
+keywords: js
 date: 2019-07-06 12:30:00
 origin: <a rel="nofollow" href="https://www.freecodecamp.org/news/elegant-patterns-in-modern-javascript-roro-be01e7669cbd/" target="_blank">Elegant patterns in modern JavaScript RORO</a>
 ---
-# Деструктуризация аргумента функции
 
 При **деструктуризации аргумента** иногда указывают *дефолтное значение*, это позволяет:
 

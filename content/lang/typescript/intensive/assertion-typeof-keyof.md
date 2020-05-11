@@ -1,12 +1,11 @@
 ---
-title: Assertion, typeof, keyof
-seoDescription: Assertion, typeof, keyof | TypeScript.
-seoKeywords: Assertion, typeof, keyof | Typescript
+title:  Assertion, typeof, keyof
+description: Assertion, typeof, keyof | TypeScript.
+keywords: Assertion, typeof, keyof | Typescript
 date: 2019-11-27 03:00:00
 ---
-# Assertion, typeof, keyof
 
-## Явное утверждения (кастинг, assertion) типа через as и <>
+## Явное утверждение (кастинг, assertion) типа через `as` и `<>`
 
 `<someType>` перед сущностью и `as someType` после сущности это одно и тоже. Таким образом `e.target as HTMLInputElement` равносильно `<HTMLInputElement>e.target`. Это утверждение обязывает TS считать объект указанным типом. Таким образом, можно уточнять типы по ходу кода, которые TS не имеет возможности вычислить сам. Так же `as const` позволяет сделать переменную **readonly**.
 
