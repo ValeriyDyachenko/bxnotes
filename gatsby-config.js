@@ -136,5 +136,26 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://bxnotes.ru',
+        sitemap: 'https://bxnotes.ru/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '' }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-yandex-metrica`,
+      options: {
+        trackingId: 46819575,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        trackHash: true,
+
+        // Detailed recordings of user activity on the site: mouse movement, scrolling, and clicks.
+        webvisor: false,
+      },
+    },
   ],
 }
