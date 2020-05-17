@@ -42,11 +42,11 @@ const PaginateButton = styled.div`
   border-radius: ${rhythm(0.2)};
   background-color: ${(props) => props.theme.global.unhover};
   cursor: pointer;
+  margin: ${rhythm(0.5)} ${rhythm(0.5)};
+  flex-grow: 0;
   :hover {
     background-color: ${(props) => props.theme.global.hover};
   }
-  flex-grow: 1;
-  margin: ${rhythm(0.5)} ${rhythm(0.5)};
 `
 
 interface Props extends PageRendererProps {
@@ -86,14 +86,18 @@ export const ArticlePagination: FC<Props> = ({ location, menu }) => {
       <Paginate>
         {prevArticle && (
           <PaginateButton onClick={() => navigate(prevArticle.slug)}>
-            <FaLongArrowAltLeft />
-            <LinkStyled to={prevArticle.slug}>{prevArticle.title}</LinkStyled>
+            <LinkStyled to={prevArticle.slug}>
+              <FaLongArrowAltLeft />
+              &nbsp;{prevArticle.title}
+            </LinkStyled>
           </PaginateButton>
         )}
         {nextArticle && (
           <PaginateButton onClick={() => navigate(nextArticle.slug)}>
-            <LinkStyled to={nextArticle.slug}>{nextArticle.title}</LinkStyled>
-            <FaLongArrowAltRight />
+            <LinkStyled to={nextArticle.slug}>
+              {nextArticle.title} &nbsp;
+              <FaLongArrowAltRight />
+            </LinkStyled>
           </PaginateButton>
         )}
       </Paginate>
