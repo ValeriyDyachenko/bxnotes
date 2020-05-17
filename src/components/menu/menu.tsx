@@ -30,8 +30,7 @@ export const MenuWrapper = styled.nav<{ mobileVisibility: boolean }>`
     background-color: ${({ theme }) => theme.global.background};
     height: 100vh;
     z-index: 1;
-    max-width: 75%;
-    min-width: 75%;
+    width: 75%;
     padding-right: 12px;
     box-shadow: 0 15px 100px #000;
     transition: left 0.2s ease-in-out;
