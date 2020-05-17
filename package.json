@@ -47,7 +47,7 @@
     "gatsby-plugin-styled-components": "^3.3.0",
     "gatsby-plugin-typescript": "^2.4.0",
     "gatsby-plugin-typography": "^2.5.0",
-    "gatsby-plugin-yandex-metrica": "^0.1.3-check",
+    "gatsby-plugin-yandex-metrika": "^2.3.0",
     "gatsby-remark-autolink-headers": "^2.3.0",
     "gatsby-remark-gemoji-to-image": "^1.1.1",
     "gatsby-remark-images": "^3.3.0",
