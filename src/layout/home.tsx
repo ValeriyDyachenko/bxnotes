@@ -5,6 +5,50 @@ import { LinkStyled } from '../components/common/linkStyled'
 import { Helmet } from 'react-helmet'
 import { Ul } from '../components/menu/styled'
 import styled from 'styled-components'
+import { BoatIco } from './assets/BoatIco'
+import { styledScale } from '../theme/typography'
+
+const HelloWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.global.hover};
+  color: white;
+  margin-bottom: -1px;
+  width: 100%;
+  align-self: center;
+`
+
+const HelloTitle = styled.div`
+  ${styledScale(1.4)};
+`
+
+const HelloDescription = styled.div`
+  ${styledScale(0.4)};
+`
+
+const HelloButton = styled(LinkStyled)`
+  cursor: pointer;
+  display: flex;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin: 35px 0;
+  border-radius: 33px;
+  transition: background-color 0.2s, color 0.2s;
+  background-color: ${({ theme }) => theme.global.hover};
+  color: white;
+  :hover {
+    background-color: white;
+    color: black;
+  }
+`
+
+const BoatIcoWrapper = styled.div`
+  width: 32px;
+  height: 32px;
+  margin-left: 18px;
+`
 
 const CategoriesWrapper = styled.div`
   display: flex;
@@ -27,24 +71,17 @@ const Link = styled(LinkStyled)`
 
 const LinkBox = styled(LinkStyled)`
   background-color: ${({ theme }) => theme.global.unhover};
-  display: inline-block;
   font-weight: 300;
-  font-size: 25px;
-  padding: 5px 10px;
-  margin: 17px 0 0 18px;
   white-space: nowrap;
-  border-radius: 24px;
-`
-
-const LinkBoxDotted = styled(LinkBox)`
-  background-color: ${({ theme }) => theme.global.background};
-  border: 1px dotted;
+  font-size: 19px;
+  padding: 5px 10px;
+  margin: 8px 8px 0 0;
+  white-space: nowrap;
+  border-radius: 1px;
 `
 
 const Title = styled.h2`
-  :not(:first-of-type) {
-    margin-top: 84px;
-  }
+  margin-top: 60px;
 `
 
 interface Props extends PageRendererProps {
@@ -59,7 +96,7 @@ const Home: FC<Props> = ({
 }) => (
   <>
     <Helmet>
-      <title>Конспекты по программированию bxnotes</title>
+      <title>Вxnotes &mdash; web-dev без воды</title>
       <meta
         name="description"
         content="уроки, конспекты, курсы по программированию на bxnotes"
@@ -70,7 +107,16 @@ const Home: FC<Props> = ({
       />
     </Helmet>
 
-    <Title>Разделы</Title>
+    <HelloWrapper>
+      <HelloTitle>Bxnotes</HelloTitle>
+      <HelloDescription>Web-dev без воды</HelloDescription>
+      <HelloButton to="/conspect/">
+        Все конспекты{' '}
+        <BoatIcoWrapper>
+          <BoatIco />
+        </BoatIcoWrapper>
+      </HelloButton>
+    </HelloWrapper>
 
     <CategoriesWrapper>
       {categories.map((c, i) => (
@@ -78,7 +124,6 @@ const Home: FC<Props> = ({
           {c.title}
         </LinkBox>
       ))}
-      <LinkBoxDotted to="/conspect/">Одним списком</LinkBoxDotted>
     </CategoriesWrapper>
 
     <Title>Последние статьи</Title>
