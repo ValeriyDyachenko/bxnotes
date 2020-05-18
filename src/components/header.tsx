@@ -47,6 +47,20 @@ export const Header: FC<{
   breadcrumbs: FlatMenuItem[]
   themeContext: ThemeManager
 }> = ({ themeContext, breadcrumbs }) => {
+  const breadcrumbsJsx = breadcrumbs.reduce((a: React.ReactElement[], v) => {
+    if (!v) {
+      return a
+    }
+    const { title, slug } = v
+    return title && slug
+      ? a.concat(
+          <Crumb key={slug}>
+            <LinkStyled to={slug}>{title}</LinkStyled>
+          </Crumb>
+        )
+      : a
+  }, [])
+
   return (
     <>
       <LogoWrapper>
@@ -58,21 +72,9 @@ export const Header: FC<{
           clickHandler={() => themeContext.toggleDark()}
         />
       </LogoWrapper>
-      <BreadcrumbsWrapper>
-        {breadcrumbs.reduce((a: React.ReactElement[], v) => {
-          if (!v) {
-            return a
-          }
-          const { title, slug } = v
-          return title && slug
-            ? a.concat(
-                <Crumb key={slug}>
-                  <LinkStyled to={slug}>{title}</LinkStyled>
-                </Crumb>
-              )
-            : a
-        }, [])}
-      </BreadcrumbsWrapper>
+      {breadcrumbsJsx.length > 0 && (
+        <BreadcrumbsWrapper>{breadcrumbsJsx}</BreadcrumbsWrapper>
+      )}
     </>
   )
 }
