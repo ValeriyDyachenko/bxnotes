@@ -28,6 +28,10 @@ const Content = styled.div`
   justify-content: space-between;
   padding: 0 ${rhythm(2.5)};
   flex-grow: 1;
+
+  @media (max-width: 1100px) {
+    padding: 0 ${rhythm(0.5)};
+  }
 `
 
 const ContentWrapper = styled.div`
