@@ -5,7 +5,6 @@ import { LinkStyled } from '../components/common/linkStyled'
 import { Helmet } from 'react-helmet'
 import { Ul } from '../components/menu/styled'
 import styled from 'styled-components'
-import { BoatIco } from './assets/BoatIco'
 import { styledScale } from '../theme/typography'
 
 const HelloWrapper = styled.div`
@@ -42,12 +41,6 @@ const HelloButton = styled(LinkStyled)`
     background-color: white;
     color: black;
   }
-`
-
-const BoatIcoWrapper = styled.div`
-  width: 32px;
-  height: 32px;
-  margin-left: 18px;
 `
 
 const CategoriesWrapper = styled.div`
@@ -110,12 +103,7 @@ const Home: FC<Props> = ({
     <HelloWrapper>
       <HelloTitle>Bxnotes</HelloTitle>
       <HelloDescription>Web-dev без воды</HelloDescription>
-      <HelloButton to="/conspect/">
-        Все конспекты{' '}
-        <BoatIcoWrapper>
-          <BoatIco />
-        </BoatIcoWrapper>
-      </HelloButton>
+      <HelloButton to="/conspect/">Все конспекты</HelloButton>
     </HelloWrapper>
 
     <CategoriesWrapper>
