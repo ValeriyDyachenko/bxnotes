@@ -1,8 +1,14 @@
 import { CreatePageArgs, GatsbyNode, Node } from 'gatsby'
 import path from 'path'
-import { getParentPath, PATH_TYPE, slugIsArticle } from './src/utils/path'
+import {
+  slugIsArticle,
+  slugIsCategoryDetail,
+  getParentPath,
+  slugIsConspect,
+} from './src/utils/path'
 import { createFilePath } from 'gatsby-source-filesystem'
 import { ConspectPageContext } from './src/layout/types'
+import { getMenuNormalized } from './src/utils/ssrDataStructure/getMenuNormalized'
 
 export interface MdQuery {
   allMdx: {
@@ -87,67 +93,55 @@ export const createPages: GatsbyNode['createPages'] = async function ({
     })
   })
 
-  const articleNodes: NormalizedMdCommon[] = []
   const categoryNodes: NormalizedMdCommon[] = []
-  const articleLimit = 25
-
+  const articleNodes: NormalizedMdCommon[] = []
+  const articleLimit = 10
+  const lastUpdatedConspects = new Set<string>()
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i]
-    if (
-      (node.fields.slug.match(/\//g) || []).length - 1 === PATH_TYPE.ARTICLE &&
-      articleNodes.length <= articleLimit
-    ) {
-      articleNodes.push({
-        title: node.frontmatter.title,
-        date: node.frontmatter.date,
-        slug: node.fields.slug,
-      })
-    }
-    if (
-      (node.fields.slug.match(/\//g) || []).length - 1 ===
-      PATH_TYPE.CATEGORY_DETAIL
-    ) {
+    if (slugIsCategoryDetail(node.fields.slug)) {
       categoryNodes.push({
         title: node.frontmatter.title,
         date: node.frontmatter.date,
         slug: node.fields.slug,
         ...(node.fields.items && { items: node.fields.items }),
       })
+    } else if (
+      slugIsArticle(node.fields.slug) &&
+      articleNodes.length < articleLimit
+    ) {
+      articleNodes.push({
+        title: node.frontmatter.title,
+        date: node.frontmatter.date,
+        slug: node.fields.slug,
+      })
+      lastUpdatedConspects.add(getParentPath(node.fields.slug))
     }
   }
-
-  let lastArticlesOfConspects: LastArticlesOfConspect[] = articleNodes.reduce(
-    (lastArticles: LastArticlesOfConspect[], article) => {
-      const conspectSlug = getParentPath(article.slug)
-      const conspectData = nodes.find((n) => n.fields.slug === conspectSlug)
-      if (!conspectData) {
-        return lastArticles
+  // filter old conspects from menu for lastConspectList component
+  const menu = getMenuNormalized(nodes)
+  const lastUpdatedMenu = Object.fromEntries(
+    Object.entries(menu).filter(([slug, items]) => {
+      if (
+        slugIsArticle(slug) &&
+        lastUpdatedConspects.has(getParentPath(slug))
+      ) {
+        return true
       }
-      const conspectIndex = lastArticles.findIndex(
-        (la: LastArticlesOfConspect) =>
-          la.conspect.slug === conspectData.fields.slug
-      )
-      if (conspectIndex > -1) {
-        lastArticles[conspectIndex].articles.push(article)
-        return lastArticles
+      if (slugIsConspect(slug) && lastUpdatedConspects.has(slug)) {
+        return true
       }
-      lastArticles.push({
-        articles: [article],
-        conspect: {
-          title: conspectData.frontmatter.title,
-          date: conspectData.frontmatter.date,
-          slug: conspectData.fields.slug,
-        },
-      })
-      return lastArticles
-    },
-    []
+    })
   )
 
   actions.createPage({
     path: '/',
     component: require.resolve(`./src/layout/home.tsx`),
-    context: { lastArticlesOfConspects, categories: categoryNodes },
+    context: {
+      menu: lastUpdatedMenu,
+      categories: categoryNodes,
+      lastUpdatedConspects: [...lastUpdatedConspects],
+    },
   })
 }
 

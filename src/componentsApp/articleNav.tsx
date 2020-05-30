@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { rhythm } from '../theme/typography'
+import { rhythm } from '../componentsLibrary/theme/typography'
 import { PageRendererProps } from 'gatsby'
-import { FakeSeoLink } from './common/fakeSeoLink'
+import { NoopLink } from './base/noopLink'
 
 const NavWrapper = styled.div`
   position: sticky;
@@ -54,9 +54,9 @@ export const ArticleNav = ({ location }: Props) => {
             key={i}
             className={element.localName}
           >
-            <FakeSeoLink href={location.pathname + hash.replace('/', '')}>
+            <NoopLink href={location.pathname + hash.replace('/', '')}>
               {element.textContent}
-            </FakeSeoLink>
+            </NoopLink>
           </Li>
         )
       }

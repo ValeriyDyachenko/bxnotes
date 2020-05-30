@@ -1,11 +1,12 @@
 import { TransitionMotion, spring, presets } from 'react-motion'
 import { FlatMenu, FlatMenuItem } from './types'
-import { MenuLink } from './styled'
+import { MenuLinkWrapper } from './styled'
+import { Link } from '../base/link'
 import React, { FC, useCallback, useState } from 'react'
 import { getPathDepth, PATH_TYPE } from '../../utils/path'
 import { Arrow } from './arrow'
 import styled from 'styled-components'
-import { rhythm } from '../../theme/typography'
+import { rhythm } from '../../componentsLibrary/theme/typography'
 import {
   AiOutlineMenu as MenuIcon,
   AiOutlineClose as CloseIcon,
@@ -163,18 +164,19 @@ export const Menu: FC<{
             <>
               {interpolatedStyles.map((config) => {
                 return (
-                  <MenuLink
+                  <MenuLinkWrapper
                     key={config.key}
                     isActive={config.data.isActive}
-                    to={config.data.to}
                     style={{ ...config.style }}
                     depthLevel={config.data.depthLevel}
                   >
-                    {config.data.title}
-                    {config.data.withArrow && (
-                      <Arrow isOpen={config.data.isOpen} />
-                    )}
-                  </MenuLink>
+                    <Link to={config.data.to}>
+                      {config.data.title}
+                      {config.data.withArrow && (
+                        <Arrow isOpen={config.data.isOpen} />
+                      )}
+                    </Link>
+                  </MenuLinkWrapper>
                 )
               })}
             </>

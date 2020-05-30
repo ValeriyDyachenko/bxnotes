@@ -1,7 +1,7 @@
 import React from 'react'
 import { PageRendererProps, WrapPageElementNodeArgs } from 'gatsby'
 import 'prism-themes/themes/prism-dracula.css'
-import './src/theme/custom-prism.css'
+import './src/componentsLibrary/theme/custom-prism.css'
 import { Layout } from './src/layout/layout'
 
 export const wrapPageElement = ({

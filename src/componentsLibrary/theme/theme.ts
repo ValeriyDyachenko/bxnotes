@@ -11,7 +11,7 @@ enum ColorPaletteLight {
 }
 
 enum ColorPaletteDark {
-  background = '#0f181f',
+  background = '#19262f',
   font = '#c8cad4',
   accent = '#e14594',
   hover = '#4b5cff',

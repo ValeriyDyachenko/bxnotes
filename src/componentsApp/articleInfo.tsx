@@ -2,13 +2,15 @@ import { GoPencil } from 'react-icons/go'
 import React, { FC } from 'react'
 import styled from 'styled-components'
 import { slugIsArticle } from '../utils/path'
-import { rhythm } from '../theme/typography'
+import { rhythm } from '../componentsLibrary/theme/typography'
+import { Link } from '../componentsLibrary/baseComponents/link'
 
 const AdditionalInfo = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   order: 1;
 `
 
@@ -35,20 +37,6 @@ const Origin = styled.div`
   }
 `
 
-const GoToEdit = styled.a`
-  justify-content: space-evenly;
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  border: 1px solid;
-  border-radius: 7px;
-  width: 238px;
-  height: 63px;
-  margin-top: 20px;
-  flex-grow: 1;
-  margin: ${rhythm(0.5)} ${rhythm(0.5)};
-`
-
 interface Props {
   slug: string
   origin?: string
@@ -65,9 +53,9 @@ export const ArticleInfo: FC<Props> = ({ slug, origin, date }) => {
   )}`.replace(/\/$/, '.md')
   return (
     <AdditionalInfo>
-      <GoToEdit href={articleGithubPath}>
-        <GoPencil /> редактировать статью
-      </GoToEdit>
+      <Link href={articleGithubPath} size="md" view="outline">
+        <GoPencil /> &nbsp; редактировать статью
+      </Link>
       <OriginWrapper>
         {origin && (
           <Origin

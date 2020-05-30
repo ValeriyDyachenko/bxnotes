@@ -1,15 +1,15 @@
 import React, { FC } from 'react'
-import { PageRendererProps, navigate } from 'gatsby'
+import { PageRendererProps } from 'gatsby'
 import styled from 'styled-components'
 import {
   FaLongArrowAltRight as FaLongArrowAltRightSvg,
   FaLongArrowAltLeft as FaLongArrowAltLeftSvg,
 } from 'react-icons/fa'
-import { rhythm } from '../theme/typography'
+import { rhythm } from '../componentsLibrary/theme/typography'
 import { FlatMenu } from './menu/types'
 import { getParentPath, slugIsArticle, slugIsConspect } from '../utils/path'
 import { getChilds } from './menu/utils/getChilds'
-import { LinkStyled } from './common/linkStyled'
+import { Link } from './base/link'
 
 const FaLongArrowAltRight = styled(FaLongArrowAltRightSvg)`
   margin-left: ${rhythm(0.6)};
@@ -32,23 +32,6 @@ const Paginate = styled.div`
   flex-grow: 1;
 `
 
-const PaginateButton = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: ${rhythm(0.7)} ${rhythm(1)};
-  color: ${(props) => props.theme.global.font};
-  border-radius: ${rhythm(0.2)};
-  background-color: ${(props) => props.theme.global.unhover};
-  cursor: pointer;
-  margin: ${rhythm(0.5)} ${rhythm(0.5)};
-  flex-grow: 0;
-  :hover {
-    background-color: ${(props) => props.theme.global.hover};
-  }
-`
-
 interface Props extends PageRendererProps {
   menu: FlatMenu
 }
@@ -64,10 +47,9 @@ export const ArticlePagination: FC<Props> = ({ location, menu }) => {
     const firstChildSlug = getChilds(item, menu)[0].slug
     return (
       <Paginate>
-        <PaginateButton onClick={() => navigate(firstChildSlug)}>
-          <LinkStyled to={firstChildSlug}>Читать</LinkStyled>
-          <FaLongArrowAltRight />
-        </PaginateButton>
+        <Link view="button" size="lg" to={firstChildSlug}>
+          Читать &nbsp; <FaLongArrowAltRight />
+        </Link>
       </Paginate>
     )
   }
@@ -85,20 +67,16 @@ export const ArticlePagination: FC<Props> = ({ location, menu }) => {
     return (
       <Paginate>
         {prevArticle && (
-          <PaginateButton onClick={() => navigate(prevArticle.slug)}>
-            <LinkStyled to={prevArticle.slug}>
-              <FaLongArrowAltLeft />
-              &nbsp;{prevArticle.title}
-            </LinkStyled>
-          </PaginateButton>
+          <Link to={prevArticle.slug} view="button" size="lg">
+            <FaLongArrowAltLeft />
+            {prevArticle.title}
+          </Link>
         )}
         {nextArticle && (
-          <PaginateButton onClick={() => navigate(nextArticle.slug)}>
-            <LinkStyled to={nextArticle.slug}>
-              {nextArticle.title} &nbsp;
-              <FaLongArrowAltRight />
-            </LinkStyled>
-          </PaginateButton>
+          <Link to={nextArticle.slug} view="button" size="lg">
+            {nextArticle.title}
+            <FaLongArrowAltRight />
+          </Link>
         )}
       </Paginate>
     )
