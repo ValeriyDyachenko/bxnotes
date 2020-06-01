@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
 export const Ul = styled.ul`
   list-style: none;
@@ -11,16 +10,12 @@ export const Li = styled.li`
   color: ${(props) => props.theme.global.font};
 `
 
-export const MenuLink = styled(Link).withConfig({
-  shouldForwardProp: (prop) => !['isActive', 'depthLevel'].includes(prop),
-})<{
-  to: string
+export const MenuLinkWrapper = styled.div<{
   isActive: boolean
   depthLevel: number
 }>`
   display: flex;
   align-items: center;
-  color: ${(props) => props.theme.global.font};
   margin-left: ${({ depthLevel }) => `${(depthLevel - 2) * 23 + 20}px`};
   padding-right: 12px;
   padding-left: 12px;
@@ -29,6 +24,9 @@ export const MenuLink = styled(Link).withConfig({
     color: ${(props) => props.theme.global.font};
   }
   overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   ${(props) =>
     props.isActive &&
     `

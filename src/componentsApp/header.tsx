@@ -1,9 +1,10 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 import { ToggleButton } from './toggleButton'
-import { rhythm } from '../theme/typography'
+import { rhythm } from '../componentsLibrary/theme/typography'
 import { FlatMenuItem } from './menu/types'
-import { LinkStyled } from './common/linkStyled'
+import { Link } from './base/link'
+import { buttonMargin } from '../componentsLibrary/theme/constants'
 
 const LogoWrapper = styled.div`
   display: flex;
@@ -15,27 +16,26 @@ const LogoWrapper = styled.div`
 
 const BreadcrumbsWrapper = styled.div`
   display: flex;
-  padding: ${rhythm(0.25)} 0 ${rhythm(1)};
+  padding: ${rhythm(0.25)} 0 ${rhythm(2)};
   flex-flow: row wrap;
   justify-content: flex-start;
-`
-
-const Logo = styled(LinkStyled)`
-  font-size: ${rhythm(1)};
-  display: block;
+  align-items: center;
 `
 
 const Thin = styled.span`
   font-weight: 100;
 `
 
-const Crumb = styled.span`
-  font-size: ${rhythm(0.55)};
+const Arrow = styled.span`
+  ${buttonMargin.sm}
+`
+
+const BcWrapper = styled.div`
   white-space: nowrap;
-  background-color: ${(props) => props.theme.global.unhover};
-  border-radius: ${rhythm(0.6)};
-  padding: ${rhythm(0.11)} ${rhythm(0.6)};
-  margin: 0 ${rhythm(0.6)} ${rhythm(0.6)};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 153px;
+  width: auto;
 `
 
 interface ThemeManager {
@@ -47,26 +47,30 @@ export const Header: FC<{
   breadcrumbs: FlatMenuItem[]
   themeContext: ThemeManager
 }> = ({ themeContext, breadcrumbs }) => {
-  const breadcrumbsJsx = breadcrumbs.reduce((a: React.ReactElement[], v) => {
+  const breadcrumbsJsx = breadcrumbs.reduce((a: React.ReactElement[], v, i) => {
     if (!v) {
       return a
     }
     const { title, slug } = v
     return title && slug
-      ? a.concat(
-          <Crumb key={slug}>
-            <LinkStyled to={slug}>{title}</LinkStyled>
-          </Crumb>
-        )
+      ? a
+          .concat(
+            <BcWrapper key={slug}>
+              <Link to={slug} view="text" size="sm" display="initial">
+                {title}
+              </Link>
+            </BcWrapper>
+          )
+          .concat(i < breadcrumbs.length - 1 ? <Arrow key={i}> > </Arrow> : [])
       : a
   }, [])
 
   return (
     <>
       <LogoWrapper>
-        <Logo to={'/'}>
+        <Link size="lg" to={'/'}>
           bxnotes<Thin>.ru</Thin>
-        </Logo>
+        </Link>
         <ToggleButton
           isOn={themeContext.isDark}
           clickHandler={() => themeContext.toggleDark()}

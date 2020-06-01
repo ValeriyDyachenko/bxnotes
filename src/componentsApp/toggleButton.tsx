@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styled, { withTheme } from 'styled-components'
-import { rhythm } from '../theme/typography'
-import { Theme } from '../theme/theme'
+import { rhythm } from '../componentsLibrary/theme/typography'
+import { Theme } from '../componentsLibrary/theme/theme'
 import { FaMoon } from 'react-icons/fa'
 import { FaLightbulb } from 'react-icons/fa'
 

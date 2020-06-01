@@ -1,18 +1,19 @@
 import React, { FC, useMemo, useContext } from 'react'
 import styled, { withTheme } from 'styled-components'
-import { Header } from '../components/header'
-import { Footer } from '../components/footer'
-import { GlobalStyle, Theme } from '../theme/theme'
-import { ArticleNav } from '../components/articleNav'
-import { rhythm } from '../theme/typography'
+import { Header } from '../componentsApp/header'
+import { Footer } from '../componentsApp/footer'
+import { GlobalStyle, Theme } from '../componentsLibrary/theme/theme'
+import { ArticleNav } from '../componentsApp/articleNav'
+import { rhythm } from '../componentsLibrary/theme/typography'
 import { graphql, PageRendererProps, useStaticQuery } from 'gatsby'
 import { ThemeManagerContext } from 'gatsby-styled-components-dark-mode/ThemeManager'
-import { FlatMenu, FlatMenuItem, MenuData } from '../components/menu/types'
+import { FlatMenu, FlatMenuItem, MenuData } from '../componentsApp/menu/types'
 import { getPathDepth, locationToPaths, PATH_TYPE } from '../utils/path'
-import { Menu } from '../components/menu/menu'
-import { ConspectList } from '../components/conspectList/conspectList'
-import { ArticlePagination } from '../components/articlePagination'
+import { Menu } from '../componentsApp/menu/menu'
+import { ConspectList } from '../componentsApp/conspectList/conspectList'
+import { ArticlePagination } from '../componentsApp/articlePagination'
 import { Helmet } from 'react-helmet'
+import { getMenuNormalized } from '../utils/ssrDataStructure/getMenuNormalized'
 
 const LayoutWrapper = styled.div`
   display: flex;
@@ -66,20 +67,10 @@ const Component: FC<Props> = ({ theme, location, children }) => {
   )
 
   // TODO transform on build time
-  const menuNormalizedData: FlatMenu = useMemo(() => {
-    return menuData.allMdx.nodes.reduce((a: FlatMenu, v) => {
-      if (v.frontmatter.date && v.fields.slug && v.frontmatter.title) {
-        a[v.fields.slug] = {
-          date: v.frontmatter.date,
-          slug: v.fields.slug,
-          items: v.fields.items || [],
-          title: v.frontmatter.title,
-          skip: !!v.frontmatter.skipInMenu,
-        }
-      }
-      return a
-    }, {})
-  }, [menuData.allMdx.nodes])
+  const menuNormalizedData: FlatMenu = useMemo(
+    () => getMenuNormalized(menuData.allMdx.nodes),
+    [menuData.allMdx.nodes]
+  )
 
   const themeContext = useContext(ThemeManagerContext)
 
@@ -89,13 +80,15 @@ const Component: FC<Props> = ({ theme, location, children }) => {
     )
   }, [menuNormalizedData])
 
-  const breadcrumbs = useMemo(
-    () =>
-      locationToPaths(decodeURI(location.pathname))
-        .slice(0, -1)
-        .map((slug) => menuNormalizedData[slug]),
-    [location.pathname, menuNormalizedData]
-  )
+  const breadcrumbs = useMemo(() => {
+    let bc = locationToPaths(decodeURI(location.pathname)).map(
+      (slug) => menuNormalizedData[slug]
+    )
+    if (bc.length) {
+      bc.unshift({ title: 'Главная', slug: '/' } as FlatMenuItem)
+    }
+    return bc
+  }, [location.pathname, menuNormalizedData])
 
   return (
     <LayoutWrapper>
@@ -117,7 +110,13 @@ const Component: FC<Props> = ({ theme, location, children }) => {
         <Header breadcrumbs={breadcrumbs} themeContext={themeContext} />
         <ContentWrapper>
           {children}
-          <ConspectList location={location} menu={menuNormalizedData} />
+          {getPathDepth(location.pathname) < PATH_TYPE.CONSPECT_INSTANCE &&
+            location.pathname !== '/' && (
+              <ConspectList
+                slug={decodeURI(location.pathname)}
+                menu={menuNormalizedData}
+              />
+            )}
           <ArticlePagination location={location} menu={menuNormalizedData} />
         </ContentWrapper>
         <Footer />

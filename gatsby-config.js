@@ -22,8 +22,10 @@ module.exports = {
     {
       resolve: `gatsby-styled-components-dark-mode`,
       options: {
-        light: require(`${__dirname}/src/theme/theme.ts`).lightTheme,
-        dark: require(`${__dirname}/src/theme/theme.ts`).darkTheme,
+        light: require(`${__dirname}/src/componentsLibrary/theme/theme.ts`)
+          .lightTheme,
+        dark: require(`${__dirname}/src/componentsLibrary/theme/theme.ts`)
+          .darkTheme,
       },
     },
     'gatsby-remark-prismjs',
@@ -100,7 +102,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/theme/typography.ts`,
+        pathToConfigModule: `src/componentsLibrary/theme/typography.ts`,
       },
     },
     {
