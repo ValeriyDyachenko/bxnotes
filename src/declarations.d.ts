@@ -6,3 +6,5 @@ declare module 'typography-theme-moraga' {
 
   export = Theme
 }
+
+declare module '*.jpg'
