@@ -9,6 +9,11 @@ import { FcAbout } from 'react-icons/fc'
 import { List } from '../../componentsLibrary/components/list'
 import { Title } from '../../componentsLibrary/baseComponents/title'
 import { rhythm } from '../../componentsLibrary/theme/typography'
+import {
+  buttonMargin,
+  fontSize,
+  titleMargin,
+} from '../../componentsLibrary/theme/constants'
 
 const ConspectItem = styled.div`
   display: flex;
@@ -17,16 +22,16 @@ const ConspectItem = styled.div`
   justify-content: space-between;
   min-width: 100%;
   padding: 0px 27px 2px;
-  margin: 0 0 35px 0;
+  margin: 0 0 45px 0;
   border-radius: 8px;
   box-shadow: 0 0 19px 0px rgba(0, 0, 0, 0.3);
 `
 
 const ArticlesCnt = styled.div`
-  font-weight: 300;
-  font-size: 20px;
+  ${fontSize['md']};
   display: flex;
   align-items: center;
+  ${titleMargin.lg}
   @media (max-width: 700px) {
     display: none;
   }
@@ -36,7 +41,6 @@ const TitleWrapper = styled.div`
   font-weight: 300;
   font-size: 20px;
   display: flex;
-  align-items: center;
   flex-direction: row;
   justify-content: space-between;
 `
@@ -45,6 +49,11 @@ const Space = styled.div`
   :not(:first-of-type) {
     margin-top: ${rhythm(1)};
   }
+`
+
+const UpdateDate = styled.div`
+  ${fontSize['sm']};
+  ${buttonMargin['lg']};
 `
 
 const createConspectListJSX = ({
@@ -138,14 +147,14 @@ const createConspectListJSX = ({
           </TitleWrapper>
           {articleLinks && <List>{articleLinks}</List>}
           {lastArticleUpdateDate && (
-            <Title size="sm" weight={300}>
+            <UpdateDate>
               обновлено{' '}
               {new Date(Number(lastArticleUpdateDate)).toLocaleString('ru', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
               })}
-            </Title>
+            </UpdateDate>
           )}
         </ConspectItem>
       ) : null}

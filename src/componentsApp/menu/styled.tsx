@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { Link } from 'gatsby'
+import { fontSize } from '../../componentsLibrary/theme/constants'
 
 export const Ul = styled.ul`
   list-style: none;
@@ -10,26 +12,25 @@ export const Li = styled.li`
   color: ${(props) => props.theme.global.font};
 `
 
-export const MenuLinkWrapper = styled.div<{
+export const MenuLinkWrapper = styled(Link)<{
   isActive: boolean
   depthLevel: number
 }>`
   display: flex;
   align-items: center;
-  margin-left: ${({ depthLevel }) => `${(depthLevel - 2) * 23 + 20}px`};
-  padding-right: 12px;
-  padding-left: 12px;
-  border-radius: 19px;
-  :hover {
-    color: ${(props) => props.theme.global.font};
-  }
+  flex-flow: row wrap;
+  flex-grow: 0;
+  flex-wrap: nowrap;
+  padding-right: 32px;
+  padding-left: ${({ depthLevel }) => `${(depthLevel - 2) * 23 + 32}px`};
   overflow: hidden;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  transition: background-color 0.4s;
+  border-radius: 2px;
+  ${fontSize['md']};
+  text-decoration: none;
   ${(props) =>
     props.isActive &&
     `
-      border: 2px dotted ${props.theme.global.hover};
+      background-color: ${props.theme.global.unhover};
     `}
 `
