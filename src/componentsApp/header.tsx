@@ -38,6 +38,10 @@ const BcWrapper = styled.div`
   width: auto;
 `
 
+const TextWrapper = styled.span`
+  font-size: ${rhythm(1.2)};
+`
+
 interface ThemeManager {
   isDark: boolean
   toggleDark(value?: boolean): void
@@ -69,7 +73,9 @@ export const Header: FC<{
     <>
       <LogoWrapper>
         <Link size="lg" to={'/'}>
-          bxnotes<Thin>.ru</Thin>
+          <TextWrapper>
+            bxnotes<Thin>.ru</Thin>
+          </TextWrapper>
         </Link>
         <ToggleButton
           isOn={themeContext.isDark}

@@ -1,7 +1,6 @@
 import { TransitionMotion, spring, presets } from 'react-motion'
 import { FlatMenu, FlatMenuItem } from './types'
 import { MenuLinkWrapper } from './styled'
-import { Link } from '../base/link'
 import React, { FC, useCallback, useState } from 'react'
 import { getPathDepth, PATH_TYPE } from '../../utils/path'
 import { Arrow } from './arrow'
@@ -32,16 +31,15 @@ export const MenuWrapper = styled.nav<{ mobileVisibility: boolean }>`
     height: 100vh;
     z-index: 1;
     width: 75%;
-    padding-right: 12px;
     box-shadow: 0 15px 100px #000;
     transition: left 0.2s ease-in-out;
     padding-bottom: ${rhythm(3)};
   }
   @media (min-width: 1101px) {
     position: sticky;
-    min-width: ${rhythm(15)};
-    max-width: ${rhythm(15)};
-    padding: ${rhythm(0.5)} ${rhythm(1)} 0 0;
+    min-width: ${rhythm(17)};
+    max-width: ${rhythm(17)};
+    padding: ${rhythm(0.5)} 0 ${rhythm(2.5)} 0;
   }
 `
 
@@ -165,17 +163,16 @@ export const Menu: FC<{
               {interpolatedStyles.map((config) => {
                 return (
                   <MenuLinkWrapper
+                    to={config.data.to}
                     key={config.key}
                     isActive={config.data.isActive}
                     style={{ ...config.style }}
                     depthLevel={config.data.depthLevel}
                   >
-                    <Link to={config.data.to}>
-                      {config.data.title}
-                      {config.data.withArrow && (
-                        <Arrow isOpen={config.data.isOpen} />
-                      )}
-                    </Link>
+                    {config.data.title}
+                    {config.data.withArrow && (
+                      <Arrow isOpen={config.data.isOpen} />
+                    )}
                   </MenuLinkWrapper>
                 )
               })}

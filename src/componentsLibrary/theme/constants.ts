@@ -31,27 +31,39 @@ export const buttonMargin: Record<ElementSize, Interpolation<any>> = {
 
 export const fontSize: Record<ElementSize, Interpolation<any>> = {
   sm: css`
-    font-size: ${rhythm(0.55)};
+    font-size: ${rhythm(0.65)};
   `,
   md: css`
-    font-size: ${rhythm(0.6)};
+    font-size: ${rhythm(0.7)};
   `,
   lg: css`
     font-size: ${rhythm(0.75)};
   `,
 }
 
-export const titleSize: Record<ElementSize, Interpolation<any>> = {
+export const titleMargin: Record<ElementSize, Interpolation<any>> = {
   sm: css`
-    ${styledScale(0.15)};
     margin: 0 0 ${rhythm(0.7)};
   `,
   md: css`
-    ${styledScale(0.7)};
     margin: 0 0 ${rhythm(1.2)};
   `,
   lg: css`
-    ${styledScale(0.9)};
     margin: 0 0 ${rhythm(1.4)};
+  `,
+}
+
+export const titleSize: Record<ElementSize, Interpolation<any>> = {
+  sm: css`
+    ${styledScale(0.15)};
+    ${titleMargin.sm};
+  `,
+  md: css`
+    ${styledScale(0.7)};
+    ${titleMargin.md};
+  `,
+  lg: css`
+    ${styledScale(0.9)};
+    ${titleMargin.lg};
   `,
 }

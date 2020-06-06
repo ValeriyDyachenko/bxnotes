@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Title } from '../../baseComponents/title'
 
 const ListWrapper = styled.div`
-  margin: 0 0 27px;
+  margin: -5px 0 12px;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@ const ListWrapper = styled.div`
 `
 
 const ChildrenWrapper = styled.div`
-  margin: 10px 0 5px;
+  margin: 0;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;

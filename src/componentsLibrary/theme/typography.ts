@@ -1,6 +1,6 @@
 import { CSSObject } from 'styled-components'
 import Typography from 'typography'
-import moragaTheme from 'typography-theme-moraga'
+import bootstrapTheme from 'typography-theme-bootstrap'
 
 // moragaTheme.overrideThemeStyles = () => ({
 //   'a.gatsby-resp-image-link': {
@@ -8,7 +8,7 @@ import moragaTheme from 'typography-theme-moraga'
 //   },
 // })
 
-const typography = new Typography(moragaTheme)
+const typography = new Typography(bootstrapTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

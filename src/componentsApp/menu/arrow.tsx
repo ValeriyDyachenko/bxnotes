@@ -10,7 +10,7 @@ const ArrowWrapper = styled.div<{ isOpen: boolean }>`
   display: flex;
   align-self: center;
   opacity: ${({ isOpen }) => (isOpen ? `1` : `0.2`)};
-  transition: transform 0.5s, opacity 1s;
+  transition: transform 0.4s, opacity 1s;
   transform: rotate(${({ isOpen }) => (isOpen ? `90deg` : `0deg`)});
   margin-left: 20px;
 `
