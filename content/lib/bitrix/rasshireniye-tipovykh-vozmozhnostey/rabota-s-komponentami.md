@@ -10,7 +10,7 @@ date: 2018-01-05 00:00:00
 + `component.php` до вызова шаблона
 + `result_modifier.php` перед вызовом шаблона
 + `template.php`
-+ `component.php` после вызова шаблона
++ `component_epilog.php` после вызова шаблона
 
 ## .parameters.php
 
